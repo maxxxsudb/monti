@@ -1,0 +1,7 @@
+{
+ "id": "r6-info-gemini",
+ "text": "Information-theoretic angle, be rigorous. In Monty Hall the host's action carries zero information about MY door being the prize and positive information about the other door. (1) Express this with mutual information / likelihood ratios: I(host action; [prize==my door]) = 0 while I(host action; prize location) > 0. Is 'zero information about the protected option + positive information overall' the defining signature? (2) Conservation law: under which exact conditions on the revealer is P(protected group contains prize) invariant after any number of reveals? Prove necessity. (3) Explore unusual directions: continuous-time reveals, partial reveals (hints instead of opening), many players with overlapping protected sets, a revealer who knows only partially, a revealer with a budget, reveals that cost the contestant. For each, state whether the Monty effect survives, vanishes, or reverses, with an exact small example. (4) Propose the 3 most surprising boundary results with exact numbers.",
+ "tag": "r6-boundary",
+ "target": "gemini",
+ "created": 1792029538.3763847
+}

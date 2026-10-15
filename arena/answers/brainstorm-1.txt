@@ -1,0 +1,153 @@
+I am looking for a SIMPLE, previously unknown probability paradox that generalizes the Monty Hall me
+РђСЃСЃРёСЃС‚РµРЅС‚ A
+
+Generating...
+
+РђСЃСЃРёСЃС‚РµРЅС‚ B
+
+I cannot honestly certify вЂњpreviously unknownвЂќ; all are instances of protocol-dependent conditioning, though none is a standard named paradox like the excluded ones.
+
+Random threshold. A fair die is rolled, and the announcer uniformly chooses one true statement from вЂњ
+рќ‘‹
+в‰Ґ
+1
+Xв‰Ґ1, вЂ¦, 
+рќ‘‹
+в‰Ґ
+6
+Xв‰Ґ6вЂќ; you hear вЂњ
+рќ‘‹
+в‰Ґ
+3
+Xв‰Ґ3.вЂќ What is 
+рќ‘ѓ
+(
+рќ‘‹
+=
+6
+)
+P(X=6)? 
+10
+/
+57
+10/57, not the intuitive 
+1
+/
+4
+1/4; similar examples occur under randomized coarsening or the protocol problem, with no standard standalone name.
+
+Random true property. A number 
+рќ‘Ѓ
+N is uniform on 
+1
+,
+вЂ¦
+,
+8
+1,вЂ¦,8, and the announcer uniformly selects a true property among вЂњodd,вЂќ вЂњeven,вЂќ вЂњdivisible by 3,вЂќ and вЂњat least 5вЂќ; you hear вЂњat least 5.вЂќ What is 
+рќ‘ѓ
+(
+рќ‘Ѓ
+=
+8
+)
+P(N=8)? 
+3
+/
+11
+3/11, not 
+1
+/
+4
+1/4; this is a вЂњrandom true statementвЂќ conditioning puzzle, not a canonically named paradox.
+
+Random divisor certificate. A number 
+рќ‘Ѓ
+N is uniform on 
+1
+,
+вЂ¦
+,
+12
+1,вЂ¦,12, and the announcer uniformly names one positive divisor of 
+рќ‘Ѓ
+N; you hear вЂњ2.вЂќ What is 
+рќ‘ѓ
+(
+рќ‘Ѓ
+=
+12
+)
+P(N=12)? 
+2
+/
+21
+2/21, not the intuitive 
+1
+/
+6
+1/6; similar phenomena are known as random-divisor bias or inverse-size-biased sampling, but not as a famous paradox.
+
+Random prime-factor witness. A number 
+рќ‘Ѓ
+N is uniform on 
+2
+,
+вЂ¦
+,
+30
+2,вЂ¦,30, and the announcer uniformly names one distinct prime factor of 
+рќ‘Ѓ
+N; you hear вЂњ2.вЂќ What is 
+рќ‘ѓ
+(
+3
+в€Ј
+рќ‘Ѓ
+)
+P(3в€ЈN)? 
+1
+/
+4
+1/4, not the naive 
+1
+/
+3
+1/3 from вЂњan even number is divisible by 3 with probability one thirdвЂќ; this is another random-witness/protocol-conditioning example, with no settled special name.
+
+Random set-bit witness. A number 
+рќ‘Ѓ
+N is uniform on 
+1
+,
+вЂ¦
+,
+15
+1,вЂ¦,15, its binary representation is inspected, and the announcer uniformly names one position containing a 1-bit; you hear вЂњthe 8вЂ™s bit is on.вЂќ What is 
+рќ‘ѓ
+(
+рќ‘Ѓ
+=
+15
+)
+P(N=15)? 
+1
+/
+15
+1/15, not 
+1
+/
+8
+1/8; similar constructions appear as random witness selection or inverse-size-biased conditioning, rather than as a named classical paradox.
+
+I am looking for a SIMPLE, previously unknown probability paradox that generalizes the Monty Hall mechanism (selective revelation by an informed or constrained filter: protection of one option, a host who must avoid the prize, survival through a biased filter). Constraints: statable in 3 sentences, answer is a single number, intuitive answer is wrong, and it must NOT reduce to: Monty Hall variants, three prisoners, Bertrand's box, boy-girl (incl. Tuesday boy), Berkson, survivorship bias, inspection paradox, Simpson, Braess, Lindley, Sleeping Beauty, two envelopes, winner's curse, optional stopping, base-rate fallacy. Propose 5 candidates with exact answers, and for each honestly say whether something similar is already known and under what name. Be concise.
+
+Battle
+
+Battle ModeBattle 2 anonymous models
+Agent ModeBuilt for complex tasks
+Side by SideCompare 2 models of your choice
+DirectChat with 1 model at a time
+Text
+
+Inputs are processed by third-party AI and responses may be inaccurate.

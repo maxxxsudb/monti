@@ -1,0 +1,271 @@
+- region "Notifications alt+T"
+- main:
+  - main:
+    - main:
+      - button:
+      - button:
+        - generic: Solve these two independent probability problems. Give an exact numerical probability and a short de
+      - link:
+        - /url: /
+      - main:
+        - list:
+          - region:
+            - generic: Ассистент A
+            - button:
+            - button:
+            - button:
+            - heading [level=2]: "Problem 1: Probability the returned battery is still charged"
+            - paragraph:
+              - strong: "Answer: 1/3"
+            - paragraph: Let C be the charged battery and E₁, E₂ the empty ones. You set one aside uniformly at random, then test the other two in random order.
+            - list:
+              - strong: "You set aside C (probability 1/3):"
+              - text: The two remaining batteries are both empty. The returned battery is empty.
+              - strong: "You set aside an empty battery (probability 2/3):"
+              - text: "The remaining two are C and E, tested in random order:"
+              - list:
+                - listitem: "Test C first (prob 1/2): C reads charged and is drained. E then reads empty, so E is removed and the drained C is returned. Not charged."
+                - listitem: "Test E first (prob 1/2): E reads empty, so the test stops and E is removed. C was never touched, so it is returned still charged."
+            - paragraph:
+              - text: P(still charged) = (2/3)(1/2) =
+              - strong: 1/3
+            - heading [level=2]: "Problem 2: Probability of winning by switching"
+            - paragraph:
+              - strong: "Answer: 1/3"
+            - paragraph: Assume the token is equally likely to be in A, B, or C, and you pick A. The host independently picks B or C with probability 1/2 each.
+            - list:
+              - strong: "Token in A (1/3):"
+              - text: The host opens an empty box and the token stays in A. Switching goes to the other unopened box, which is empty. Switching loses.
+              - strong: "Token in B (1/3):"
+              - list:
+                - listitem: "Host picks B (1/2): the token moves to A and B is opened. Unopened boxes are A and C, and the token is in A. Switching to C loses."
+                - listitem: "Host picks C (1/2): C is empty and opened, and the token stays in B. Unopened boxes are A and B. Switching to B wins. This case contributes (1/3)(1/2) = 1/6."
+              - strong: "Token in C (1/3):"
+              - list:
+                - listitem: "Host picks B (1/2): B is empty and opened, and the token stays in C. Unopened boxes are A and C. Switching to C wins. This case contributes 1/6."
+                - listitem: "Host picks C (1/2): the token moves to A and C is opened. Switching to B loses."
+            - paragraph:
+              - text: P(win by switching) = 1/6 + 1/6 =
+              - strong: 1/3
+            - paragraph: As a check, staying wins with probability 2/3, which is the complement.
+            - generic: Ассистент B
+            - button:
+            - button:
+            - button:
+            - list:
+              - paragraph:
+                - strong:
+                  - text: "Probability the returned battery is still charged:"
+                  - math:
+                    - generic: "1"
+                    - generic: "3"
+                  - generic: "3"
+                  - generic: "1"
+              - paragraph:
+                - text: Let the battery you set aside be
+                - math:
+                  - generic: S
+                - generic: S
+                - text: .
+              - list:
+                - text: With probability
+                - math:
+                  - generic: "1"
+                  - generic: "3"
+                - generic: "3"
+                - generic: "1"
+                - text: ","
+                - math:
+                  - generic: S
+                - generic: S
+                - text: is the initially charged battery. Then the technician only has empty batteries, so the returned battery is empty.
+                - text: With probability
+                - math:
+                  - generic: "2"
+                  - generic: "3"
+                - generic: "3"
+                - generic: "2"
+                - text: ","
+                - math:
+                  - generic: S
+                - generic: S
+                - text: is empty, so the technician’s two batteries are one charged and one empty.
+                - list:
+                  - text: With probability
+                  - math:
+                    - generic: "1"
+                    - generic: "2"
+                  - generic: "2"
+                  - generic: "1"
+                  - text: ", he tests the empty one first, stops, and returns the charged battery untested, so it is still charged."
+                  - text: With probability
+                  - math:
+                    - generic: "1"
+                    - generic: "2"
+                  - generic: "2"
+                  - generic: "1"
+                  - text: ", he tests the charged one first; it reads charged but is drained, so the returned battery is no longer charged."
+              - paragraph: Therefore,
+              - math:
+                - generic: P
+                - generic: (
+                - generic: returned still charged
+                - generic: )
+                - generic: =
+                - generic: "2"
+                - generic: "3"
+                - generic: ⋅
+                - generic: "1"
+                - generic: "2"
+                - generic: =
+                - generic: "1"
+                - generic: "3"
+                - generic: .
+              - text: P(
+              - generic: returned still charged
+              - text: ) =
+              - generic: "3"
+              - generic: "2"
+              - text: ⋅
+              - generic: "2"
+              - generic: "1"
+              - text: =
+              - generic: "3"
+              - generic: "1"
+              - text: .
+              - paragraph:
+                - strong:
+                  - text: "Probability of winning by switching:"
+                  - math:
+                    - generic: "1"
+                    - generic: "3"
+                  - generic: "3"
+                  - generic: "1"
+              - paragraph:
+                - text: There are
+                - math:
+                  - generic: "3"
+                - generic: "3"
+                - text: initial token positions and
+                - math:
+                  - generic: "2"
+                - generic: "2"
+                - text: equally likely host inspection choices, so
+                - math:
+                  - generic: "6"
+                - generic: "6"
+                - text: equally likely cases.
+              - paragraph:
+                - text: Suppose the host opens
+                - math:
+                  - generic: B
+                - generic: B
+                - text: . Then switching to
+                - math:
+                  - generic: C
+                - generic: C
+                - text: wins only if the token was initially in
+                - math:
+                  - generic: C
+                - generic: C
+                - text: ":"
+              - list:
+                - text: Initially in
+                - math:
+                  - generic: A
+                - generic: A
+                - text: ": token stays in"
+                - math:
+                  - generic: A
+                - generic: A
+                - text: ", switch loses."
+                - text: Initially in
+                - math:
+                  - generic: B
+                - generic: B
+                - text: ": token is moved to"
+                - math:
+                  - generic: A
+                - generic: A
+                - text: ", switch loses."
+                - text: Initially in
+                - math:
+                  - generic: C
+                - generic: C
+                - text: ": token stays in"
+                - math:
+                  - generic: C
+                - generic: C
+                - text: ", switch wins."
+              - paragraph:
+                - text: Similarly, if the host opens
+                - math:
+                  - generic: C
+                - generic: C
+                - text: ", switching wins only if the token was initially in"
+                - math:
+                  - generic: B
+                - generic: B
+                - text: .
+              - paragraph:
+                - text: Thus there are
+                - math:
+                  - generic: "2"
+                - generic: "2"
+                - text: winning cases out of
+                - math:
+                  - generic: "6"
+                - generic: "6"
+                - text: ":"
+              - math:
+                - generic: P
+                - generic: (
+                - generic: win by switching
+                - generic: )
+                - generic: =
+                - generic: "2"
+                - generic: "6"
+                - generic: =
+                - generic: "1"
+                - generic: "3"
+                - generic: .
+              - text: P(
+              - generic: win by switching
+              - text: ) =
+              - generic: "6"
+              - generic: "2"
+              - text: =
+              - generic: "3"
+              - generic: "1"
+              - text: .
+            - button:
+              - generic: Next slide
+          - paragraph: Solve these two independent probability problems. Give an exact numerical probability and a short derivation for each.
+          - list:
+            - paragraph: Exactly one of three identical batteries is fully charged, initially placed uniformly at random; you set one aside. A technician tests the other two in a uniformly random order until a test reads empty, removes that empty battery, and returns the other battery without revealing the testing history. A test on a charged battery first reads charged and then fully drains it. What is the probability that the returned battery is still charged?
+            - paragraph: One token is initially placed uniformly at random in three boxes, and you choose box A. A host uniformly randomly selects B or C to inspect; if the token is there, the host moves it into A, then always opens the inspected box, now empty. What is the probability of winning if you switch to the other unopened box?
+          - button:
+        - button:
+          - generic: A лучше
+        - button:
+        - button:
+        - button:
+          - generic: B лучше
+        - textbox [active]:
+          - /placeholder: Ask followup…
+        - button:
+        - combobox:
+        - combobox
+        - button:
+        - button:
+        - button [disabled]:
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+    - dialog "How voting works":
+      - heading "How voting works" [level=2]
+      - paragraph: We'll show you 2 responses from 2 anonymous models. Please vote on the response you think is best. We will reveal the models afterwards. If you like both responses, use "It's a tie" button. If you do not like either, please use the "Both are bad" button.
+      - link "Learn more about How it Works":
+        - /url: /how-it-works
+        - generic: Learn more about How it Works
+      - img "Mobile Voting Onboarding Experience"
+      - button "Got it"
+- alert

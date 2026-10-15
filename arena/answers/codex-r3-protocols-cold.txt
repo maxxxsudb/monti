@@ -1,0 +1,1228 @@
+- region "Notifications alt+T"
+- button "Toggle Sidebar"
+- list:
+  - button "Arena menu":
+- button:
+- list:
+  - link "New Chat":
+    - /url: /
+    - generic: New Chat
+  - link "Leaderboard New":
+    - /url: /leaderboard
+    - generic: Leaderboard
+    - generic: New
+  - link "Search":
+    - /url: /history/search
+    - generic: Search
+- generic: Today
+- list:
+  - link "Solve these independent problems using the fully specified procedures. Give exact probabilities and":
+    - /url: /c/01a13b74-d36e-7651-9fbe-9b28763cccf4
+    - generic: Solve these independent problems using the fully specified procedures. Give exact probabilities and
+  - button "More options":
+  - link "Solve the following independent problems. Give exact numerical answers and brief calculations; disti":
+    - /url: /c/01a13b73-591e-73bb-ab13-69101e26c999
+    - generic: Solve the following independent problems. Give exact numerical answers and brief calculations; disti
+  - button "More options":
+  - link "Solve these five independent probability problems. Give an exact fraction and a brief derivation for":
+    - /url: /c/01a13b70-5251-73ad-9a20-95714f9e6bab
+    - generic: Solve these five independent probability problems. Give an exact fraction and a brief derivation for
+  - button "More options":
+  - link "Solve these two independent probability problems. Give an exact numerical probability and a short de":
+    - /url: /c/01a13b6c-b92b-7abf-bc16-f1e236c3f708
+    - generic: Solve these two independent probability problems. Give an exact numerical probability and a short de
+  - button "More options":
+- link:
+  - /url: https://www.youtube.com/watch?v=Kq3-fV7w3Nk
+- heading "Get More Done With Agents" [level=3]
+- paragraph:
+  - text: Start evaluating agentic AI on Arena today.
+  - link "Learn more":
+    - /url: https://arena.ai/blog/agent-mode/
+- link "Try it now":
+  - /url: /agent
+- button "Hide this":
+  - text: Hide this
+- button "Log In"
+- link "Terms of Use":
+  - /url: /terms-of-use
+- link "Privacy Policy":
+  - /url: /privacy-policy
+- button "Cookies"
+- main:
+  - main:
+    - main:
+      - button "Solve these independent problems using the fully specified procedures. Give exact probabilities and":
+        - generic: Solve these independent problems using the fully specified procedures. Give exact probabilities and
+      - main:
+        - list:
+          - region:
+            - generic: Ассистент A
+            - button:
+            - button:
+            - button:
+            - paragraph: Here are the exact solutions by direct conditioning / Bayes.
+            - separator
+            - heading "1. Four doors, host cannot open A or D" [level=3]
+            - paragraph:
+              - text: "Car uniform:"
+              - math:
+                - generic: P
+                - generic: (
+                - generic: ⋅
+                - generic: )
+                - generic: =
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: P(⋅) =
+              - generic: 1/4
+              - text: "on"
+              - math:
+                - generic: "{"
+                - generic: A
+                - generic: ","
+                - generic: B
+                - generic: ","
+                - generic: C
+                - generic: ","
+                - generic: D
+                - generic: "}"
+              - generic: "{A, B, C, D}"
+              - text: .
+              - text: Host opens
+              - strong: C
+              - text: "only as a goat:"
+            - table:
+              - rowgroup:
+                - row "car joint":
+                  - columnheader "car"
+                  - columnheader:
+                    - math:
+                      - generic: P
+                      - generic: (
+                      - generic: open
+                      - generic: C
+                      - generic: ∣
+                      - generic: car
+                      - generic: )
+                    - text: P(
+                    - generic: open
+                    - text: C ∣
+                    - generic: car
+                    - text: )
+                  - columnheader "joint":
+                    - text: joint
+                    - math:
+                      - generic: P
+                      - generic: (
+                      - generic: car
+                      - generic: ∩
+                      - generic: open
+                      - generic: C
+                      - generic: )
+                    - text: P(
+                    - generic: car
+                    - text: ∩
+                    - generic: open
+                    - text: C)
+              - rowgroup:
+                - row "A (B,C both goats)":
+                  - cell "A"
+                  - cell "(B,C both goats)":
+                    - math:
+                      - generic: "1"
+                      - generic: /
+                      - generic: "2"
+                    - generic: 1/2
+                    - text: (B,C both goats)
+                  - cell:
+                    - math:
+                      - generic: "1"
+                      - generic: /
+                      - generic: "4"
+                      - generic: ⋅
+                      - generic: "1"
+                      - generic: /
+                      - generic: "2"
+                      - generic: =
+                      - generic: "1"
+                      - generic: /
+                      - generic: "8"
+                    - generic: 1/4 ⋅
+                    - generic: 1/2 =
+                    - generic: 1/8
+                - row "B (C is the only goat)":
+                  - cell "B"
+                  - cell "(C is the only goat)":
+                    - math:
+                      - generic: "1"
+                    - generic: "1"
+                    - text: (C is the only goat)
+                  - cell:
+                    - math:
+                      - generic: "1"
+                      - generic: /
+                      - generic: "4"
+                    - generic: 1/4
+                - row "C":
+                  - cell "C"
+                  - cell:
+                    - math:
+                      - generic: "0"
+                    - generic: "0"
+                  - cell:
+                    - math:
+                      - generic: "0"
+                    - generic: "0"
+                - row "D":
+                  - cell "D"
+                  - cell:
+                    - math:
+                      - generic: "1"
+                      - generic: /
+                      - generic: "2"
+                    - generic: 1/2
+                  - cell:
+                    - math:
+                      - generic: "1"
+                      - generic: /
+                      - generic: "8"
+                    - generic: 1/8
+            - math:
+              - generic: P
+              - generic: (
+              - generic: open
+              - generic: C
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "8"
+              - generic: +
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "0"
+              - generic: +
+              - generic: "1"
+              - generic: "8"
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - text: P(
+            - generic: open
+            - text: C) =
+            - generic: "8"
+            - generic: "1"
+            - text: +
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: 0 +
+            - generic: "8"
+            - generic: "1"
+            - text: =
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: B
+              - generic: ∣
+              - generic: open
+              - generic: C
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - generic: P(B ∣
+            - generic: open
+            - text: C) =
+            - generic: 1/2
+            - generic: 1/4
+            - text: =
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - paragraph:
+              - text: "(Posterior:"
+              - math:
+                - generic: A
+                - generic: ":"
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+                - generic: ","
+                - generic: B
+                - generic: ":"
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+                - generic: ","
+                - generic: C
+                - generic: ":"
+                - generic: "0"
+                - generic: ","
+                - generic: D
+                - generic: ":"
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: "A :"
+              - generic: "1/4, B :"
+              - generic: "1/2, C :"
+              - generic: "0, D :"
+              - generic: 1/4
+              - text: .)
+            - separator
+            - heading "2. Five doors, package , host opens E" [level=3]:
+              - text: 2. Five doors, package
+              - math:
+                - generic: "{"
+                - generic: A
+                - generic: ","
+                - generic: B
+                - generic: ","
+                - generic: C
+                - generic: "}"
+              - generic: "{A, B, C}"
+              - text: ", host opens E"
+            - paragraph:
+              - text: Host opens a goat among
+              - math:
+                - generic: "{"
+                - generic: D
+                - generic: ","
+                - generic: E
+                - generic: "}"
+              - generic: "{D, E}"
+              - text: .
+              - text: If car is
+              - math:
+                - generic: D
+                - generic: ⇒
+              - generic: D ⇒
+              - text: open E w.p. 1; if car
+              - math:
+                - generic: A
+                - generic: ","
+                - generic: B
+                - generic: ","
+                - generic: C
+                - generic: ⇒
+              - generic: A, B, C ⇒
+              - text: open E w.p.
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: ; if car
+              - math:
+                - generic: E
+                - generic: ⇒
+              - generic: E ⇒
+              - text: prob 0.
+            - math:
+              - generic: P
+              - generic: (
+              - generic: open
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "3"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "5"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "5"
+              - generic: ⋅
+              - generic: "1"
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - text: P(
+            - generic: open
+            - text: E) =
+            - generic: 3 ⋅
+            - generic: "5"
+            - generic: "1"
+            - text: ⋅
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "5"
+            - generic: "1"
+            - text: ⋅
+            - generic: 1 =
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - paragraph:
+              - text: Joint for
+              - math:
+                - generic: D
+              - generic: D
+              - text: ":"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "5"
+              - generic: 1/5
+              - text: . Hence
+            - math:
+              - generic: P
+              - generic: (
+              - generic: D
+              - generic: ∣
+              - generic: open
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "5"
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: =
+              - generic: "2"
+              - generic: "5"
+              - generic: .
+            - generic: P(D ∣
+            - generic: open
+            - text: E) =
+            - generic: 1/2
+            - generic: 1/5
+            - text: =
+            - generic: "5"
+            - generic: "2"
+            - text: .
+            - paragraph:
+              - text: Your package win prob after observing E is
+              - math:
+                - generic: "3"
+                - generic: /
+                - generic: "5"
+              - generic: 3/5
+              - text: ; swapping to D gives
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "5"
+              - generic: 2/5
+              - text: .
+            - separator
+            - heading "3. One qualified among A,B,C; A is guaranteed to pass" [level=3]
+            - paragraph:
+              - text: "Prior qualification:"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "3"
+              - generic: 1/3
+              - text: each.
+              - math:
+                - generic: A
+              - generic: A
+              - text: passes always (cheat); qualified pass always; unqualified pass w.p.
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: all pass
+              - generic: ∣
+              - generic: A
+              - generic: q
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "2"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "2"
+              - generic: =
+              - generic: "1"
+              - generic: "4"
+              - generic: ","
+              - generic: P
+              - generic: (
+              - generic: all pass
+              - generic: ∣
+              - generic: B
+              - generic: q
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: ⋅
+              - generic: "1"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "2"
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: ","
+              - generic: P
+              - generic: (
+              - generic: all pass
+              - generic: ∣
+              - generic: C
+              - generic: q
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - text: P(
+            - generic: all pass
+            - text: ∣ A
+            - generic: q
+            - text: )
+            - text: P(
+            - generic: all pass
+            - text: ∣ B
+            - generic: q
+            - text: )
+            - text: P(
+            - generic: all pass
+            - text: ∣ C
+            - generic: q
+            - text: )
+            - text: = 1 ⋅
+            - generic: "2"
+            - generic: "1"
+            - text: ⋅
+            - generic: "2"
+            - generic: "1"
+            - text: =
+            - generic: "4"
+            - generic: "1"
+            - text: ","
+            - text: = 1 ⋅ 1 ⋅
+            - generic: "2"
+            - generic: "1"
+            - text: =
+            - generic: "2"
+            - generic: "1"
+            - text: ","
+            - text: =
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: all pass
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "3"
+              - generic: (
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: )
+              - generic: =
+              - generic: "5"
+              - generic: "12"
+              - generic: .
+            - text: P(
+            - generic: all pass
+            - text: ) =
+            - generic: "3"
+            - generic: "1"
+            - generic: (
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - generic: )
+            - text: =
+            - generic: "12"
+            - generic: "5"
+            - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: A
+              - generic: q
+              - generic: ∣
+              - generic: all pass
+              - generic: )
+              - generic: =
+              - generic: (
+              - generic: "1"
+              - generic: /
+              - generic: "3"
+              - generic: )
+              - generic: (
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: )
+              - generic: "5"
+              - generic: /
+              - generic: "12"
+              - generic: =
+              - generic: "1"
+              - generic: "5"
+              - generic: .
+            - text: P(A
+            - generic: q
+            - text: ∣
+            - generic: all pass
+            - text: ) =
+            - generic: 5/12
+            - generic: (1/3)(1/4)
+            - text: =
+            - generic: "5"
+            - generic: "1"
+            - text: .
+            - separator
+            - heading "4. Exactly one of A,B qualified; pass if qualified, if not" [level=3]:
+              - text: 4. Exactly one of A,B qualified; pass
+              - math:
+                - generic: =
+                - generic: "1"
+              - generic: =
+              - generic: "1"
+              - text: if qualified,
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: if not
+            - paragraph:
+              - strong: No help.
+              - text: "States:"
+              - math:
+                - generic: A
+              - generic: A
+              - text: q /
+              - math:
+                - generic: B
+              - generic: B
+              - text: q each w.p.
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: .
+            - paragraph: "Outcomes:"
+            - list:
+              - math:
+                - generic: (
+                - generic: P
+                - generic: ","
+                - generic: F
+                - generic: )
+              - generic: (P, F)
+              - text: ": only"
+              - math:
+                - generic: A
+              - generic: A
+              - text: q
+              - math:
+                - generic: ⇒
+              - generic: ⇒
+              - text: hire A, success 1. Joint
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: 1/4
+              - text: .
+              - math:
+                - generic: (
+                - generic: F
+                - generic: ","
+                - generic: P
+                - generic: )
+              - generic: (F, P)
+              - text: ": only"
+              - math:
+                - generic: B
+              - generic: B
+              - text: q
+              - math:
+                - generic: ⇒
+              - generic: ⇒
+              - text: hire B, success 1. Joint
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: 1/4
+              - text: .
+              - math:
+                - generic: (
+                - generic: P
+                - generic: ","
+                - generic: P
+                - generic: )
+              - generic: (P, P)
+              - text: ": either state, w.p."
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: each; best success
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: . Joint
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: .
+            - math:
+              - generic: P
+              - generic: max
+              - generic: ⁡
+              - generic: =
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: ⋅
+              - generic: "1"
+              - generic: "2"
+              - generic: =
+              - generic: "3"
+              - generic: "4"
+              - generic: .
+            - text: P
+            - generic: max
+            - text: =
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: ⋅
+            - generic: "2"
+            - generic: "1"
+            - text: =
+            - generic: "4"
+            - generic: "3"
+            - text: .
+            - paragraph:
+              - strong: Help A
+              - text: "(A always passes). Now:"
+            - list:
+              - math:
+                - generic: (
+                - generic: P
+                - generic: ","
+                - generic: F
+                - generic: )
+              - generic: (P, F)
+              - text: ": prob"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: 1/4
+              - text: ; must be
+              - math:
+                - generic: A
+              - generic: A
+              - text: q
+              - math:
+                - generic: ⇒
+              - generic: ⇒
+              - text: hire A, success 1.
+              - math:
+                - generic: (
+                - generic: P
+                - generic: ","
+                - generic: P
+                - generic: )
+              - generic: (P, P)
+              - text: ": prob"
+              - math:
+                - generic: "3"
+                - generic: /
+                - generic: "4"
+              - generic: 3/4
+              - text: ; posterior
+              - math:
+                - generic: P
+                - generic: (
+                - generic: B
+                - generic: q
+                - generic: )
+                - generic: =
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+                - generic: "3"
+                - generic: /
+                - generic: "4"
+                - generic: =
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - text: P(B
+              - generic: q
+              - text: ) =
+              - generic: 3/4
+              - generic: 1/2
+              - text: =
+              - generic: 2/3
+              - text: ; hire B, success
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - generic: 2/3
+              - text: .
+            - math:
+              - generic: P
+              - generic: max
+              - generic: ⁡
+              - generic: =
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "3"
+              - generic: "4"
+              - generic: ⋅
+              - generic: "2"
+              - generic: "3"
+              - generic: =
+              - generic: "3"
+              - generic: "4"
+              - generic: .
+            - text: P
+            - generic: max
+            - text: =
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: "4"
+            - generic: "3"
+            - text: ⋅
+            - generic: "3"
+            - generic: "2"
+            - text: =
+            - generic: "4"
+            - generic: "3"
+            - text: .
+            - paragraph:
+              - text: "Both protocols have the same optimum:"
+              - strong:
+                - math:
+                  - generic: "3"
+                  - generic: /
+                  - generic: "4"
+                - generic: 3/4
+              - text: .
+            - separator
+            - heading "5. Prize placed after opening B/C" [level=3]:
+              - text: 5. Prize placed
+              - strong: after
+              - text: opening B/C
+            - paragraph:
+              - text: You choose A; program opens B or C uniformly; prize then placed uniformly on the
+              - strong: two closed
+              - text: doors.
+            - paragraph: "Thus for the other closed door (say C if B opened):"
+            - math:
+              - generic: P
+              - generic: (
+              - generic: prize at A
+              - generic: )
+              - generic: =
+              - generic: P
+              - generic: (
+              - generic: prize at other
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - text: P(
+            - generic: prize at A
+            - text: ) =
+            - text: P(
+            - generic: prize at other
+            - text: ) =
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - paragraph: Switching gives success
+            - math:
+              - generic: "1"
+              - generic: "2"
+              - generic: .
+            - generic: "2"
+            - generic: "1"
+            - text: .
+            - paragraph:
+              - strong: Does it reproduce usual Monty Hall?
+              - text: No.
+              - text: "Usually: prize placed first, knowledgeable host cannot open it"
+              - math:
+                - generic: ⇒
+                - generic: P
+                - generic: (
+                - generic: other
+                - generic: )
+                - generic: =
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - generic: ⇒
+              - text: P(
+              - generic: other
+              - text: ) =
+              - generic: 2/3
+              - text: ". Here the opening is random before placement, so symmetry remains:"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+                - generic: ≠
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - text: 1/2
+              - generic: 
+              - text: =
+              - generic: 2/3
+              - text: .
+            - separator
+            - heading "6. Engine (E) and gearbox (G) independent, work w.p." [level=3]:
+              - text: 6. Engine (E) and gearbox (G) independent, work w.p.
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+            - paragraph:
+              - text: Initial 4 states, each
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "4"
+              - generic: 1/4
+              - text: ":"
+            - math:
+              - generic: (
+              - generic: "1"
+              - generic: ","
+              - generic: "1"
+              - generic: )
+              - generic: ","
+              - generic: (
+              - generic: "1"
+              - generic: ","
+              - generic: "0"
+              - generic: )
+              - generic: ","
+              - generic: (
+              - generic: "0"
+              - generic: ","
+              - generic: "1"
+              - generic: )
+              - generic: ","
+              - generic: (
+              - generic: "0"
+              - generic: ","
+              - generic: "0"
+              - generic: )
+              - generic: .
+            - generic: (1, 1), (1, 0), (0, 1), (0, 0).
+            - paragraph:
+              - text: Dealership
+              - strong: admits
+              - text: iff
+              - math:
+                - generic: E
+                - generic: +
+                - generic: G
+                - generic: ≥
+                - generic: "1"
+              - generic: E +
+              - generic: G ≥
+              - generic: "1"
+              - text: (excludes
+              - math:
+                - generic: (
+                - generic: "0"
+                - generic: ","
+                - generic: "0"
+                - generic: )
+              - generic: (0, 0)
+              - text: ).
+              - text: It
+              - strong: repairs
+              - text: exactly those admitted with broken gearbox, i.e.
+              - math:
+                - generic: G
+                - generic: =
+                - generic: "0"
+              - generic: G =
+              - generic: "0"
+              - text: .
+            - paragraph:
+              - text: The only admitted state with
+              - math:
+                - generic: G
+                - generic: =
+                - generic: "0"
+              - generic: G =
+              - generic: "0"
+              - text: is
+              - math:
+                - generic: (
+                - generic: E
+                - generic: =
+                - generic: "1"
+                - generic: ","
+                - generic: G
+                - generic: =
+                - generic: "0"
+                - generic: )
+              - generic: (E =
+              - generic: 1, G =
+              - generic: 0)
+              - text: .
+            - paragraph: Hence
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: works
+              - generic: ∣
+              - generic: admitted and gearbox repaired
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: .
+            - text: P(E
+            - generic: works
+            - text: ∣
+            - generic: admitted and gearbox repaired
+            - text: ) =
+            - generic: "1"
+            - text: .
+            - paragraph:
+              - text: (Conditional on admission alone it would be
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - generic: 2/3
+              - text: ; the repair reveals the broken gearbox, forcing the engine to be the working component.)
+            - separator
+            - paragraph:
+              - strong: Summary of exact answers
+            - list:
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "5"
+              - generic: 2/5
+              - text: (swap is worse; keep
+              - math:
+                - generic: "3"
+                - generic: /
+                - generic: "5"
+              - generic: 3/5
+              - text: )
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "5"
+              - generic: 1/5
+              - text: No help
+              - math:
+                - generic: "3"
+                - generic: /
+                - generic: "4"
+              - generic: 3/4
+              - text: ; help-A
+              - math:
+                - generic: "3"
+                - generic: /
+                - generic: "4"
+              - generic: 3/4
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2
+              - text: ;
+              - strong: "no"
+              - text: ", usual is"
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - generic: 2/3
+              - math:
+                - generic: "1"
+              - generic: "1"
+            - generic: Ассистент B
+            - button:
+            - button:
+            - button:
+            - heading "1. Locked-door Monty (4 doors)" [level=1]
+            - paragraph: "Host must open a goat in {B,C}. Likelihood of \"opens C\" given car location (prior ¼ each):"
+            - table:
+              - rowgroup:
+                - row "car at A B C D":
+                  - columnheader "car at"
+                  - columnheader "A"
+                  - columnheader "B"
+                  - columnheader "C"
+                  - columnheader "D"
+              - rowgroup:
+                - row "P(open C) ½ 1 0 ½":
+                  - cell "P(open C)"
+                  - cell "½"
+                  - cell "1"
+                  - cell "0"
+                  - cell "½"
+            - paragraph:
+              - text: P(open C) = ¼(½+1+0+½) = ½.
+              - text: "Bayes:"
+              - strong: P(B | open C) = (¼·1)/½ = 1/2
+              - text: "(A and D stay at ¼; the forced choice set {B,C} makes the reveal uninformative about A vs. D)."
+            - heading "2. Package exchange (5 doors)" [level=1]
+            - paragraph:
+              - text: "Likelihood of \"opens E\" (prior ⅕ each): D → 1, E → 0, each of A,B,C → ½."
+              - text: P(open E) = ⅕(1 + 0 + 3·½) = ½.
+              - text: "Bayes:"
+              - strong: P(D | open E) = (⅕·1)/½ = 2/5.
+              - text: "(Remark: the package is still worth 3/5, so the trade is bad — but the asked probability is 2/5.)"
+            - heading "3. Helped candidate, all pass" [level=1]
+            - paragraph:
+              - text: "Likelihood all pass (priors ⅓): A qualified: 1·½·½ = ¼; B (or C) qualified: 1·1·½ = ½."
+              - strong: P(A qual | all pass) = ¼/(¼+½+½) = 1/5.
+              - text: "(Remark: with no help, \"all pass\" carries no information — posterior ⅓. The guarantee"
+              - emphasis: lowers
+              - text: A to 1/5, with B and C at 2/5 each.)
+            - heading "4. Hiring success, no help vs. help" [level=1]
+            - paragraph:
+              - strong: "No help:"
+              - text: (P,P) w.p. ½, posterior ½ → success ½; (P,F) w.p. ¼ → hire A, success 1; (F,P) w.p. ¼ → hire B, success 1; (F,F) impossible.
+              - text: Max = ½·½ + ¼ + ¼ =
+              - strong: 3/4
+              - text: .
+            - paragraph:
+              - strong: "With help (A always passes):"
+              - text: B passes w.p. ¾ → posterior P(B qual) = (½·1)/(¾) = ⅔, hire B; B fails w.p. ¼ → A qualified for sure, hire A.
+              - text: Max = ¾·⅔ + ¼·1 =
+              - strong: 3/4
+              - text: .
+            - paragraph:
+              - text: Both protocols give
+              - strong: 3/4
+              - text: ": the guarantee changes only the both-pass posterior (A drops from ½ to ⅓), not the overall optimum, because a failure still identifies the other candidate with certainty."
+            - heading "5. Prize placed after the opening" [level=1]
+            - paragraph:
+              - text: The opened door is uniform and independent of the prize, which is then uniform over the two closed doors. Switching wins exactly
+              - strong: 1/2
+              - text: .
+            - paragraph:
+              - strong: No, this is not the usual experiment.
+              - text: With an initially uniform prize and a knowledgeable host, P(win by switching | host opens B) = (⅓·1)/½ =
+              - strong: 2/3
+              - text: ≠ ½. The knowledgeable host's choice is constrained by the prize location; the program's choice is not. The program instead reproduces the "ignorant host" (Monty Fall) variant, where switching wins ½.
+            - heading "6. Admitted car with repaired gearbox" [level=1]
+            - paragraph:
+              - text: "Initial (E,G) each ¼: (1,1), (1,0), (0,1), (0,0)."
+              - text: "Admitted ⟺ E∨G: states (1,1), (1,0), (0,1)."
+              - text: "Gearbox repaired ⟺ admitted ∧ G broken:"
+              - strong: only state (1,0)
+              - text: .
+            - paragraph:
+              - text: Observing "admitted ∧ gearbox repaired" pins the initial state to E=1, G=0; the repair changes only the gearbox.
+              - strong: P(engine works) = 1.
+              - text: "(Remark: learning only \"admitted\" would give 2/3 — the"
+              - emphasis: specific
+              - text: repaired component is what forces certainty.)
+            - button:
+          - paragraph: Solve these independent problems using the fully specified procedures. Give exact probabilities and short calculations.
+          - list:
+            - listitem: A car is uniform behind four doors A,B,C,D. You choose A and D is locked so the informed host cannot open A or D. The host opens a goat among B,C, uniformly if both are goats, and opens C. What is P(car behind B)?
+            - listitem: A car is uniform behind five doors A,B,C,D,E. You own package A,B,C and win if the car is in any of them. An informed host opens a goat among D,E, uniformly if both are goats, and opens E. You exchange the whole package for D. What is your winning probability?
+            - listitem: Exactly one of candidates A,B,C is qualified, uniform. Qualified candidates always pass; unqualified candidates independently pass with probability 1/2. A receives answers and is guaranteed to pass, without changing qualification. All three pass. What is P(A is qualified)?
+            - listitem: Exactly one of A,B is qualified, uniform. Qualified always passes; unqualified passes with probability 1/2. Compare no help with giving A answers to guarantee a pass without changing qualification. You observe all results, including failures, and optimally hire one. What is the maximum overall hiring success in each protocol?
+            - listitem: Before a prize exists you choose A among three doors. A program randomly opens B or C as empty, then places a prize uniformly among the two closed doors. You switch. What is the success probability, and does this reproduce the usual experiment with an initially uniform prize and a knowledgeable host?
+            - listitem: A car engine and gearbox initially independently work with probability 1/2 each. A dealership first admits cars if at least one component works, then repairs exactly admitted cars with broken gearboxes, changing only the gearbox. You learn that your car was admitted and had its gearbox repaired under this rule. What is P(engine works)?
+          - button:
+        - button "A лучше":
+          - generic: A лучше
+        - button "Оба хорошие":
+          - generic: Оба хорошие
+        - button "Оба плохие":
+          - generic: Оба плохие
+        - button "B лучше":
+          - generic: B лучше
+        - textbox "Ask followup…" [active]
+        - button "Add files":
+        - combobox:
+          - paragraph: Battle
+        - combobox
+        - 'button "Modality: Text"':
+          - generic: Text
+        - button:
+        - button "Send message" [disabled]:
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+- alert
+- generic: Не удается связаться с сервисом reCAPTCHA. Проверьте подключение к Интернету и перезагрузите страницу.

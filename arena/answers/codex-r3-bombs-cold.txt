@@ -1,0 +1,227 @@
+- region "Notifications alt+T"
+- button "Toggle Sidebar"
+- list:
+  - button "Arena menu":
+- button:
+- list:
+  - link "New Chat":
+    - /url: /
+    - generic: New Chat
+  - link "Leaderboard New":
+    - /url: /leaderboard
+    - generic: Leaderboard
+    - generic: New
+  - link "Search":
+    - /url: /history/search
+    - generic: Search
+- generic: Today
+- list:
+  - link "Solve the following independent problems. Give exact numerical answers and brief calculations; disti":
+    - /url: /c/01a13b73-591e-73bb-ab13-69101e26c999
+    - generic: Solve the following independent problems. Give exact numerical answers and brief calculations; disti
+  - button "More options":
+  - link "Solve these five independent probability problems. Give an exact fraction and a brief derivation for":
+    - /url: /c/01a13b70-5251-73ad-9a20-95714f9e6bab
+    - generic: Solve these five independent probability problems. Give an exact fraction and a brief derivation for
+  - button "More options":
+  - link "Solve these two independent probability problems. Give an exact numerical probability and a short de":
+    - /url: /c/01a13b6c-b92b-7abf-bc16-f1e236c3f708
+    - generic: Solve these two independent probability problems. Give an exact numerical probability and a short de
+  - button "More options":
+- link:
+  - /url: https://www.youtube.com/watch?v=Kq3-fV7w3Nk
+- heading "Get More Done With Agents" [level=3]
+- paragraph:
+  - text: Start evaluating agentic AI on Arena today.
+  - link "Learn more":
+    - /url: https://arena.ai/blog/agent-mode/
+- link "Try it now":
+  - /url: /agent
+- button "Hide this":
+  - text: Hide this
+- button "Log In"
+- link "Terms of Use":
+  - /url: /terms-of-use
+- link "Privacy Policy":
+  - /url: /privacy-policy
+- button "Cookies"
+- main:
+  - main:
+    - main:
+      - button "Solve the following independent problems. Give exact numerical answers and brief calculations; disti":
+        - generic: Solve the following independent problems. Give exact numerical answers and brief calculations; disti
+      - main:
+        - list:
+          - region:
+            - generic: Ассистент A
+            - button:
+            - button:
+            - button:
+            - paragraph: Label the empty-cell prior uniform; use Bayes.
+            - paragraph:
+              - strong: "Fixed-time (overnight Bernoulli: explode p=0.9, survive q=0.1)"
+              - strong: "First-event density (exponential race: f_J(t)=λ_J e^{-Λt})"
+            - separator
+            - heading "1. Fixed-time; A protected" [level=3]
+            - paragraph: "Cases (empty cell):"
+            - list:
+              - strong: B empty
+              - text: ": only C present ⇒ C explodes: 0.9"
+              - strong: A empty
+              - text: ": B,C present ⇒ B survives (0.1), C explodes (0.9): 0.09"
+              - strong: C empty
+              - text: ": impossible (C exploded)"
+            - paragraph:
+              - text: Weights ∝ 0.9, 0.09.
+              - text: P(B empty)=0.9/(0.9+0.09)=0.9/0.99=
+              - strong: 10/11
+              - text: .
+            - separator
+            - heading "2. First-event density at t=ln2; A protected (rate 0)" [level=3]
+            - list:
+              - strong: B empty
+              - text: ": only C, λ=1, Λ=1 ⇒ f=e⁻ᵗ=1/2"
+              - strong: A empty
+              - text: ": B,C rate 1 each, Λ=2 ⇒ f=e⁻²ᵗ=1/4"
+              - strong: C empty
+              - text: ": impossible"
+            - paragraph:
+              - text: Weights ∝ 1/2, 1/4 ⇒ P(B empty)=(1/2)/(3/4)=
+              - strong: 2/3
+              - text: .
+            - separator
+            - heading "3. First-event density at t=2ln3; rates B,C=1, A=0.5" [level=3]
+            - list:
+              - strong: A empty
+              - text: ": B,C ⇒ Λ=2 ⇒ f=e⁻⁴ˡⁿ³=3⁻⁴=1/81"
+              - strong: B empty
+              - text: ": A,C ⇒ Λ=1.5 ⇒ f=e⁻³ˡⁿ³=3⁻³=1/27"
+              - strong: C empty
+              - text: ": impossible"
+            - paragraph:
+              - text: Weights ∝ 1/81, 3/81 ⇒ P(A empty)=(1/81)/(4/81)=
+              - strong: 1/4
+              - text: .
+            - separator
+            - heading "4. Fixed-time; 4 cells, A,B protected; only D exploded" [level=3]
+            - paragraph: D must be present. Need C absent or survive (0.1).
+            - list:
+              - strong: B empty
+              - text: "(or A empty): C present survives, D explodes ⇒ 0.9·0.1=0.09"
+              - strong: C empty
+              - text: ": only D ⇒ 0.9"
+              - strong: D empty
+              - text: ": impossible"
+            - paragraph:
+              - text: Priors 1/4 each; weights 0.09,0.09,0.9.
+              - text: P(B empty)=0.09/(0.09+0.09+0.9)=0.09/1.08=
+              - strong: 1/12
+              - text: .
+            - separator
+            - heading "5. Monty-type with hidden availability" [level=3]
+            - paragraph: "Choose A. Availability S (indep. of prize): S={B} w.p. 2/3, S=∅ w.p. 1/3; C never available."
+            - paragraph: "P(no open | prize):"
+            - list:
+              - listitem: "A: open B iff S={B} ⇒ fails only when S=∅ ⇒ 1/3"
+              - listitem: "B: B not empty ⇒ always 1"
+              - listitem: "C: open B iff S={B} ⇒ fails only when S=∅ ⇒ 1/3"
+            - paragraph:
+              - text: "With priors P(A)=1/2, P(B)=P(C)=1/4:"
+              - text: "Weights: A:(1/2)(1/3)=1/6; B:(1/4)·1=1/4; C:(1/4)(1/3)=1/12. Sum=1/2."
+            - paragraph:
+              - text: P(B)=(1/4)/(1/2)=
+              - strong: 1/2
+              - text: .
+            - separator
+            - paragraph:
+              - strong: "Answers:"
+            - list:
+              - strong: 10/11
+              - strong: 2/3
+              - strong: 1/4
+              - strong: 1/12
+              - strong: 1/2
+            - paragraph: (Problems 1,4 use fixed-interval survival q=0.1; problems 2,3 condition on the exponential first-event density f(t).)
+            - generic: Ассистент B
+            - button:
+            - button:
+            - button:
+            - paragraph:
+              - strong: "1."
+              - text: "Likelihood of \"only C exploded\":"
+            - list:
+              - listitem: "A empty (bombs B,C both live): 0.9·0.1 = 0.09"
+              - listitem: "B empty (A protected, C live): 0.9·1 = 0.9"
+              - listitem: "C empty: 0 (C has no bomb)"
+            - paragraph:
+              - text: P(B empty) = 0.9 / (0.09 + 0.9) = 90/99 =
+              - strong: 10/11
+            - paragraph:
+              - strong: "2."
+              - text: "First‑event density at t = ln 2 (density of C's explosion × survival of the other live bomb to t, not a fixed-window probability):"
+            - list:
+              - listitem: "A empty: e^{-t}·e^{-t} = e^{-2t} = 1/4"
+              - listitem: "B empty: e^{-t}·1 = 1/2 (A can never explode)"
+              - listitem: "C empty: 0"
+            - paragraph:
+              - text: P(B empty) = (1/2)/(1/4 + 1/2) =
+              - strong: 2/3
+            - paragraph:
+              - strong: "3."
+              - text: "Density at t = 2 ln 3:"
+            - list:
+              - listitem: "A empty (B,C rate 1): e^{-t}·e^{-t} = e^{-4 ln 3} = 1/81"
+              - listitem: "B empty (A rate ½, C rate 1): e^{-t}·e^{-t/2} = e^{-3 ln 3} = 1/27"
+              - listitem: "C empty: 0"
+            - paragraph:
+              - text: P(A empty) = (1/81)/(1/81 + 3/81) =
+              - strong: 1/4
+            - paragraph: (Problems 2–3 use the event‑time density f_C(t)·S_other(t); problems 1 and 4 use fixed‑night Bernoulli outcomes. Here the C‑factor is common to the surviving hypotheses, so either way the ratio is the same.)
+            - paragraph:
+              - strong: "4."
+              - text: "\"Only D exploded\" (A,B protected):"
+            - list:
+              - listitem: "A empty (C,D live): 0.9·0.1 = 0.09"
+              - listitem: "B empty (C,D live): 0.09"
+              - listitem: "C empty (only D live): 0.9"
+              - listitem: "D empty: 0"
+            - paragraph:
+              - text: P(B empty) = 0.09/(0.09+0.09+0.9) = 0.09/1.08 =
+              - strong: 1/12
+            - paragraph:
+              - strong: "5."
+              - text: "Host opens no door iff no legal opening exists (budget unobserved):"
+            - list:
+              - listitem: "Prize A: no door only if budget empty → 1/3"
+              - listitem: "Prize B: budget {B} is illegal (B has prize) and empty budget → 1"
+              - listitem: "Prize C: 1/3"
+            - paragraph:
+              - text: P(B | no door) = (¼·1) / (½·⅓ + ¼·1 + ¼·⅓) = (1/4)/(1/6+1/4+1/12) = (1/4)/(1/2) =
+              - strong: 1/2
+          - paragraph: Solve the following independent problems. Give exact numerical answers and brief calculations; distinguish fixed-time survival from an unspecified first-event time.
+          - list:
+            - listitem: Exactly one of three cells A,B,C is empty, initially uniform; the other two contain bombs. A is completely protected, so its bomb cannot explode. Every unprotected bomb independently explodes during the night with probability 0.9. Only C exploded overnight. What is P(B is empty)?
+            - listitem: Same three-cell setup, with A completely protected, but unprotected bombs have independent exponential explosion times with rate 1 per hour. The first explosion is in C at time ln(2) hours, conditioning by the event-time density. What is P(B is empty)?
+            - listitem: Exactly one of A,B,C is empty, initially uniform. Bombs in B,C have independent exponential rates 1; a bomb in A has rate 0.5. The first explosion is C at time 2 ln(3), conditioning by density. What is P(A is empty)?
+            - listitem: Exactly one of four cells A,B,C,D is empty, initially uniform; A,B are fully protected. Each unprotected bomb independently explodes overnight with probability 0.9. Only D exploded overnight. What is P(B is empty)?
+            - listitem: A prize is in A with prior probability 1/2, or in B,C with probability 1/4 each. You choose A. A knowledgeable host must open an available unchosen empty door; independently of the prize, with probability 2/3 only B is available and with probability 1/3 no door is available, and the budget is hidden. The host opens no door because no legal opening is available. What is P(prize in B)?
+          - button:
+        - button "A лучше":
+          - generic: A лучше
+        - button "Оба хорошие":
+          - generic: Оба хорошие
+        - button "Оба плохие":
+          - generic: Оба плохие
+        - button "B лучше":
+          - generic: B лучше
+        - textbox "Ask followup…" [active]
+        - button "Add files":
+        - combobox:
+          - paragraph: Battle
+        - combobox
+        - 'button "Modality: Text"':
+          - generic: Text
+        - button:
+        - button "Send message" [disabled]:
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+- alert

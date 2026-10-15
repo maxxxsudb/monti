@@ -1,0 +1,1809 @@
+- region "Notifications alt+T"
+- main:
+  - main:
+    - main:
+      - button "Open sidebar":
+      - button "Solve these five independent probability problems. Give an exact fraction and a brief derivation for":
+        - generic: Solve these five independent probability problems. Give an exact fraction and a brief derivation for
+      - link:
+        - /url: /
+      - main:
+        - list:
+          - region:
+            - generic: Ассистент A
+            - button:
+            - button:
+            - button:
+            - paragraph:
+              - text: Let
+              - math:
+                - generic: E
+              - generic: E
+              - text: "be the exact report heard. The key reporting likelihood is:"
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: ∣
+              - generic: state
+              - generic: )
+              - generic: =
+              - generic: "{"
+              - generic: "1"
+              - generic: "#"
+              - generic: "{"
+              - generic: true reports available
+              - generic: "}"
+              - generic: ","
+              - generic: E
+              - generic: is true for that state
+              - generic: ","
+              - generic: "0"
+              - generic: ","
+              - generic: E
+              - generic: is false for that state
+              - generic: .
+            - generic: P(E ∣
+            - generic: state
+            - text: ) =
+            - generic: "{"
+            - text: "#{"
+            - generic: true reports available
+            - text: "}"
+            - generic: "1"
+            - text: ","
+            - generic: 0,
+            - text: E
+            - generic: is true for that state
+            - text: ","
+            - text: E
+            - generic: is false for that state
+            - text: .
+            - paragraph: Since each prior is uniform, the common prior factor cancels in Bayes’ rule.
+            - separator
+            - heading "1. Die, hear" [level=3]:
+              - text: 1. Die, hear
+              - math:
+                - generic: X
+                - generic: ≥
+                - generic: "3"
+              - generic: X ≥
+              - generic: "3"
+            - paragraph:
+              - text: If
+              - math:
+                - generic: X
+                - generic: =
+                - generic: x
+              - generic: X =
+              - generic: x
+              - text: ", the true statements are"
+              - math:
+                - generic: X
+                - generic: ≥
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: X
+                - generic: ≥
+                - generic: x
+              - generic: X ≥
+              - generic: 1, … , X ≥
+              - generic: x
+              - text: ", so there are"
+              - math:
+                - generic: x
+              - generic: x
+              - text: choices.
+            - paragraph:
+              - text: For
+              - math:
+                - generic: x
+                - generic: =
+                - generic: "3"
+                - generic: ","
+                - generic: "4"
+                - generic: ","
+                - generic: "5"
+                - generic: ","
+                - generic: "6"
+              - generic: x =
+              - generic: 3, 4, 5, 6
+              - text: ","
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: ∣
+              - generic: X
+              - generic: =
+              - generic: x
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: x
+              - generic: .
+            - generic: P(E ∣
+            - generic: X =
+            - generic: x) =
+            - generic: x
+            - generic: "1"
+            - text: .
+            - paragraph: Thus
+            - math:
+              - generic: P
+              - generic: (
+              - generic: X
+              - generic: =
+              - generic: "6"
+              - generic: ∣
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: "1"
+              - generic: /
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "5"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: "19"
+              - generic: /
+              - generic: "20"
+              - generic: =
+              - generic: "10"
+              - generic: "57"
+              - generic: .
+            - generic: P(X =
+            - generic: 6 ∣
+            - generic: E) =
+            - generic: 1/3 + 1/4 + 1/5 + 1/6
+            - generic: 1/6
+            - text: =
+            - generic: 19/20
+            - generic: 1/6
+            - text: =
+            - generic: "57"
+            - generic: "10"
+            - text: .
+            - separator
+            - heading "2. , hear “ is at least 5”" [level=3]:
+              - text: "2."
+              - math:
+                - generic: "N"
+                - generic: ∼
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "8"
+                - generic: "}"
+              - generic: N ∼
+              - generic: "{1, … , 8}"
+              - text: ", hear “"
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: is at least 5”
+            - paragraph:
+              - text: For
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "5"
+                - generic: ","
+                - generic: "6"
+                - generic: ","
+                - generic: "7"
+                - generic: ","
+                - generic: "8"
+              - generic: N =
+              - generic: 5, 6, 7, 8
+              - text: ", the numbers of true statements are:"
+            - math:
+              - generic: "N"
+              - generic: "5"
+              - generic: "6"
+              - generic: "7"
+              - generic: "8"
+              - generic: "#"
+              - generic: true statements
+              - generic: "2"
+              - generic: "3"
+              - generic: "2"
+              - generic: "2"
+            - generic: "N"
+            - text: "#"
+            - generic: true statements
+            - generic: "5"
+            - generic: "2"
+            - generic: "6"
+            - generic: "3"
+            - generic: "7"
+            - generic: "2"
+            - generic: "8"
+            - generic: "2"
+            - paragraph:
+              - text: So the likelihoods are
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+                - generic: ","
+                - generic: "1"
+                - generic: /
+                - generic: "3"
+                - generic: ","
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+                - generic: ","
+                - generic: "1"
+                - generic: /
+                - generic: "2"
+              - generic: 1/2, 1/3, 1/2, 1/2
+              - text: . Therefore
+            - math:
+              - generic: P
+              - generic: (
+              - generic: "N"
+              - generic: =
+              - generic: "8"
+              - generic: ∣
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: "11"
+              - generic: /
+              - generic: "6"
+              - generic: =
+              - generic: "3"
+              - generic: "11"
+              - generic: .
+            - generic: P(N =
+            - generic: 8 ∣
+            - generic: E) =
+            - generic: 1/2 + 1/3 + 1/2 + 1/2
+            - generic: 1/2
+            - text: =
+            - generic: 11/6
+            - generic: 1/2
+            - text: =
+            - generic: "11"
+            - generic: "3"
+            - text: .
+            - separator
+            - heading "3. , hear divisor" [level=3]:
+              - text: "3."
+              - math:
+                - generic: "N"
+                - generic: ∼
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "12"
+                - generic: "}"
+              - generic: N ∼
+              - generic: "{1, … , 12}"
+              - text: ", hear divisor"
+              - math:
+                - generic: "2"
+              - generic: "2"
+            - paragraph:
+              - text: If
+              - math:
+                - generic: "2"
+                - generic: ∣
+                - generic: "N"
+              - generic: 2 ∣
+              - generic: "N"
+              - text: ", the announcer names one of the"
+              - math:
+                - generic: d
+                - generic: (
+                - generic: "N"
+                - generic: )
+              - generic: d(N)
+              - text: positive divisors, so
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: ∣
+              - generic: "N"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: d
+              - generic: (
+              - generic: "N"
+              - generic: )
+              - generic: .
+            - generic: P(E ∣
+            - generic: N) =
+            - generic: d(N)
+            - generic: "1"
+            - text: .
+            - paragraph: "The possible even values and divisor counts are:"
+            - math:
+              - generic: "N"
+              - generic: "2"
+              - generic: "4"
+              - generic: "6"
+              - generic: "8"
+              - generic: "10"
+              - generic: "12"
+              - generic: d
+              - generic: (
+              - generic: "N"
+              - generic: )
+              - generic: "2"
+              - generic: "3"
+              - generic: "4"
+              - generic: "4"
+              - generic: "4"
+              - generic: "6"
+            - generic: "N"
+            - generic: d(N)
+            - generic: "2"
+            - generic: "2"
+            - generic: "4"
+            - generic: "3"
+            - generic: "6"
+            - generic: "4"
+            - generic: "8"
+            - generic: "4"
+            - generic: "10"
+            - generic: "4"
+            - generic: "12"
+            - generic: "6"
+            - paragraph: So
+            - math:
+              - generic: P
+              - generic: (
+              - generic: "N"
+              - generic: =
+              - generic: "12"
+              - generic: ∣
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: "7"
+              - generic: /
+              - generic: "4"
+              - generic: =
+              - generic: "2"
+              - generic: "21"
+              - generic: .
+            - generic: P(N =
+            - generic: 12 ∣
+            - generic: E) =
+            - generic: 1/2 + 1/3 + 1/4 + 1/4 + 1/4 + 1/6
+            - generic: 1/6
+            - text: =
+            - generic: 7/4
+            - generic: 1/6
+            - text: =
+            - generic: "21"
+            - generic: "2"
+            - text: .
+            - separator
+            - heading "4. , hear prime divisor" [level=3]:
+              - text: "4."
+              - math:
+                - generic: "N"
+                - generic: ∼
+                - generic: "{"
+                - generic: "2"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "30"
+                - generic: "}"
+              - generic: N ∼
+              - generic: "{2, … , 30}"
+              - text: ", hear prime divisor"
+              - math:
+                - generic: "2"
+              - generic: "2"
+            - paragraph:
+              - text: If
+              - math:
+                - generic: "2"
+                - generic: ∣
+                - generic: "N"
+              - generic: 2 ∣
+              - generic: "N"
+              - text: ", the announcer names one distinct prime divisor, so"
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: ∣
+              - generic: "N"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: ω
+              - generic: (
+              - generic: "N"
+              - generic: )
+              - generic: ","
+            - generic: P(E ∣
+            - generic: N) =
+            - generic: ω(N)
+            - generic: "1"
+            - text: ","
+            - paragraph:
+              - text: where
+              - math:
+                - generic: ω
+                - generic: (
+                - generic: "N"
+                - generic: )
+              - generic: ω(N)
+              - text: is the number of distinct prime divisors.
+            - paragraph:
+              - text: Among even
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: ":"
+            - list:
+              - math:
+                - generic: ω
+                - generic: (
+                - generic: "N"
+                - generic: )
+                - generic: =
+                - generic: "1"
+              - generic: ω(N) =
+              - generic: "1"
+              - text: ":"
+              - math:
+                - generic: "2"
+                - generic: ","
+                - generic: "4"
+                - generic: ","
+                - generic: "8"
+                - generic: ","
+                - generic: "16"
+              - generic: 2, 4, 8, 16
+              - text: ", total weight"
+              - math:
+                - generic: "4"
+              - generic: "4"
+              - text: .
+              - math:
+                - generic: ω
+                - generic: (
+                - generic: "N"
+                - generic: )
+                - generic: =
+                - generic: "2"
+              - generic: ω(N) =
+              - generic: "2"
+              - text: ":"
+              - math:
+                - generic: "6"
+                - generic: ","
+                - generic: "10"
+                - generic: ","
+                - generic: "12"
+                - generic: ","
+                - generic: "14"
+                - generic: ","
+                - generic: "18"
+                - generic: ","
+                - generic: "20"
+                - generic: ","
+                - generic: "22"
+                - generic: ","
+                - generic: "24"
+                - generic: ","
+                - generic: "26"
+                - generic: ","
+                - generic: "28"
+              - generic: 6, 10, 12, 14, 18, 20, 22, 24, 26, 28
+              - text: ", total weight"
+              - math:
+                - generic: "10"
+                - generic: ⋅
+                - generic: "1"
+                - generic: "2"
+                - generic: =
+                - generic: "5"
+              - generic: 10 ⋅
+              - generic: "2"
+              - generic: "1"
+              - text: =
+              - generic: "5"
+              - text: .
+              - math:
+                - generic: ω
+                - generic: (
+                - generic: "N"
+                - generic: )
+                - generic: =
+                - generic: "3"
+              - generic: ω(N) =
+              - generic: "3"
+              - text: ":"
+              - math:
+                - generic: "30"
+              - generic: "30"
+              - text: ", weight"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "3"
+              - generic: 1/3
+              - text: .
+            - paragraph: "Total likelihood weight:"
+            - math:
+              - generic: "4"
+              - generic: +
+              - generic: "5"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: =
+              - generic: "28"
+              - generic: "3"
+              - generic: .
+            - generic: 4 +
+            - generic: 5 +
+            - generic: "3"
+            - generic: "1"
+            - text: =
+            - generic: "3"
+            - generic: "28"
+            - text: .
+            - paragraph:
+              - text: For
+              - math:
+                - generic: "3"
+                - generic: ∣
+                - generic: "N"
+              - generic: 3 ∣
+              - generic: "N"
+              - text: ", after hearing"
+              - math:
+                - generic: "2"
+              - generic: "2"
+              - text: ", only even multiples of"
+              - math:
+                - generic: "3"
+              - generic: "3"
+              - text: "matter:"
+            - math:
+              - generic: "6"
+              - generic: ","
+              - generic: "12"
+              - generic: ","
+              - generic: "18"
+              - generic: ","
+              - generic: "24"
+              - generic: ","
+              - generic: "30."
+            - generic: 6, 12, 18, 24, 30.
+            - paragraph: Their weights are
+            - math:
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: =
+              - generic: "7"
+              - generic: "3"
+              - generic: .
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: =
+            - generic: "3"
+            - generic: "7"
+            - text: .
+            - paragraph: Thus
+            - math:
+              - generic: P
+              - generic: (
+              - generic: "3"
+              - generic: ∣
+              - generic: "N"
+              - generic: ∣
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "7"
+              - generic: /
+              - generic: "3"
+              - generic: "28"
+              - generic: /
+              - generic: "3"
+              - generic: =
+              - generic: "1"
+              - generic: "4"
+              - generic: .
+            - generic: P(3 ∣
+            - generic: N ∣
+            - generic: E) =
+            - generic: 28/3
+            - generic: 7/3
+            - text: =
+            - generic: "4"
+            - generic: "1"
+            - text: .
+            - separator
+            - heading "5. Four-bit , hear 8-position selected" [level=3]:
+              - text: 5. Four-bit
+              - math:
+                - generic: "N"
+                - generic: ∼
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "15"
+                - generic: "}"
+              - generic: N ∼
+              - generic: "{1, … , 15}"
+              - text: ", hear 8-position selected"
+            - paragraph:
+              - text: The 8-position can be selected only for
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "8"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "15"
+              - generic: N =
+              - generic: 8, … , 15
+              - text: . If the binary representation has
+              - math:
+                - generic: s
+                - generic: "2"
+                - generic: (
+                - generic: "N"
+                - generic: )
+              - text: s
+              - generic: "2"
+              - text: (N)
+              - text: ones, then
+            - math:
+              - generic: P
+              - generic: (
+              - generic: E
+              - generic: ∣
+              - generic: "N"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: s
+              - generic: "2"
+              - generic: (
+              - generic: "N"
+              - generic: )
+              - generic: .
+            - generic: P(E ∣
+            - generic: N) =
+            - text: s
+            - generic: "2"
+            - text: (N)
+            - generic: "1"
+            - text: .
+            - math:
+              - generic: "N"
+              - generic: "8"
+              - generic: "9"
+              - generic: "10"
+              - generic: "11"
+              - generic: "12"
+              - generic: "13"
+              - generic: "14"
+              - generic: "15"
+              - generic: s
+              - generic: "2"
+              - generic: (
+              - generic: "N"
+              - generic: )
+              - generic: "1"
+              - generic: "2"
+              - generic: "2"
+              - generic: "3"
+              - generic: "2"
+              - generic: "3"
+              - generic: "3"
+              - generic: "4"
+            - generic: "N"
+            - text: s
+            - generic: "2"
+            - text: (N)
+            - generic: "8"
+            - generic: "1"
+            - generic: "9"
+            - generic: "2"
+            - generic: "10"
+            - generic: "2"
+            - generic: "11"
+            - generic: "3"
+            - generic: "12"
+            - generic: "2"
+            - generic: "13"
+            - generic: "3"
+            - generic: "14"
+            - generic: "3"
+            - generic: "15"
+            - generic: "4"
+            - paragraph: "Total likelihood weight:"
+            - math:
+              - generic: "1"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: "4"
+              - generic: =
+              - generic: "15"
+              - generic: "4"
+              - generic: .
+            - generic: 1 +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: +
+            - generic: "4"
+            - generic: "1"
+            - text: =
+            - generic: "4"
+            - generic: "15"
+            - text: .
+            - paragraph: Therefore
+            - math:
+              - generic: P
+              - generic: (
+              - generic: "N"
+              - generic: =
+              - generic: "15"
+              - generic: ∣
+              - generic: E
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "4"
+              - generic: "15"
+              - generic: /
+              - generic: "4"
+              - generic: =
+              - generic: "1"
+              - generic: "15"
+              - generic: .
+            - generic: P(N =
+            - generic: 15 ∣
+            - generic: E) =
+            - generic: 15/4
+            - generic: 1/4
+            - text: =
+            - generic: "15"
+            - generic: "1"
+            - text: .
+            - separator
+            - paragraph: "Final answers:"
+            - math:
+              - generic: "10"
+              - generic: "57"
+              - generic: ","
+              - generic: "3"
+              - generic: "11"
+              - generic: ","
+              - generic: "2"
+              - generic: "21"
+              - generic: ","
+              - generic: "1"
+              - generic: "4"
+              - generic: ","
+              - generic: "1"
+              - generic: "15"
+              - generic: .
+            - generic: "57"
+            - generic: "10"
+            - text: ","
+            - generic: "11"
+            - generic: "3"
+            - text: ","
+            - generic: "21"
+            - generic: "2"
+            - text: ","
+            - generic: "4"
+            - generic: "1"
+            - text: ","
+            - generic: "15"
+            - generic: "1"
+            - text: .
+            - generic: Ассистент B
+            - button:
+            - button:
+            - button:
+            - heading "Reporting Procedure (Common to All Problems)" [level=3]
+            - paragraph:
+              - text: The hidden value
+              - math:
+                - generic: v
+              - generic: v
+              - text: is drawn from a known uniform prior distribution.
+              - text: Given
+              - math:
+                - generic: v
+              - generic: v
+              - text: ", the announcer has a set of available"
+              - strong: true statements
+              - math:
+                - generic: S
+                - generic: v
+              - text: S
+              - generic: v
+              - text: . The announcer selects one of these uniformly at random.
+              - text: Thus, if we hear a specific statement
+              - math:
+                - generic: S
+              - generic: S
+              - text: ", the likelihood is"
+            - math:
+              - generic: P
+              - generic: (
+              - generic: hearing
+              - generic: S
+              - generic: ∣
+              - generic: v
+              - generic: )
+              - generic: =
+              - generic: "{"
+              - generic: "1"
+              - generic: /
+              - generic: ∣
+              - generic: S
+              - generic: v
+              - generic: ∣
+              - generic: ","
+              - generic: if
+              - generic: S
+              - generic: ∈
+              - generic: S
+              - generic: v
+              - generic: ","
+              - generic: "0"
+              - generic: ","
+              - generic: otherwise
+              - generic: .
+            - text: P(
+            - generic: hearing
+            - text: S ∣
+            - generic: v) =
+            - generic: "{"
+            - text: 1/∣
+            - text: S
+            - generic: v
+            - text: ∣,
+            - generic: 0,
+            - generic: if
+            - text: S ∈
+            - text: S
+            - generic: v
+            - text: ","
+            - generic: otherwise
+            - text: .
+            - paragraph:
+              - text: With a uniform prior over
+              - math:
+                - generic: v
+                - generic: ∈
+                - generic: V
+              - generic: v ∈
+              - generic: V
+              - text: ", the posterior for a specific"
+              - math:
+                - generic: v
+              - generic: v
+              - text: is proportional to
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: ∣
+                - generic: S
+                - generic: v
+                - generic: ∣
+              - text: 1/∣
+              - text: S
+              - generic: v
+              - text: ∣
+              - text: among those
+              - math:
+                - generic: v
+              - generic: v
+              - text: for which
+              - math:
+                - generic: S
+              - generic: S
+              - text: is true. Normalising gives
+            - math:
+              - generic: P
+              - generic: (
+              - generic: v
+              - generic: ∣
+              - generic: S
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: ∣
+              - generic: S
+              - generic: v
+              - generic: ∣
+              - generic: ∑
+              - generic: u
+              - generic: ∈
+              - generic: V
+              - generic: ":"
+              - generic: S
+              - generic: ∈
+              - generic: S
+              - generic: u
+              - generic: "1"
+              - generic: /
+              - generic: ∣
+              - generic: S
+              - generic: u
+              - generic: ∣
+              - generic: .
+            - generic: P(v ∣
+            - generic: S) =
+            - text: ∑
+            - text: "u∈V: S∈"
+            - text: S
+            - generic: u
+            - text: 1/∣
+            - text: S
+            - generic: u
+            - text: ∣
+            - text: 1/∣
+            - text: S
+            - generic: v
+            - text: ∣
+            - text: .
+            - separator
+            - heading "1. Fair die , statements" [level=3]:
+              - text: 1. Fair die
+              - math:
+                - generic: X
+              - generic: X
+              - text: ", statements"
+              - math:
+                - generic: X
+                - generic: ≥
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: X
+                - generic: ≥
+                - generic: "6"
+              - generic: X ≥
+              - generic: 1, … , X ≥
+              - generic: "6"
+            - paragraph:
+              - strong: "Prior:"
+              - math:
+                - generic: X
+                - generic: ∈
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: "2"
+                - generic: ","
+                - generic: "3"
+                - generic: ","
+                - generic: "4"
+                - generic: ","
+                - generic: "5"
+                - generic: ","
+                - generic: "6"
+                - generic: "}"
+              - generic: X ∈
+              - generic: "{1, 2, 3, 4, 5, 6}"
+              - text: with probability
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "6"
+              - generic: 1/6
+              - text: each.
+            - paragraph:
+              - text: For a given
+              - math:
+                - generic: X
+              - generic: X
+              - text: ", the statements"
+              - math:
+                - generic: X
+                - generic: ≥
+                - generic: k
+              - generic: X ≥
+              - generic: k
+              - text: are true for
+              - math:
+                - generic: k
+                - generic: =
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: X
+              - generic: k =
+              - generic: 1, … , X
+              - text: .
+              - text: So the number of true statements is
+              - math:
+                - generic: ∣
+                - generic: S
+                - generic: X
+                - generic: ∣
+                - generic: =
+                - generic: X
+              - text: ∣
+              - text: S
+              - generic: X
+              - text: ∣ =
+              - generic: X
+              - text: .
+            - paragraph:
+              - text: You hear
+              - strong:
+                - math:
+                  - generic: X
+                  - generic: ≥
+                  - generic: "3"
+                - generic: X ≥
+                - generic: "3"
+              - text: . This is true for
+              - math:
+                - generic: X
+                - generic: ∈
+                - generic: "{"
+                - generic: "3"
+                - generic: ","
+                - generic: "4"
+                - generic: ","
+                - generic: "5"
+                - generic: ","
+                - generic: "6"
+                - generic: "}"
+              - generic: X ∈
+              - generic: "{3, 4, 5, 6}"
+              - text: .
+            - math:
+              - generic: ∑
+              - generic: x
+              - generic: =
+              - generic: "3"
+              - generic: "6"
+              - generic: "1"
+              - generic: ∣
+              - generic: S
+              - generic: x
+              - generic: ∣
+              - generic: =
+              - generic: "1"
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: "4"
+              - generic: +
+              - generic: "1"
+              - generic: "5"
+              - generic: +
+              - generic: "1"
+              - generic: "6"
+              - generic: =
+              - generic: "20"
+              - generic: +
+              - generic: "15"
+              - generic: +
+              - generic: "12"
+              - generic: +
+              - generic: "10"
+              - generic: "60"
+              - generic: =
+              - generic: "57"
+              - generic: "60"
+              - generic: =
+              - generic: "19"
+              - generic: "20"
+              - generic: .
+            - generic: x=3
+            - generic: ∑
+            - generic: "6"
+            - text: ∣
+            - text: S
+            - generic: x
+            - text: ∣
+            - generic: "1"
+            - text: =
+            - generic: "3"
+            - generic: "1"
+            - text: +
+            - generic: "4"
+            - generic: "1"
+            - text: +
+            - generic: "5"
+            - generic: "1"
+            - text: +
+            - generic: "6"
+            - generic: "1"
+            - text: =
+            - generic: "60"
+            - generic: 20 + 15 + 12 + 10
+            - text: =
+            - generic: "60"
+            - generic: "57"
+            - text: =
+            - generic: "20"
+            - generic: "19"
+            - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: X
+              - generic: =
+              - generic: "6"
+              - generic: ∣
+              - generic: X
+              - generic: ≥
+              - generic: "3"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "6"
+              - generic: "19"
+              - generic: /
+              - generic: "20"
+              - generic: =
+              - generic: "20"
+              - generic: "114"
+              - generic: =
+              - generic: "10"
+              - generic: "57"
+              - generic: .
+            - generic: P(X =
+            - generic: 6 ∣
+            - generic: X ≥
+            - generic: 3) =
+            - generic: 19/20
+            - generic: 1/6
+            - text: =
+            - generic: "114"
+            - generic: "20"
+            - text: =
+            - generic: "57"
+            - generic: "10"
+            - text: .
+            - paragraph:
+              - strong: "Answer:"
+              - math:
+                - generic: "10"
+                - generic: "57"
+              - generic: "57"
+              - generic: "10"
+            - separator
+            - 'heading "2. uniform on 1…8, statements: odd, even, divisible by 3," [level=3]':
+              - text: "2."
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: "uniform on 1…8, statements: odd, even, divisible by 3,"
+              - math:
+                - generic: ≥
+                - generic: "5"
+              - generic: ≥
+              - generic: "5"
+            - paragraph:
+              - strong: "Prior:"
+              - math:
+                - generic: "N"
+                - generic: ∈
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "8"
+                - generic: "}"
+              - generic: N ∈
+              - generic: "{1, … , 8}"
+              - text: ", each"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "8"
+              - generic: 1/8
+              - text: .
+            - paragraph:
+              - text: Count the true statements
+              - math:
+                - generic: T
+                - generic: (
+                - generic: "N"
+                - generic: )
+              - generic: T(N)
+              - text: for each
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: ":"
+            - list:
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "1"
+              - generic: N =
+              - generic: "1"
+              - text: ": {odd} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "2"
+              - generic: N =
+              - generic: "2"
+              - text: ": {even} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "3"
+              - generic: N =
+              - generic: "3"
+              - text: ": {odd, divisible by 3} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "4"
+              - generic: N =
+              - generic: "4"
+              - text: ": {even} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "5"
+              - generic: N =
+              - generic: "5"
+              - text: ": {odd,"
+              - math:
+                - generic: ≥
+                - generic: "5"
+              - generic: ≥
+              - generic: "5"
+              - text: "} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "6"
+              - generic: N =
+              - generic: "6"
+              - text: ": {even, divisible by 3,"
+              - math:
+                - generic: ≥
+                - generic: "5"
+              - generic: ≥
+              - generic: "5"
+              - text: "} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "3"
+              - generic: T =
+              - generic: "3"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "7"
+              - generic: N =
+              - generic: "7"
+              - text: ": {odd,"
+              - math:
+                - generic: ≥
+                - generic: "5"
+              - generic: ≥
+              - generic: "5"
+              - text: "} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "8"
+              - generic: N =
+              - generic: "8"
+              - text: ": {even,"
+              - math:
+                - generic: ≥
+                - generic: "5"
+              - generic: ≥
+              - generic: "5"
+              - text: "} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+            - paragraph:
+              - text: You hear
+              - strong:
+                - text: “
+                - math:
+                  - generic: "N"
+                  - generic: ≥
+                  - generic: "5"
+                - generic: N ≥
+                - generic: "5"
+                - text: ”
+              - text: ", which restricts to"
+              - math:
+                - generic: "N"
+                - generic: ∈
+                - generic: "{"
+                - generic: "5"
+                - generic: ","
+                - generic: "6"
+                - generic: ","
+                - generic: "7"
+                - generic: ","
+                - generic: "8"
+                - generic: "}"
+              - generic: N ∈
+              - generic: "{5, 6, 7, 8}"
+              - text: .
+            - math:
+              - generic: ∑
+              - generic: "n"
+              - generic: ∈
+              - generic: "{"
+              - generic: "5"
+              - generic: ","
+              - generic: "6"
+              - generic: ","
+              - generic: "7"
+              - generic: ","
+              - generic: "8"
+              - generic: "}"
+              - generic: "1"
+              - generic: T
+              - generic: (
+              - generic: "n"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "2"
+              - generic: =
+              - generic: "3"
+              - generic: "2"
+              - generic: +
+              - generic: "1"
+              - generic: "3"
+              - generic: =
+              - generic: "11"
+              - generic: "6"
+              - generic: .
+            - generic: "n∈{5,6,7,8}"
+            - generic: ∑
+            - generic: T(n)
+            - generic: "1"
+            - text: =
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: +
+            - generic: "2"
+            - generic: "1"
+            - text: =
+            - generic: "2"
+            - generic: "3"
+            - text: +
+            - generic: "3"
+            - generic: "1"
+            - text: =
+            - generic: "6"
+            - generic: "11"
+            - text: .
+            - math:
+              - generic: P
+              - generic: (
+              - generic: "N"
+              - generic: =
+              - generic: "8"
+              - generic: ∣
+              - generic: heard
+              - generic: ≥
+              - generic: "5"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: /
+              - generic: "2"
+              - generic: "11"
+              - generic: /
+              - generic: "6"
+              - generic: =
+              - generic: "3"
+              - generic: "11"
+              - generic: .
+            - generic: P(N =
+            - generic: 8 ∣
+            - generic: heard
+            - text: ≥
+            - generic: 5) =
+            - generic: 11/6
+            - generic: 1/2
+            - text: =
+            - generic: "11"
+            - generic: "3"
+            - text: .
+            - paragraph:
+              - strong: "Answer:"
+              - math:
+                - generic: "3"
+                - generic: "11"
+              - generic: "11"
+              - generic: "3"
+            - separator
+            - heading "3. uniform on 1…12, announcer names a positive divisor uniformly" [level=3]:
+              - text: "3."
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: uniform on 1…12, announcer names a positive divisor uniformly
+            - paragraph:
+              - strong: "Prior:"
+              - math:
+                - generic: "N"
+                - generic: ∈
+                - generic: "{"
+                - generic: "1"
+                - generic: ","
+                - generic: …
+                - generic: ","
+                - generic: "12"
+                - generic: "}"
+              - generic: N ∈
+              - generic: "{1, … , 12}"
+              - text: ", each"
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "12"
+              - generic: 1/12
+              - text: .
+            - paragraph:
+              - text: The true statements are the positive divisors of
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: . Let
+              - math:
+                - generic: T
+                - generic: (
+                - generic: "N"
+                - generic: )
+                - generic: =
+                - generic: d
+                - generic: (
+                - generic: "N"
+                - generic: )
+              - generic: T(N) =
+              - generic: d(N)
+              - text: be the number of divisors.
+            - paragraph:
+              - text: You hear
+              - strong: “2”
+              - text: . This is possible only when 2 divides
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: ", i.e."
+              - math:
+                - generic: "N"
+              - generic: "N"
+              - text: "is even. Even numbers in range:"
+              - math:
+                - generic: "2"
+                - generic: ","
+                - generic: "4"
+                - generic: ","
+                - generic: "6"
+                - generic: ","
+                - generic: "8"
+                - generic: ","
+                - generic: "10"
+                - generic: ","
+                - generic: "12"
+              - generic: 2, 4, 6, 8, 10, 12
+              - text: .
+            - paragraph: "Divisor counts:"
+            - list:
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "2"
+              - generic: N =
+              - generic: "2"
+              - text: ": divisors {1,2} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "4"
+              - generic: N =
+              - generic: "4"
+              - text: ": {1,2,4} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "3"
+              - generic: T =
+              - generic: "3"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "6"
+              - generic: N =
+              - generic: "6"
+              - text: ": {1,2,3,6} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "4"
+              - generic: T =
+              - generic: "4"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "8"
+              - generic: N =
+              - generic: "8"
+              - text: ": {1,2,4,8} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "4"
+              - generic: T =
+              - generic: "4"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "10"
+              - generic: N =
+              - generic: "10"
+              - text: ": {1,2,5,10} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "4"
+              - generic: T =
+              - generic: "4"
+              - math:
+                - generic: "N"
+                - generic: =
+                - generic: "12"
+              - generic: N =
+              - generic: "12"
+              - text: ": {1,2,3,4,6,12} →"
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "6"
+              - generic: T =
+              - generic: "6"
+            - text: "\\sum_{n\\text{ even}} \\frac{1}{T(n)} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\frac{1}{4} + \\frac{1}{"
+            - button "Next slide":
+              - generic: Next slide
+          - paragraph: Solve these five independent probability problems. Give an exact fraction and a brief derivation for each; include the reporting procedure in your calculation.
+          - list:
+            - listitem: A fair die X is rolled secretly. An informed announcer uniformly selects one true statement among X>=1, X>=2, ..., X>=6. You hear X>=3. What is P(X=6)?
+            - listitem: "N is uniform on integers 1 through 8. An announcer uniformly selects one true statement from: N is odd; N is even; N is divisible by 3; N is at least 5. You hear N is at least 5. What is P(N=8)?"
+            - listitem: N is uniform on integers 1 through 12. An announcer uniformly names one positive divisor of N, including 1 and N. You hear 2. What is P(N=12)?
+            - listitem: N is uniform on integers 2 through 30. An announcer uniformly names one distinct prime divisor of N. You hear 2. What is P(3 divides N)?
+            - listitem: N is uniform on integers 1 through 15 and written as four binary digits. An announcer uniformly selects one position whose bit is 1 and announces that position. You hear the 8-position was selected. What is P(N=15)?
+          - button:
+        - button "A лучше":
+          - generic: A лучше
+        - button:
+        - button:
+        - button "B лучше":
+          - generic: B лучше
+        - textbox "Ask followup…" [active]
+        - button "Add files":
+        - combobox:
+        - combobox
+        - 'button "Modality: Text"':
+        - button:
+        - button "Send message" [disabled]:
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+- alert

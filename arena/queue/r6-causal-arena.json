@@ -1,0 +1,7 @@
+{
+ "id": "r6-causal-arena",
+ "text": "Causal/game-theoretic angle, be rigorous. Pearl explains Monty Hall as conditioning on a collider (host's door depends on both my pick and the prize). (1) Is 'collider conditioning with my own choice as one parent' the precise boundary between Monty Hall and plain Bayes? Find a case that is a collider but has no Monty effect, and a Monty-like effect without a collider. (2) Minimax view: switching guarantees >=1/2 against ANY host strategy that must open a goat; what is the full set of host strategies and the game value? (3) What changes if the contestant's choice is made by a random device the host cannot see vs. one the host sees? (4) Give 3 NON-obvious mathematical facts at this boundary (with exact numbers) that most probability teachers do not know. Flag honestly anything already published (real sources only).",
+ "tag": "r6-boundary",
+ "target": "arena",
+ "created": 1792029537.478347
+}

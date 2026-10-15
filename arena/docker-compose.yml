@@ -1,0 +1,16 @@
+# Очередь вопросов к arena.ai. Используется только локальный образ python:3.11-alpine (без сборки).
+services:
+  arena-bridge:
+    image: python:3.11-alpine
+    container_name: montihol-arena-bridge
+    command: ["python", "-u", "/app/server.py"]
+    environment:
+      DATA_DIR: /data
+      MIN_INTERVAL_SEC: "120"
+      DAILY_CAP: "40"
+    volumes:
+      - ./bridge:/app:ro
+      - ./:/data
+    ports:
+      - "127.0.0.1:8765:8765"
+    restart: unless-stopped

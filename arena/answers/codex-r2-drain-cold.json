@@ -1,0 +1,13 @@
+{
+ "id": "codex-r2-drain-cold",
+ "tag": "codex-r2-cold",
+ "question": "Exactly one of three identical batteries is fully charged, with its initial location chosen uniformly at random; you set one battery aside without testing it. A technician tests the other two in a uniformly random order until a test reads empty, removes that empty battery, and returns the other one without telling you which tests were performed; a test on a charged battery first reads charged and then completely drains it. What is the probability that the returned battery is still charged? Give one exact number and a brief calculation.",
+ "source": "edge-cdp",
+ "snapshot": {
+  "url": "https://arena.ai/",
+  "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+  "main": "Follow us for the latest in AI news and advancements\nWhat would you like to do?\nGet started\nCreate a landing page\nCreate a sleek, modern landing page\nBuild a dashboard\nTurn data into interactive charts\nMake a game\nBuild a playable browser game\nDesign to Code\nUpload an image and have AI build it\nBuild a fullstack app\nCreate a templated full-stack app\nLaunch a storefront\nCreate a beautiful online shop\n\nBattle\n\nBattle ModeBattle 2 anonymous models\nAgent ModeBuilt for complex tasks\nSide by SideCompare 2 models of your choice\nDirectChat with 1 model at a time\nAuto",
+  "blocks": []
+ },
+ "received": 1791998006.8589976
+}

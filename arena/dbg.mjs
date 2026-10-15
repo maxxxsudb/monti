@@ -1,0 +1,15 @@
+const list = await (await fetch("http://127.0.0.1:9222/json")).json();
+const t = list.find(x => x.type==="page" && /arena\.ai/.test(x.url));
+const ws = new WebSocket(t.webSocketDebuggerUrl); await new Promise(r => ws.onopen = r);
+let id=0; const W=new Map(); ws.onmessage=e=>{const m=JSON.parse(e.data); if(W.has(m.id)){W.get(m.id)(m);W.delete(m.id);}};
+const send=(method,params={})=>new Promise(r=>{const i=++id;W.set(i,r);ws.send(JSON.stringify({id:i,method,params}));});
+const ev=async e=>(await send("Runtime.evaluate",{expression:e,returnByValue:true,awaitPromise:true})).result?.result?.value;
+await send("Page.navigate",{url:"https://arena.ai/"}); await new Promise(r=>setTimeout(r,8000));
+console.log("url", await ev("location.href"));
+console.log("tas", await ev("[...document.querySelectorAll('textarea')].map(t=>[t.placeholder, t.offsetParent!==null])"));
+console.log("focus", await ev("(()=>{const ta=document.querySelector('textarea[placeholder^=\"Ask\"]'); ta.focus(); return document.activeElement===ta})()"));
+await send("Input.insertText",{text:"hello"}); await new Promise(r=>setTimeout(r,500));
+console.log("value", await ev("document.querySelector('textarea[placeholder^=\"Ask\"]').value"));
+console.log("send btn", await ev("(()=>{const b=document.querySelector('button[aria-label=\"Send message\"]')||[...document.querySelectorAll('button')].find(b=>/send/i.test(b.getAttribute('aria-label')||'')); return b? [b.getAttribute('aria-label'), b.disabled]:null})()"));
+await ev("(()=>{const ta=document.querySelector('textarea[placeholder^=\"Ask\"]'); ta.select(); document.execCommand('delete')})()");
+ws.close();

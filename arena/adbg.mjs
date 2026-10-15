@@ -1,0 +1,11 @@
+import { rpc, evaluate } from "./rpc.mjs";
+const T = "arena", sleep = (ms) => new Promise(r => setTimeout(r, ms));
+await rpc(T, "Emulation.setFocusEmulationEnabled", { enabled: true });
+await evaluate(T, "document.querySelector('textarea[placeholder^=\"Ask\"]').focus()");
+await rpc(T, "Input.insertText", { text: "test" });
+await sleep(1000);
+console.log(await evaluate(T, "({v: document.querySelector('textarea[placeholder^=\"Ask\"]').value, d: document.querySelector('button[aria-label=\"Send message\"]').disabled})"));
+await evaluate(T, "(() => { const ta=document.querySelector('textarea[placeholder^=\"Ask\"]'); ta.select(); })()");
+await rpc(T, "Input.dispatchKeyEvent", { type: "keyDown", key: "Delete", code: "Delete", windowsVirtualKeyCode: 46 });
+await rpc(T, "Input.dispatchKeyEvent", { type: "keyUp", key: "Delete", code: "Delete", windowsVirtualKeyCode: 46 });
+console.log(await evaluate(T, "document.querySelector('textarea[placeholder^=\"Ask\"]').value"));

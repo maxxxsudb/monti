@@ -1,0 +1,94 @@
+- region "Notifications alt+T"
+- button "Toggle Sidebar"
+- list:
+  - button "Arena menu":
+- button:
+- list:
+  - link "New Chat":
+    - /url: /text
+    - generic: New Chat
+  - link "Leaderboard New":
+    - /url: /leaderboard
+    - generic: Leaderboard
+    - generic: New
+  - link "Search":
+    - /url: /history/search
+    - generic: Search
+- generic: Today
+- list:
+  - 'link "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"':
+    - /url: /c/01a13bb9-2fa6-7701-a7e3-2e408d1c72e7
+    - generic: "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"
+  - button "More options":
+  - link "Independently solve these six fully specified problems. Give exact probabilities and concise calcula":
+    - /url: /c/01a13b79-4248-7f23-af49-07e0574acf11
+    - generic: Independently solve these six fully specified problems. Give exact probabilities and concise calcula
+  - button "More options":
+  - link "Independently solve and check these five procedures. Give exact answers and brief derivations; do no":
+    - /url: /c/01a13b77-1aac-78ec-8a64-aab67db5bcf3
+    - generic: Independently solve and check these five procedures. Give exact answers and brief derivations; do no
+  - button "More options":
+  - link "Solve these independent problems using the fully specified procedures. Give exact probabilities and":
+    - /url: /c/01a13b74-d36e-7651-9fbe-9b28763cccf4
+    - generic: Solve these independent problems using the fully specified procedures. Give exact probabilities and
+  - button "More options":
+  - link "Solve the following independent problems. Give exact numerical answers and brief calculations; disti":
+    - /url: /c/01a13b73-591e-73bb-ab13-69101e26c999
+    - generic: Solve the following independent problems. Give exact numerical answers and brief calculations; disti
+  - button "More options":
+  - link "Solve these five independent probability problems. Give an exact fraction and a brief derivation for":
+    - /url: /c/01a13b70-5251-73ad-9a20-95714f9e6bab
+    - generic: Solve these five independent probability problems. Give an exact fraction and a brief derivation for
+  - button "More options":
+  - link "Solve these two independent probability problems. Give an exact numerical probability and a short de":
+    - /url: /c/01a13b6c-b92b-7abf-bc16-f1e236c3f708
+    - generic: Solve these two independent probability problems. Give an exact numerical probability and a short de
+  - button "More options":
+- link:
+  - /url: https://www.youtube.com/watch?v=Kq3-fV7w3Nk
+- heading "Get More Done With Agents" [level=3]
+- paragraph:
+  - text: Start evaluating agentic AI on Arena today.
+  - link "Learn more":
+    - /url: https://arena.ai/blog/agent-mode/
+- link "Try it now":
+  - /url: /agent
+- button "Hide this":
+  - text: Hide this
+- button "Log In"
+- link "Terms of Use":
+  - /url: /terms-of-use
+- link "Privacy Policy":
+  - /url: /privacy-policy
+- button "Cookies"
+- main:
+  - main:
+    - main:
+      - 'button "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"':
+        - generic: "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"
+      - main:
+        - list:
+          - region:
+            - generic: Ассистент A
+            - button:
+            - paragraph: Generating...
+            - generic: Ассистент B
+            - button:
+            - paragraph: Generating...
+          - paragraph: "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability paradox from a generalized Monty Hall mechanism. Do constructive discovery, not a survey of familiar puzzles."
+          - paragraph: "Core model: a hidden target/state X, an informed or constrained filter, a protected choice that does not face the same filter, and an observation history. Two options can have the same visible present but different histories. Move the viewpoint/boundary: what counts as the object versus its support/controller; what is protected versus selected at different stages; the boundary between reading an already fixed outcome and causally creating/changing the future; or the boundary between a local snapshot and the relevant larger system. The breakthrough should arise from this boundary shift, not from plugging a new probability into the usual doors."
+          - paragraph: "Propose THREE genuinely different concrete candidate mechanisms. For each: (1) a school-level puzzle in at most 3 sentences, fully specified; (2) ONE exact numerical answer with a short calculation; (3) the plausible human intuitive answer, labelled a hypothesis rather than measured; (4) explain the selective filter/protection and exactly which boundary shift creates the surprise; (5) strongest known-paradox reduction or concrete published predecessor, with an explicit mapping if one exists. If a candidate fails, improve the mechanism rather than relabelling the same old puzzle."
+          - paragraph: Avoid merely n-door Monty, Monty Fall/Crawl/biased-host variants, three prisoners, Bertrand boxes, boy-girl/Tuesday boy, Berkson/collider, survivorship/inspection, Simpson/Braess/Lindley, Sleeping Beauty, envelopes, Parrondo, friendship, winner curse, two witnesses, Newcomb, optional stopping, base-rate fallacy or selected retesting. Also avoid mixing old game types, simple damage/destruction of a prize after a reveal, merely flipping good/bad labels, or arbitrary random true statements/divisors. These have already failed our search.
+          - paragraph: "Do NOT certify novelty from not remembering a name. But saying “it is Bayes/CAR/decision theory” is also not a sufficient rejection: every probability puzzle uses general mathematics. Distinguish a generic framework from a concrete equivalent mechanism. Models being able to solve a puzzle does not imply humans find it intuitive. Seek a structural new effect, a short story and a single small exact fraction. Prioritize actual candidate construction."
+          - button:
+        - textbox "Ask followup…" [active]
+        - button "Add files":
+        - combobox:
+          - paragraph: Battle
+        - combobox
+        - 'button "Modality: Text" [disabled]':
+          - generic: Text
+        - button:
+        - button "Stop generation":
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+- alert
