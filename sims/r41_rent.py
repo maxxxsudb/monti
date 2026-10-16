@@ -136,3 +136,31 @@ if __name__ == "__main__":
         assert tie_losses(half, classic_msgs(half, N - 2)) == (0, 0, 0, t)      # знающий 50/50: невидимо
     print("Двойственность 50/50: тот же сдвиг (N-2)/(2N); наивный 50/50 — потеря = сдвиг (наугад) или 2*сдвиг (упрямо); знающий 50/50 — потеря 0.")
     print("ALL OK")
+
+
+# ---------- Честный ведущий-интересант: ставки только по публичному сообщению ----------
+def two_closed_rent(N, rule):
+    """Равные априоры; rule(car) -> [(закрытое множество из 2 дверей, вероятность)];
+    наивная цена 1/2 на каждую закрытую. Возвращает среднюю полную вариацию = легальную ренту."""
+    msgs = {}
+    for c in range(N):
+        for S, pr in rule(c):
+            v = msgs.setdefault(frozenset(S), [F(0)] * N)
+            v[c] += F(1, N) * pr
+    return sum(sum(v) * sum(abs(v[d] / sum(v) - F(1, 2)) for d in S) / 2 for S, v in msgs.items())
+
+
+if __name__ == "__main__":
+    import random
+    R = random.Random(7)
+    for N in range(3, 8):
+        for _ in range(20):
+            w = [F(R.randint(0, 9)) for _ in range(N - 1)]
+            if sum(w) == 0:
+                w[0] = F(1)
+            w = [x / sum(w) for x in w]
+            prot = lambda c, w=w: [({0, d}, w[d - 1]) for d in range(1, N)] if c == 0 else [({0, c}, F(1))]
+            assert two_closed_rent(N, prot) == F(N - 2, 2 * N)          # под запретом: инвариант
+        assert two_closed_rent(N, lambda c: [({c, (c + 1) % N}, F(1))]) == F(1, 2)   # без запрета: кодирование
+    print("Честный ведущий: под запретом рента (N-2)/(2N) при любом предпочтении; без запрета кодирование даёт 1/2.")
+    print("ALL OK")
