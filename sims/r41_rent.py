@@ -164,3 +164,44 @@ if __name__ == "__main__":
         assert two_closed_rent(N, lambda c: [({c, (c + 1) % N}, F(1))]) == F(1, 2)   # без запрета: кодирование
     print("Честный ведущий: под запретом рента (N-2)/(2N) при любом предпочтении; без запрета кодирование даёт 1/2.")
     print("ALL OK")
+
+
+# ---------- Влияние на ведущего: равномерный — минимум ренты; частичное сотрудничество выпукло ----------
+def protected_rent(N, prefs):
+    msgs = {}
+    for c in range(N):
+        for S, pr in prefs[c].items():
+            v = msgs.setdefault(S, [F(0)] * N)
+            v[c] += pr * F(1, N)
+    return sum(sum(v) * sum(abs(v[d] / sum(v) - F(1, len(S))) for d in S) / 2 for S, v in msgs.items() if sum(v) > 0)
+
+
+def protected_options(N, k, c):
+    rv = list(range(1, N))
+    if c == 0:
+        return [frozenset((0,) + T) for T in combinations(rv, k - 1)]
+    return [frozenset((0, c) + T) for T in combinations([d for d in rv if d != c], k - 2)]
+
+
+if __name__ == "__main__":
+    import random
+    R = random.Random(11)
+    for N, k in ((4, 3), (5, 3), (5, 4)):
+        opts = [protected_options(N, k, c) for c in range(N)]
+        uni = [{S: F(1, len(o)) for S in o} for o in opts]
+        r_uni = protected_rent(N, uni)
+        for _ in range(40):
+            prefs = []
+            for o in opts:
+                w = [F(R.randint(0, 6)) for _ in o]
+                if sum(w) == 0:
+                    w[0] = F(1)
+                prefs.append({S: x / sum(w) for S, x in zip(o, w)})
+            assert protected_rent(N, prefs) >= r_uni          # равномерный ведущий — минимум
+    # код (N=5, k=3): машина c -> {0, c, следующая по кругу}; машина у вас -> {0, 1, 3}
+    code = [{frozenset((0, 1, 3)): F(1)}] + [{frozenset((0, c, c % 4 + 1)): F(1)} for c in range(1, 5)]
+    uni5 = [{S: F(1, len(o)) for S in o} for o in (protected_options(5, 3, c) for c in range(5))]
+    half = [{S: uni5[c].get(S, 0) / 2 + code[c].get(S, 0) / 2 for S in set(uni5[c]) | set(code[c])} for c in range(5)]
+    assert (protected_rent(5, uni5), protected_rent(5, code), protected_rent(5, half)) == (F(2, 15), F(2, 3), F(16, 45))
+    print("Влияние на ведущего: равномерный — минимум; код до 2/3; половина сотрудничества 16/45 < линейной 2/5.")
+    print("ALL OK")
