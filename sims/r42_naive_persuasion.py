@@ -40,6 +40,8 @@ def solve(pi, strong=True, margin=0.0, sizes=None):
             row=np.zeros(nv); row[idx[('u',S,t)]]=1; row[idx[('z',S,t)]]=-1
             A.append(row); lo.append(-np.inf); hi.append(0)
     res=milp(obj,constraints=LinearConstraint(np.array(A),lo,hi),integrality=integ,bounds=Bounds(lb,ub),options={'time_limit':60})
+    if res.status != 0 or res.x is None:
+        raise RuntimeError(f"MILP did not certify an optimum: {res.message}")
     x={S:{t:res.x[idx[('x',S,t)]] for t in S} for S in msgs}
     return -res.fun, x
 if __name__=="__main__":
