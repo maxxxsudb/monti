@@ -41,5 +41,12 @@ if __name__ == "__main__":
         assert win(N, pr, exch(N, quota_law(N, k))) - protected(N, pr, replan(N, k, F(1))) == F(k * (N - 1 - k), (N - 1) * (N - k) ** 2)
     pr = [F(1, 2)] + [F(1, 18)] * 9
     assert (win(10, pr, exch(10, quota_law(10, 8))), protected(10, pr, replan(10, 8, F(1)))) == (F(13, 18), F(1, 2))
+    # Динамика: T(k) = 1 + k/((N-1-k)(N-k)); N=10, r=2 — смена знака на k=7.
+    for N in range(3, 9):
+        for k in range(1, N - 1):
+            assert F(N - 1, N - 1 - k) - F(k, N - k) == 1 + F(k, (N - 1 - k) * (N - k))
+    pr = [F(2, 11)] + [F(1, 11)] * 9
+    d = {k: protected(10, pr, replan(10, k, F(1))) - win(10, pr, exch(10, quota_law(10, k))) for k in range(1, 9)}
+    assert all(d[k] < 0 for k in range(1, 7)) and all(d[k] > 0 for k in (7, 8)) and d[6] == -F(1, 22) and d[7] == F(1, 66)
     print(f"P19: {n} точных случаев; порог T подтверждён; (1/2,1/4,1/4): 5/8 -> 1/2, равные: 1/2 -> 2/3.")
     print("ALL OK")
