@@ -103,3 +103,36 @@ if __name__ == "__main__":
     assert stealth(eq, classic_msgs(eq, 1)) == (F(1, 3), F(1, 6), False)
     print("Невидимая рента: классика «все, кроме одной» (N-2)/(2N) при нулевой потере наивных; монетка -> (N-1)/(2N).")
     print("ALL OK")
+
+
+# ---------- Кто верит в 50/50: двойственность видимой и невидимой связи ----------
+def tie_losses(pr, out):
+    """(потеря при лучшем, случайном, худшем выборе среди наивно-лучших; средняя полная вариация)."""
+    N = len(pr)
+    lb = lr = lw = tv = F(0)
+    for o, v in out.items():
+        Pm = sum(v)
+        if Pm == 0:
+            continue
+        cl = [d for d in range(N) if d not in o]
+        tr = {d: v[d] / Pm for d in cl}
+        S = sum(pr[d] for d in cl)
+        nv = {d: pr[d] / S for d in cl}
+        mt, mn = max(tr.values()), max(nv.values())
+        nav = [d for d in cl if nv[d] == mn]
+        lb += Pm * (mt - max(tr[d] for d in nav))
+        lr += Pm * (mt - sum(tr[d] for d in nav) / len(nav))
+        lw += Pm * (mt - min(tr[d] for d in nav))
+        tv += Pm * sum(abs(tr[d] - nv[d]) for d in cl) / 2
+    return lb, lr, lw, tv
+
+
+if __name__ == "__main__":
+    for N in range(3, 11):
+        eq = [F(1, N)] * N
+        half = [F(1, 2)] + [F(1, 2 * (N - 1))] * (N - 1)
+        t = F(N - 2, 2 * N)
+        assert tie_losses(eq, classic_msgs(eq, N - 2)) == (0, t, 2 * t, t)       # наивный 50/50: видимо
+        assert tie_losses(half, classic_msgs(half, N - 2)) == (0, 0, 0, t)      # знающий 50/50: невидимо
+    print("Двойственность 50/50: тот же сдвиг (N-2)/(2N); наивный 50/50 — потеря = сдвиг (наугад) или 2*сдвиг (упрямо); знающий 50/50 — потеря 0.")
+    print("ALL OK")
