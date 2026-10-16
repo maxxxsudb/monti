@@ -116,4 +116,33 @@ if __name__ == "__main__":
             loss = win(3, [p0, p, p], pl) - protected(3, [p0, p, p], pl)
             assert loss == (1 + q) * max(0, min((1 - q) * (p0 - p), q * p))
     print("Общий q: формула палатки подтверждена при q=1/5, 1/3, 1/2, 3/4.")
+    # Сведение к двум дверям: любое N, любые априоры (монетка).
+    def phi(q, p0, P):
+        return max(0, min(q * P, (1 - q) * (p0 - P)))
+
+    def reduced(N, q, pr):
+        return sum((1 - q) ** (len(C) - 1) * q ** (N - 1 - len(C)) * phi(q, pr[0], max(pr[d] for d in C))
+                   for C in subsets(range(1, N)) if C)
+    n = 0
+    for N, ws in ((3, [(5, 2, 1), (3, 3, 0), (4, 1, 3)]), (4, [(5, 2, 1, 1), (2, 3, 4, 1), (6, 1, 0, 2)]),
+                  (5, [(4, 1, 2, 3, 1), (7, 1, 1, 1, 1), (1, 1, 1, 1, 1)])):
+        for w in ws:
+            pr = [F(x, sum(w)) for x in w]
+            for q in (F(1, 3), F(1, 2), F(4, 5)):
+                pl = exch(N, coin_law(N, q))
+                assert win(N, pr, pl) - protected(N, pr, pl) == reduced(N, q, pr)
+                n += 1
+    for N in (3, 4, 5, 6):
+        for q in (F(1, 4), F(1, 2), F(9, 10)):
+            for p0 in [F(j, 30) for j in range(0, 31, 3)]:
+                p = (1 - p0) / (N - 1)
+                pl = exch(N, coin_law(N, q))
+                loss = win(N, [p0] + [p] * (N - 1), pl) - protected(N, [p0] + [p] * (N - 1), pl)
+                assert loss == (1 - q ** (N - 1)) / (1 - q) * phi(q, p0, p)
+                n += 1
+    e = F(1, 10**6)
+    p0 = F(1, 3) + e
+    pl = exch(3, coin_law(3, F(1, 2)))
+    assert (win(3, [p0, (1 - p0) / 2, (1 - p0) / 2], pl) - protected(3, [p0, (1 - p0) / 2, (1 - p0) / 2], pl)) / e == F(9, 8)
+    print(f"Сведение к двум дверям и формула общего N: {n} точных совпадений; наклон при равных априорах 9/8.")
     print("ALL OK")
