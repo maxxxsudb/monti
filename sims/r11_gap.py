@@ -95,4 +95,22 @@ if __name__ == "__main__":
                 assert gain([r * p] + [p] * (n - 1), [a, 1 - a], [b, 1 - b], list(range(1, n))) == closed(n, a, b, r)
                 k += 1
     print(f"Формула из шести кусков: {k} точных совпадений.")
+    # Зеркало R02 при неравных априорах (P13, п. 6).
+    def both(pr, g1, g0, tested, g):
+        fv = ov = F(0)
+        for res in product(range(len(g1)), repeat=len(tested)):
+            js = []
+            for c in range(len(pr)):
+                w = pr[c]
+                for d, x in zip(tested, res):
+                    w *= g1[x] if d == c else g0[x]
+                js.append(w)
+            fv += max(js)
+            ov += max(0, max((1 + g) * j - g * sum(js) for j in js))
+        return fv, ov
+    pr, t1, t0 = [F(1, 5), F(2, 5), F(2, 5)], [F(2, 3), F(1, 3)], [F(1, 3), F(2, 3)]
+    f1, o1 = both(pr, t1, t0, [0, 1, 2], F(1))
+    f0, o0 = both(pr, t1, t0, [1, 2], F(1))
+    assert (f1 - f0, o1 - o0, o0) == (F(4, 135), 0, F(8, 45))
+    print("Зеркало R02: обязательный выбор +4/135, право уйти +0 при выигрыше 8/45.")
     print("ALL OK")
