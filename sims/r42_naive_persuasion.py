@@ -45,3 +45,21 @@ def solve(pi, strong=True, margin=0.0, sizes=None):
 if __name__=="__main__":
     for a in (0.6,0.7,0.75,0.8,0.9):
         v,_=solve([a,1-a]); print("n=2 a",a,"V*",round(v,6),"formula",round((1-a)*(2*a-1),6))
+
+
+# ---- Запас на отношении априоров: геометрические π_j ∝ (1+δ)^(-j), «лестница» -> 1/(1+δ) ----
+def ladder_value(pi):
+    from fractions import Fraction as Fr
+    pi = sorted(pi, reverse=True)
+    T = [sum(pi[j:]) for j in range(len(pi))]
+    return sum(p * (1 - p / t) for p, t in zip(pi, T))
+
+
+if __name__ == "__main__":
+    from fractions import Fraction as Fr
+    for d in (Fr(1), Fr(1, 2), Fr(1, 4)):
+        r = 1 + d
+        w = [r ** (-j) for j in range(40)]
+        pi = [x / sum(w) for x in w]
+        assert abs(float(ladder_value(pi)) - float(1 / r)) < 1e-4
+    print("Запас δ на отношении априоров: лестница -> 1/(1+δ) (δ=1: 1/2, δ=1/2: 2/3, δ=1/4: 4/5).")
