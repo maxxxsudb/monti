@@ -205,3 +205,46 @@ if __name__ == "__main__":
     assert (protected_rent(5, uni5), protected_rent(5, code), protected_rent(5, half)) == (F(2, 15), F(2, 3), F(16, 45))
     print("Влияние на ведущего: равномерный — минимум; код до 2/3; половина сотрудничества 16/45 < линейной 2/5.")
     print("ALL OK")
+
+
+# ---------- «Мир балансирует в среднем» может увеличить ренту (квота с вычёркиванием, N=3) ----------
+if __name__ == "__main__":
+    import math
+    # Сообщения: молчание (вероятность 1/3, ваша дверь — коза), «открыта чужая d» (2/3, ваша 1/2).
+    # Наивно: молчание = «нет новостей» (1/3), открыта d -> 1/2. Рента своей двери 1/3 * 1/3 = 1/9.
+    naive = F(1, 3) * abs(F(1, 3) - 0) + F(2, 3) * abs(F(1, 2) - F(1, 2))
+    assert naive == F(1, 9)
+    # Общий наклон beta веса своей двери, подобранный по калибровке в среднем: beta^2 + beta - 1 = 0.
+    b = (math.sqrt(5) - 1) / 2
+    assert abs((1 / 3) * b / (b + 2) + (2 / 3) * b / (b + 1) - 1 / 3) < 1e-12
+    bal = (1 / 3) * (b / (b + 2) - 0) + (2 / 3) * abs(b / (b + 1) - 0.5)
+    assert abs(bal - (2 / 3) * (math.sqrt(5) - 2)) < 1e-12 and bal > 1 / 9
+    print(f"Балансировка в среднем: наклон 1/phi, рента 1/9 -> (2/3)(sqrt5-2) = {bal:.4f} (растёт).")
+    print("ALL OK")
+
+
+# ---------- Балансировка в среднем прячет связь: видимая -> невидимая, рента растёт ----------
+def _loss_tv_mean(msgs):
+    D = TV = E0 = 0.0
+    for P, tr, nv in msgs:
+        mt, mn = max(tr.values()), max(nv.values())
+        nav = [d for d in nv if abs(nv[d] - mn) < 1e-12]
+        D += P * (mt - min(tr[d] for d in nav))
+        TV += P * sum(abs(tr[d] - nv[d]) for d in tr) / 2
+        E0 += P * nv["own"]
+    return D, TV, E0
+
+
+if __name__ == "__main__":
+    b = (math.sqrt(5) - 1) / 2
+    silent_true = {"own": 0.0, "r1": 0.5, "r2": 0.5}
+    open_true = {"own": 0.5, "r": 0.5}
+    naive_msgs = [(1 / 3, silent_true, {"own": 1 / 3, "r1": 1 / 3, "r2": 1 / 3})] + [(1 / 3, open_true, {"own": 0.5, "r": 0.5})] * 2
+    bal_msgs = [(1 / 3, silent_true, {"own": b / (b + 2), "r1": 1 / (b + 2), "r2": 1 / (b + 2)})] + \
+               [(1 / 3, open_true, {"own": b / (b + 1), "r": 1 / (b + 1)})] * 2
+    Dn, TVn, En = _loss_tv_mean(naive_msgs)
+    Db, TVb, Eb = _loss_tv_mean(bal_msgs)
+    assert abs(Dn - 1 / 6) < 1e-12 and abs(TVn - 1 / 9) < 1e-12 and abs(En - 4 / 9) < 1e-12   # видимо, средняя цена сбита
+    assert abs(Db) < 1e-12 and abs(Eb - 1 / 3) < 1e-12 and TVb > TVn                          # невидимо, откалибровано, рента выше
+    print(f"Балансировка в среднем: потеря выбирающих 1/6 -> 0, средняя цена 4/9 -> 1/3, рента 1/9 -> {TVb:.4f}.")
+    print("ALL OK")
