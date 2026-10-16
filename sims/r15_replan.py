@@ -50,3 +50,30 @@ if __name__ == "__main__":
     assert all(d[k] < 0 for k in range(1, 7)) and all(d[k] > 0 for k in (7, 8)) and d[6] == -F(1, 22) and d[7] == F(1, 66)
     print(f"P19: {n} точных случаев; порог T подтверждён; (1/2,1/4,1/4): 5/8 -> 1/2, равные: 1/2 -> 2/3.")
     print("ALL OK")
+
+
+def race(N, k, pr, amulet):
+    """Бомбы с одинаковыми независимыми часами: порядок взрывов — равновероятная перестановка бомб,
+    участвующих в гонке (без амулета — все бомбы; с амулетом — кроме клетки 0). Видны первые k."""
+    from itertools import permutations
+    obs = {}
+    for e in range(N):
+        bombs = [i for i in range(N) if i != e and not (amulet and i == 0)]
+        perms = list(permutations(bombs))
+        for perm in perms:
+            key = frozenset(perm[:k])
+            v = obs.setdefault(key, [F(0)] * N)
+            v[e] += pr[e] / len(perms)
+    return sum(max(v[d] for d in range(N) if d not in o) for o, v in obs.items())
+
+
+if __name__ == "__main__":
+    for N in (3, 4, 5):
+        for k in range(1, N - 1):
+            for p0 in (F(1, N), F(1, 2), F(1, 5)):
+                p = (1 - p0) / (N - 1)
+                pr = [p0] + [p] * (N - 1)
+                assert race(N, k, pr, True) == protected(N, pr, replan(N, k, F(1)))
+                assert race(N, k, pr, False) == win(N, pr, exch(N, quota_law(N, k)))
+    assert (race(3, 1, [F(1, 3)] * 3, False), race(3, 1, [F(1, 3)] * 3, True)) == (F(1, 2), F(2, 3))
+    print("Гонка взрывов = квота: с амулетом — перепланирование, без — квота среди всех; 1/2 -> 2/3.")
