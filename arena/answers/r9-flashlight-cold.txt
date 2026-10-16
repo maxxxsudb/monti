@@ -1,0 +1,1143 @@
+- region "Notifications alt+T"
+- button "Toggle Sidebar"
+- list:
+  - button "Arena menu":
+- button:
+- list:
+  - link "New Chat":
+    - /url: /
+    - generic: New Chat
+  - link "Leaderboard New":
+    - /url: /leaderboard
+    - generic: Leaderboard
+    - generic: New
+  - link "Search":
+    - /url: /history/search
+    - generic: Search
+- generic: Today
+- list:
+  - link "Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка пере":
+    - /url: /c/01a13f6b-9ef3-7d83-90b7-9f7d865eb629
+    - generic: Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка пере
+  - button "More options":
+- generic: Yesterday
+- list:
+  - 'link "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"':
+    - /url: /c/01a13bb9-2fa6-7701-a7e3-2e408d1c72e7
+    - generic: "RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability"
+  - button "More options":
+  - link "Independently solve these six fully specified problems. Give exact probabilities and concise calcula":
+    - /url: /c/01a13b79-4248-7f23-af49-07e0574acf11
+    - generic: Independently solve these six fully specified problems. Give exact probabilities and concise calcula
+  - button "More options":
+  - link "Independently solve and check these five procedures. Give exact answers and brief derivations; do no":
+    - /url: /c/01a13b77-1aac-78ec-8a64-aab67db5bcf3
+    - generic: Independently solve and check these five procedures. Give exact answers and brief derivations; do no
+  - button "More options":
+  - link "Solve these independent problems using the fully specified procedures. Give exact probabilities and":
+    - /url: /c/01a13b74-d36e-7651-9fbe-9b28763cccf4
+    - generic: Solve these independent problems using the fully specified procedures. Give exact probabilities and
+  - button "More options":
+  - link "Solve the following independent problems. Give exact numerical answers and brief calculations; disti":
+    - /url: /c/01a13b73-591e-73bb-ab13-69101e26c999
+    - generic: Solve the following independent problems. Give exact numerical answers and brief calculations; disti
+  - button "More options":
+  - link "Solve these five independent probability problems. Give an exact fraction and a brief derivation for":
+    - /url: /c/01a13b70-5251-73ad-9a20-95714f9e6bab
+    - generic: Solve these five independent probability problems. Give an exact fraction and a brief derivation for
+  - button "More options":
+  - link "Solve these two independent probability problems. Give an exact numerical probability and a short de":
+    - /url: /c/01a13b6c-b92b-7abf-bc16-f1e236c3f708
+    - generic: Solve these two independent probability problems. Give an exact numerical probability and a short de
+  - button "More options":
+- link:
+  - /url: https://www.youtube.com/watch?v=Kq3-fV7w3Nk
+- heading "Get More Done With Agents" [level=3]
+- paragraph:
+  - text: Start evaluating agentic AI on Arena today.
+  - link "Learn more":
+    - /url: https://arena.ai/blog/agent-mode/
+- link "Try it now":
+  - /url: /agent
+- button "Hide this":
+  - text: Hide this
+- button "Log In"
+- link "Terms of Use":
+  - /url: /terms-of-use
+- link "Privacy Policy":
+  - /url: /privacy-policy
+- button "Cookies"
+- main:
+  - main:
+    - main:
+      - button "Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка пере":
+        - generic: Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка пере
+      - main:
+        - list:
+          - paragraph: Did you mean to do something else?
+          - button "Search the Web":
+            - text: Search the Web
+          - button "Dismiss":
+            - text: No, please hide
+          - region:
+            - generic: Ассистент A
+            - button:
+            - button:
+            - button:
+            - paragraph:
+              - text: "Коротко: наблюдение \"кто погас первым\" несёт информацию о"
+              - emphasis: причине
+              - text: ", а не просто о \"годности\" батарейки целиком. Из-за этого донорские батарейки неравновероятно исправны, правило \"брать у ещё горевшего\" строго лучше, а точное время погасания (1с vs 2с) при данном исходе ничего не меняет."
+            - heading "1) Модель" [level=2]
+            - paragraph: "Обозначим три фонарика по типу неисправности:"
+            - list:
+              - math:
+                - generic: G
+              - generic: G
+              - text: ": лампочка исправна, батарейка исправна (работает часами)."
+              - math:
+                - generic: L
+              - generic: L
+              - text: ": лампочка перегорает через 1 секунду работы, батарейка исправна."
+              - math:
+                - generic: B
+              - generic: B
+              - text: ": лампочка исправна, батарейка садится через 2 секунды работы."
+            - paragraph:
+              - text: Всего
+              - math:
+                - generic: "3"
+                - generic: "!"
+                - generic: =
+                - generic: "6"
+              - generic: 3! =
+              - generic: "6"
+              - text: равновероятных перестановок этих трёх по трём местам.
+            - paragraph:
+              - text: Выбираем один случайный фонарик
+              - math:
+                - generic: A
+              - generic: A
+              - text: и оставляем его выключенным. Два оставшихся назовём
+              - math:
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+              - generic: X, Y
+              - text: и одновременно включаем. Как только
+              - strong: первый
+              - text: из
+              - math:
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+              - generic: X, Y
+              - text: гаснет, мы сразу выключаем
+              - strong: оба
+              - text: .
+            - paragraph:
+              - text: Нам нужна батарейка для
+              - strong: лампочки
+              - math:
+                - generic: A
+              - generic: A
+              - text: (её собственную батарейку заменяем на батарейку одного из
+              - math:
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+              - generic: X, Y
+              - text: ). Сборка "
+              - math:
+                - generic: A
+              - generic: A
+              - text: "-лампочка + донорская батарейка\" проработает минуту тогда и только тогда, когда и лампочка"
+              - math:
+                - generic: A
+              - generic: A
+              - text: исправна, и донорская батарейка исправна.
+            - paragraph: "Сравниваем два правила:"
+            - list:
+              - math:
+                - generic: R
+                - generic: "1"
+              - text: R
+              - generic: "1"
+              - text: ": всегда брать батарейку из того фонарика, который погас"
+              - strong: первым
+              - text: .
+              - math:
+                - generic: R
+                - generic: "2"
+              - text: R
+              - generic: "2"
+              - text: ": всегда брать батарейку из того фонарика, который"
+              - strong: ещё горел
+              - text: в момент первого погасания (выживший из пары).
+            - heading "2) Поведение пары" [level=2]:
+              - text: 2) Поведение пары
+              - math:
+                - generic: (
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+                - generic: )
+              - generic: (X, Y)
+            - paragraph: "При одновременном включении:"
+            - list:
+              - math:
+                - generic: L
+              - generic: L
+              - text: гаснет ровно в
+              - math:
+                - generic: t
+                - generic: =
+                - generic: "1"
+              - generic: t =
+              - generic: "1"
+              - text: (причина — лампочка). Его батарейка в этот момент ещё полностью годна.
+              - math:
+                - generic: B
+              - generic: B
+              - text: гаснет ровно в
+              - math:
+                - generic: t
+                - generic: =
+                - generic: "2"
+              - generic: t =
+              - generic: "2"
+              - text: (причина — батарейка). Его лампочка в этот момент ещё полностью годна.
+              - math:
+                - generic: G
+              - generic: G
+              - text: не гаснет ни в 1, ни в 2.
+            - paragraph: "Значит возможны лишь два наблюдаемых события по времени первого погасания:"
+            - list:
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - text: ": первый погас ровно через 1 с. Это значит среди"
+              - math:
+                - generic: (
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+                - generic: )
+              - generic: (X, Y)
+              - strong: есть
+              - text: фонарик
+              - math:
+                - generic: L
+              - generic: L
+              - text: ", и ни один из них не"
+              - math:
+                - generic: B
+              - generic: B
+              - text: "? Или точнее: погасший в 1с —"
+              - math:
+                - generic: L
+              - generic: L
+              - text: . Второй при этом мог быть
+              - math:
+                - generic: G
+              - generic: G
+              - text: или
+              - math:
+                - generic: B
+              - generic: B
+              - text: "? Если второй"
+              - math:
+                - generic: B
+              - generic: B
+              - text: ", то"
+              - math:
+                - generic: B
+              - generic: B
+              - text: сам бы погас только в 2с, но первый погас уже в 1с — событие всё равно "первый погас в 1с" и им окажется
+              - math:
+                - generic: L
+              - generic: L
+              - text: . Если второй
+              - math:
+                - generic: G
+              - generic: G
+              - text: ", первый тоже"
+              - math:
+                - generic: L
+              - generic: L
+              - text: .
+              - text: Таким образом
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+                - generic: ⟺
+              - generic: T =
+              - generic: 1 ⟺
+              - text: в паре
+              - math:
+                - generic: "{"
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+                - generic: "}"
+              - generic: "{X, Y}"
+              - text: присутствует тип
+              - math:
+                - generic: L
+              - generic: L
+              - text: .
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - text: ": первый погас ровно через 2 с. Это невозможно, если есть"
+              - math:
+                - generic: L
+              - generic: L
+              - text: . Значит в паре нет
+              - math:
+                - generic: L
+              - generic: L
+              - text: . Первый гаснет тот, у кого батарейка сядет в 2с, т.е.
+              - math:
+                - generic: B
+              - generic: B
+              - text: "(если он там есть), иначе никто не гаснет, но по условию \"сразу после первого погасания выключают оба\" — случай без погасания не наступает, коль скоро пара содержит ровно один из дефектных или оба дефектных? Всего 3 штуки: один"
+              - math:
+                - generic: A
+              - generic: A
+              - text: вне пары, значит в паре ровно два из
+              - math:
+                - generic: "{"
+                - generic: G
+                - generic: ","
+                - generic: L
+                - generic: ","
+                - generic: B
+                - generic: "}"
+              - generic: "{G, L, B}"
+              - text: . Погасание произойдёт, если там есть
+              - math:
+                - generic: L
+              - generic: L
+              - text: или
+              - math:
+                - generic: B
+              - generic: B
+              - text: .
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - text: случается лишь когда в паре
+              - math:
+                - generic: "{"
+                - generic: G
+                - generic: ","
+                - generic: B
+                - generic: "}"
+              - generic: "{G, B}"
+              - text: (нет
+              - math:
+                - generic: L
+              - generic: L
+              - text: ) — тогда первым в 2с гаснет
+              - math:
+                - generic: B
+              - generic: B
+              - text: .
+            - paragraph:
+              - text: "Итак наблюдение сводится ровно к бинарному: \"первый погас в 1с\" или \"первый погас в 2с\". Знание"
+              - emphasis: точного
+              - text: момента сверх "1 или 2" здесь избыточно, ибо других времён нет. Более того, даже фраза "кто именно по часам" ничего не добавляет к условию "был ли среди включённых
+              - math:
+                - generic: L
+              - generic: L
+              - text: "?\"."
+            - heading "3) Перечислим все 6 равновероятных случаев" [level=2]
+            - paragraph:
+              - text: Пусть тройка в порядке
+              - math:
+                - generic: (
+                - generic: A
+                - generic: ","
+                - generic: X
+                - generic: ","
+                - generic: "Y"
+                - generic: )
+              - generic: (A, X, Y)
+              - text: есть перестановка
+              - math:
+                - generic: (
+                - generic: G
+                - generic: ","
+                - generic: L
+                - generic: ","
+                - generic: B
+                - generic: )
+              - generic: (G, L, B)
+              - text: .
+            - table:
+              - rowgroup:
+                - row "№ Кто первый гаснет, время Донор по (первый) Его батарейка годна? Донор по (выживший) Его батарейка годна? Лампочка годна? Итог сборки проработает минуту Итог":
+                  - columnheader "№"
+                  - columnheader:
+                    - math:
+                      - generic: A
+                    - generic: A
+                  - columnheader:
+                    - math:
+                      - generic: X
+                    - generic: X
+                  - columnheader:
+                    - math:
+                      - generic: "Y"
+                    - generic: "Y"
+                  - columnheader "Кто первый гаснет, время"
+                  - columnheader "Донор по (первый)":
+                    - text: Донор по
+                    - math:
+                      - generic: R
+                      - generic: "1"
+                    - text: R
+                    - generic: "1"
+                    - text: (первый)
+                  - columnheader "Его батарейка годна?"
+                  - columnheader "Донор по (выживший)":
+                    - text: Донор по
+                    - math:
+                      - generic: R
+                      - generic: "2"
+                    - text: R
+                    - generic: "2"
+                    - text: (выживший)
+                  - columnheader "Его батарейка годна?"
+                  - columnheader "Лампочка годна?":
+                    - text: Лампочка
+                    - math:
+                      - generic: A
+                    - generic: A
+                    - text: годна?
+                  - columnheader "Итог сборки проработает минуту":
+                    - text: Итог сборки
+                    - math:
+                      - generic: R
+                      - generic: "1"
+                    - text: R
+                    - generic: "1"
+                    - text: проработает минуту
+                  - columnheader "Итог":
+                    - text: Итог
+                    - math:
+                      - generic: R
+                      - generic: "2"
+                    - text: R
+                    - generic: "2"
+              - rowgroup:
+                - row "1 в 1с ( ) Да Нет (сядет в 2с, но батарейка сама дефектна) Да Да Нет":
+                  - cell "1"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "в 1с ( )":
+                    - math:
+                      - generic: L
+                    - generic: L
+                    - text: в 1с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "1"
+                    - generic: T =
+                    - generic: "1"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "Да"
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "Нет (сядет в 2с, но батарейка сама дефектна)":
+                    - strong: Нет
+                    - text: (сядет в 2с, но батарейка сама дефектна)
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Нет"
+                - row "2 в 1с ( ) Да Нет Да Да Нет":
+                  - cell "2"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "в 1с ( )":
+                    - math:
+                      - generic: L
+                    - generic: L
+                    - text: в 1с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "1"
+                    - generic: T =
+                    - generic: "1"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "Да"
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "Нет"
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Нет"
+                - row "3 в 2с ( ) Нет Да Нет (лампочка перегорит за 1с) Нет Нет":
+                  - cell "3"
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "в 2с ( )":
+                    - math:
+                      - generic: B
+                    - generic: B
+                    - text: в 2с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "2"
+                    - generic: T =
+                    - generic: "2"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "Нет"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "Да"
+                  - cell "Нет (лампочка перегорит за 1с)":
+                    - strong: Нет
+                    - text: (лампочка
+                    - math:
+                      - generic: A
+                    - generic: A
+                    - text: перегорит за 1с)
+                  - cell "Нет"
+                  - cell "Нет"
+                - row "4 в 2с ( ) Нет Да Нет Нет Нет":
+                  - cell "4"
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "в 2с ( )":
+                    - math:
+                      - generic: B
+                    - generic: B
+                    - text: в 2с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "2"
+                    - generic: T =
+                    - generic: "2"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell "Нет"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "Да"
+                  - cell "Нет"
+                  - cell "Нет"
+                  - cell "Нет"
+                - row "5 в 1с ( ) Да Да Да Да Да":
+                  - cell "5"
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "в 1с ( )":
+                    - math:
+                      - generic: L
+                    - generic: L
+                    - text: в 1с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "1"
+                    - generic: T =
+                    - generic: "1"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "Да"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Да"
+                - row "6 в 1с ( ) Да Да Да Да Да":
+                  - cell "6"
+                  - cell:
+                    - math:
+                      - generic: B
+                    - generic: B
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "в 1с ( )":
+                    - math:
+                      - generic: L
+                    - generic: L
+                    - text: в 1с (
+                    - math:
+                      - generic: T
+                      - generic: =
+                      - generic: "1"
+                    - generic: T =
+                    - generic: "1"
+                    - text: )
+                  - cell:
+                    - math:
+                      - generic: L
+                    - generic: L
+                  - cell "Да"
+                  - cell:
+                    - math:
+                      - generic: G
+                    - generic: G
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Да"
+                  - cell "Да"
+            - paragraph:
+              - text: Каждая строка вероятность
+              - math:
+                - generic: "1"
+                - generic: /
+                - generic: "6"
+              - generic: 1/6
+              - text: .
+            - heading "4) Вероятности успеха" [level=2]
+            - list:
+              - text: По
+              - math:
+                - generic: R
+                - generic: "1"
+              - text: R
+              - generic: "1"
+              - text: "(брать батарейку первого погасшего): успех в строках 1,2,5,6. Итого"
+              - math:
+                - generic: "4"
+                - generic: /
+                - generic: "6"
+                - generic: =
+                - generic: "2"
+                - generic: /
+                - generic: "3"
+              - generic: 4/6 =
+              - generic: 2/3
+              - text: .
+              - text: По
+              - math:
+                - generic: R
+                - generic: "2"
+              - text: R
+              - generic: "2"
+              - text: "(брать батарейку ещё горевшего): успех только в строках 5,6. Итого"
+              - math:
+                - generic: "2"
+                - generic: /
+                - generic: "6"
+                - generic: =
+                - generic: "1"
+                - generic: /
+                - generic: "3"
+              - generic: 2/6 =
+              - generic: 1/3
+              - text: .
+            - paragraph: Значит
+            - math:
+              - generic: P
+              - generic: (
+              - generic: минуту
+              - generic: ∣
+              - generic: R
+              - generic: "1"
+              - generic: )
+              - generic: =
+              - generic: "2"
+              - generic: "3"
+              - generic: ","
+              - generic: P
+              - generic: (
+              - generic: минуту
+              - generic: ∣
+              - generic: R
+              - generic: "2"
+              - generic: )
+              - generic: =
+              - generic: "1"
+              - generic: "3"
+              - generic: .
+            - text: P(
+            - generic: минуту
+            - text: ∣
+            - text: R
+            - generic: "1"
+            - text: ) =
+            - generic: "3"
+            - generic: "2"
+            - text: ", P("
+            - generic: минуту
+            - text: ∣
+            - text: R
+            - generic: "2"
+            - text: ) =
+            - generic: "3"
+            - generic: "1"
+            - text: .
+            - paragraph:
+              - strong: Правило "брать у первого погасшего" вдвое вероятнее даст рабочую сборку, чем "брать у ещё горевшего".
+            - heading "5) Почему? Исправность донорских батареек не одинакова" [level=2]
+            - paragraph:
+              - text: "Ключевой момент: мы выбираем"
+              - strong: батарейку
+              - text: ", а не \"фонарик целиком\"."
+            - paragraph: "Посмотрим на доноров при каждом правиле:"
+            - list:
+              - math:
+                - generic: R
+                - generic: "1"
+              - text: R
+              - generic: "1"
+              - text: даёт донора только в случаях
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - text: (строки 1,2,5,6) — и этим донором всегда оказывается
+              - math:
+                - generic: L
+              - generic: L
+              - text: . У
+              - math:
+                - generic: L
+              - generic: L
+              - text: батарейка
+              - strong: исправна
+              - text: . В случаях
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - text: (3,4) донором был бы
+              - math:
+                - generic: B
+              - generic: B
+              - text: с
+              - strong: неисправной
+              - text: батарейкой. Но условно на
+              - math:
+                - generic: R
+                - generic: "1"
+              - text: R
+              - generic: "1"
+              - text: "мы получаем годную батарейку во всех 4 исходах, где оно применяется? Да:"
+              - math:
+                - generic: P
+                - generic: (
+                - generic: донор-батарейка годна
+                - generic: ∣
+                - generic: R
+                - generic: "1"
+                - generic: )
+                - generic: =
+                - generic: "1"
+              - text: P(
+              - generic: донор-батарейка годна
+              - text: ∣
+              - text: R
+              - generic: "1"
+              - text: ) =
+              - generic: "1"
+              - text: .
+              - math:
+                - generic: R
+                - generic: "2"
+              - text: R
+              - generic: "2"
+              - text: при
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - text: "(1,2,5,6) даёт в качестве донора выжившего: в 1,2 это"
+              - math:
+                - generic: B
+              - generic: B
+              - text: (батарейка дефектна), в 5,6 это
+              - math:
+                - generic: G
+              - generic: G
+              - text: (годна). Итого годна лишь в 2 из этих 4, да ещё лампочка
+              - math:
+                - generic: A
+              - generic: A
+              - text: в 1,2 годна, а сборка всё равно гибнет из-за батареи. При
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "2"
+              - generic: T =
+              - generic: "2"
+              - text: (3,4) даёт
+              - math:
+                - generic: G
+              - generic: G
+              - text: — батарейка годна, но лампочка
+              - math:
+                - generic: A
+              - generic: A
+              - text: оказывается
+              - math:
+                - generic: L
+              - generic: L
+              - text: .
+            - paragraph:
+              - text: "Отсюда прямо видно:"
+              - math:
+                - generic: P
+                - generic: (
+                - generic: батарейка донора исправна
+                - generic: ∣
+                - generic: взяли первого погасшего
+                - generic: )
+                - generic: =
+                - generic: "1"
+              - text: P(
+              - generic: батарейка донора исправна
+              - text: ∣
+              - generic: взяли первого погасшего
+              - text: ) =
+              - generic: "1"
+              - text: ","
+              - math:
+                - generic: P
+                - generic: (
+                - generic: батарейка донора исправна
+                - generic: ∣
+                - generic: взяли ещё горевшего
+                - generic: )
+                - generic: =
+                - generic: P
+                - generic: (
+                - generic: G
+                - generic: выжил
+                - generic: ∣
+                - generic: T
+                - generic: =
+                - generic: "1"
+                - generic: )
+                - generic: ⋅
+                - generic: "?"
+              - text: P(
+              - generic: батарейка донора исправна
+              - text: ∣
+              - generic: взяли ещё горевшего
+              - text: ) =
+              - text: P(G
+              - generic: выжил
+              - text: ∣
+              - generic: T =
+              - generic: 1)⋅?
+              - text: но точнее по всем ветвям
+              - math:
+                - generic: =
+                - generic: (
+                - generic: "1"
+                - generic: /
+                - generic: "6"
+                - generic: +
+                - generic: "1"
+                - generic: /
+                - generic: "6"
+                - generic: +
+                - generic: "0"
+                - generic: +
+                - generic: "0"
+                - generic: )
+                - generic: /
+                - generic: "?"
+              - generic: =
+              - generic: (1/6 +
+              - generic: 1/6 +
+              - generic: 0 +
+              - generic: 0)/?
+              - text: ". Лучше сказать: априорно батарейка любого конкретного из трёх с виду одинакова, но"
+              - strong: после
+              - text: опыта "включили двоих и дождались первого погасания" распределение причинности меняется. Тот, кто погас первым при
+              - math:
+                - generic: t
+                - generic: =
+                - generic: "1"
+              - generic: t =
+              - generic: "1"
+              - text: — почти наверняка "жертва лампочки", а не "жертва батарейки", поэтому его батарейка уцелела. Тот, кто ещё горел в этот момент — с заметной вероятностью и есть как раз носитель дефектной батарейки (
+              - math:
+                - generic: B
+              - generic: B
+              - text: ).
+            - paragraph:
+              - text: Если бы мы знали точное время (ровно 1с, а не "около"), ответ
+              - strong: не изменился бы
+              - text: . Оба наблюдения
+              - math:
+                - generic: "{"
+                - generic: T
+                - generic: =
+                - generic: "1"
+                - generic: "}"
+              - generic: "{T ="
+              - generic: "1}"
+              - text: и
+              - math:
+                - generic: "{"
+                - generic: T
+                - generic: =
+                - generic: "2"
+                - generic: "}"
+              - generic: "{T ="
+              - generic: "2}"
+              - text: исчерпывают возможное. Никакого другого тайминга не дано. Условный вывод держится именно на факте "есть ли
+              - math:
+                - generic: L
+              - generic: L
+              - text: в паре" (что эквивалентно
+              - math:
+                - generic: T
+                - generic: =
+                - generic: "1"
+              - generic: T =
+              - generic: "1"
+              - text: ).
+            - heading "6) Критика простоты и предшественник" [level=2]
+            - paragraph:
+              - text: "Эта задачка обманчиво примитивна: кажется, что \"любой из двух оставшихся одинаково хорош/плох\", и интуитивно хочется брать того, что"
+              - strong: дольше
+              - text: "продержался. На деле верно обратное. Ошибка в том, чтобы приписывать батарейке свойство \"выносливее показала себя\" целиком, игнорируя конкурирующий риск: погаснуть раньше могло"
+              - strong: по другой детали
+              - text: .
+            - paragraph:
+              - text: "Здесь важно: не \"проверка человеческой контринтуитивности\" ради самой себя, а точная причинная фильтрация. Простота модели лишь оголяет приём: условная вероятность годности"
+              - strong: компонента
+              - text: ", а не"
+              - strong: изделия
+              - text: .
+            - paragraph:
+              - text: Что до предшественника. Общее упоминание теоремы Байеса действительно ничего не говорит о конкретике. Ближе всего по духу — класс задач о
+              - strong: конкурирующих рисках
+              - text: (competing risks), где наблюдаемый момент отказа есть
+              - math:
+                - generic: min
+                - generic: ⁡
+                - generic: (
+                - generic: T
+                - generic: "1"
+                - generic: ","
+                - generic: T
+                - generic: "2"
+                - generic: )
+              - text: min(
+              - text: T
+              - generic: "1"
+              - text: ","
+              - text: T
+              - generic: "2"
+              - text: )
+              - text: и тип первого отказа информативен о том, какая именно функция распределения "сработала". В элементарном дискретном виде подобные мини-сюжеты встречались ещё у Феллера (Vol.1) при обсуждении "парадокса ожидания" и при разделении причин, а также в некоторых старых задачниках по теории вероятностей (например у Гнездиловой–Капеллера, у Бочарова и др.), иногда под маской "двух лампочек", "двух предохранителей" или "детали с двумя возможными поломками".
+            - paragraph:
+              - text: Однако
+              - strong: единого канонического названия
+              - text: "вроде \"задача Монти-Холла\" у этого конкретного обмена батарейка/лампочка нет. Прямого, широко цитируемого \"опубликованного предшественника\" с ровно такой формулировкой мне указать нельзя. Реальный родственник — не дверь, а именно элементарная модель competing risks: замена \"прожил дольше => надёжнее\" на \"ранний отказ чаще вызван менее фатальным для интересующей детали механизмом\"."
+            - paragraph:
+              - strong: "Главный вывод:"
+              - text: брать надо
+              - strong: первого погасшего
+              - text: ", ибо его раннее погасание с высокой вероятностью означает \"сломалась лампочка\", а не \"села батарейка\". Выживший же как раз подозрителен на предмет батарейного дефекта."
+            - generic: Ассистент B
+            - button:
+            - button:
+            - button:
+            - heading "Обозначения" [level=2]
+            - paragraph:
+              - text: "Фонарики:"
+              - strong: Г
+              - text: (всё исправно),
+              - strong: Л
+              - text: (лампочка перегорает через 1 с, батарейка хорошая),
+              - strong: Б
+              - text: (батарейка садится через 2 с, лампочка хорошая). A выбирается равновероятно из трёх. Сборка «лампочка A + чужая батарейка» горит минуту ⇔ лампочка A хорошая
+              - strong: и
+              - text: батарейка хорошая (у хорошей батарейки запас — часы; у батарейки Б после 1 с опыта остаётся 1 с, минуту она не выдержит).
+            - heading "Перебор трёх равновероятных случаев" [level=2]
+            - table:
+              - rowgroup:
+                - row "A включены первым гаснет момент лампочка A правило «из погасшего» правило «из горевшего»":
+                  - columnheader "A"
+                  - columnheader "включены"
+                  - columnheader "первым гаснет"
+                  - columnheader "момент"
+                  - columnheader "лампочка A"
+                  - columnheader "правило «из погасшего»"
+                  - columnheader "правило «из горевшего»"
+              - rowgroup:
+                - row "Г Л, Б Л 1 с хорошая батарейка Л — хорошая ✔ батарейка Б — плохая ✘":
+                  - cell "Г"
+                  - cell "Л, Б"
+                  - cell "Л"
+                  - cell "1 с"
+                  - cell "хорошая"
+                  - cell "батарейка Л — хорошая ✔"
+                  - cell "батарейка Б — плохая ✘"
+                - row "Л Г, Б Б 2 с плохая ✘ ✘":
+                  - cell "Л"
+                  - cell "Г, Б"
+                  - cell "Б"
+                  - cell "2 с"
+                  - cell "плохая"
+                  - cell "✘"
+                  - cell "✘"
+                - row "Б Г, Л Л 1 с хорошая батарейка Л — хорошая ✔ батарейка Г — хорошая ✔":
+                  - cell "Б"
+                  - cell "Г, Л"
+                  - cell "Л"
+                  - cell "1 с"
+                  - cell "хорошая"
+                  - cell "батарейка Л — хорошая ✔"
+                  - cell "батарейка Г — хорошая ✔"
+            - paragraph:
+              - strong: "Безусловно:"
+              - text: P(минута | «из погасшего») = 2/3, P(минута | «из горевшего») = 1/3.
+            - heading "Роль точного времени погасания" [level=2]
+            - list:
+              - listitem: "Погасание в 1 с (вероятность 2/3): A ∈ {Г, Б}, лампочка A точно хорошая; «из погасшего» даёт 1, «из горевшего» — 1/2."
+              - listitem: "Погасание в 2 с (вероятность 1/3): A = Л, лампочка A плохая; обе сборки дают 0."
+            - paragraph: "Условные вероятности меняются (1 и 1/2 вместо 2/3 и 1/3; 0 и 0), но порядок правил не меняется, и никакое правило, зависящее от времени, не превзойдёт «из погасшего»: оно уже достигает максимума (успех всегда, когда лампочка A вообще может гореть минуту). Усреднение по времени возвращает 2/3 и 1/3."
+            - heading "Исправность самих донорских батареек" [level=2]
+            - list:
+              - listitem: "Батарейка первого погасшего: Л (хорошая), Б (плохая), Л (хорошая) → P = 2/3."
+              - listitem: "Батарейка ещё горевшего: Б (плохая), Г (хорошая), Г (хорошая) → P = 2/3."
+            - paragraph:
+              - text: Маргинальные вероятности
+              - strong: одинаковы
+              - text: ". Разница в успехе сборки — целиком за счёт корреляции с лампочкой A: единственный случай, когда горевший донор исправен, а погасший нет (A = Л), — это случай с негодной лампочкой A, где батарейка бесполезна. Сравнивать нужно совместное событие «лампочка хорошая ∧ батарейка хорошая», а не маргиналы батареек."
+            - heading "Критика простоты" [level=2]
+            - list:
+              - listitem: Задача — конечный перебор трёх равновероятных случаев с детерминированными временами отказа; никакой байесовской «машинерии» тут нет, достаточно таблицы.
+              - listitem: "Эффект целиком порождён искусственным условием «ровно по одному фонарику каждого типа»: скрытая переменная «кто именно A» одновременно определяет и качество лампочки A, и качество донора. При независимых отказах (реалистичная ситуация) правило «из горевшего» было бы правильным; парадокс паразитирует на конструкции."
+              - listitem: Момент погасания полностью раскрывает тип A — информации «больше, чем нужно», поэтому оптимальная стратегия тривиальна, а не «тонко байесовская».
+              - listitem: Совпадение маргиналов 2/3 = 2/3 — тоже следствие подобранных чисел; при других временах отказа или более чем трёх типах оно не обязано сохраняться, так что «одинаковы, но совместное разное» — свойство примера, а не общий закон.
+            - heading "Предшественники" [level=2]
+            - paragraph: "Конкретную опубликованную задачу именно с фонариками, лампочками и батарейками и этой процедурой выбора донора я указать не могу. Структурно это известный мотив: наблюдение (какой предмет сработал/отказал первым) неявно идентифицирует скрытое состояние, и выгода определяется совместным, а не маргинальным распределением. Ближайшие опубликованные родственники — парадокс ящиков Бертрана (1889), задача трёх узников (Гарднер, 1959), задача Монти Холла (Селвин, 1975) и механизм «explaining away» в коллайдерных структурах (Пёрл, 1988); сравнение равных маргиналов при разных совместных вероятностях перекликается с парадоксом Симпсона. Ни одно из этих «известно» не означает, что именно эта схема где-то опубликована; это утверждение о сходстве, а не о приоритете. И то, что решение здесь получается механически, ничего не говорит о том, ошибаются ли на нём люди, — это надо проверять эмпирически, а не выводить из лёгкости перебора."
+          - paragraph: "Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка перегорает после секунды работы, у третьего батарейка садится после двух секунд работы; исправные детали служат часами, поломка одной детали не портит другую. Один случайный фонарик A оставляют выключенным. Два других включают и сразу после первого погасания выключают оба. Для лампочки A надо выбрать одну чужую батарейку. До опыта сравниваются два правила: всегда брать батарейку из первого погасшего или всегда брать из ещё горевшего. Каковы вероятности, что каждая сборка проработает минуту? Может ли знание точного времени погасания изменить условный ответ? Проверь также, одинаковы ли вероятности исправности самих донорских батареек. После решения критикуй простоту и укажи конкретный опубликованный предшественник, если знаешь: общее слово «Байес» не устанавливает новизну или известность конкретной процедуры. Не считай правильное решение модели проверкой человеческой контринтуитивности."
+          - button:
+        - button "A лучше":
+          - generic: A лучше
+        - button "Оба хорошие":
+          - generic: Оба хорошие
+        - button "Оба плохие":
+          - generic: Оба плохие
+        - button "B лучше":
+          - generic: B лучше
+        - textbox "Ask followup…" [active]
+        - button "Add files":
+        - combobox:
+          - paragraph: Battle
+        - combobox
+        - 'button "Modality: Text"':
+          - generic: Text
+        - button:
+        - button "Send message" [disabled]:
+        - paragraph: Inputs are processed by third-party AI and responses may be inaccurate.
+- alert
