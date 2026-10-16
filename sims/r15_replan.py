@@ -1,0 +1,79 @@
+"""P19: классическая защита (перепланирование с квотой k) при неравных априорах.
+
+Без защиты: ведущий открывает k коз, равновероятно среди всех коз (включая вашу дверь).
+С защитой: k коз среди чужих дверей. Обязательный выбор. Точные дроби.
+Порог: защита выгодна <=> p0/p < T = (N-1)/(N-1-k) - k/(N-k).
+"""
+from fractions import Fraction as F
+
+from r10_deletion import exch, protected, quota_law, replan, win
+
+
+def formulas(N, k, p0):
+    p = (1 - p0) / (N - 1)
+    unp = max(p0, p) + p * k / (N - k) if p0 >= p else None
+    prot = max(p0, p * F(N - 1, N - 1 - k))
+    return unp, prot
+
+
+if __name__ == "__main__":
+    n = 0
+    for N in (3, 4, 5, 6):
+        for k in range(1, N - 1):
+            T = F(N - 1, N - 1 - k) - F(k, N - k)
+            for p0 in [F(j, 60) for j in range(20, 60)]:
+                p = (1 - p0) / (N - 1)
+                if p0 < p:
+                    continue
+                pr = [p0] + [p] * (N - 1)
+                u = win(N, pr, exch(N, quota_law(N, k)))
+                r = protected(N, pr, replan(N, k, F(1)))
+                assert (u, r) == formulas(N, k, p0)
+                assert (r > u) == (p0 / p < T) and (r == u) == (p0 / p == T)
+                n += 1
+    pr = [F(1, 2), F(1, 4), F(1, 4)]
+    assert (win(3, pr, exch(3, quota_law(3, 1))), protected(3, pr, replan(3, 1, F(1)))) == (F(5, 8), F(1, 2))
+    assert (win(3, [F(1, 3)] * 3, exch(3, quota_law(3, 1))), protected(3, [F(1, 3)] * 3, replan(3, 1, F(1)))) == (F(1, 2), F(2, 3))
+    for N, k in ((3, 1), (4, 2), (5, 3), (10, 8)):
+        r0 = F(N - 1, N - 1 - k)
+        p = 1 / (N - 1 + r0)
+        pr = [r0 * p] + [p] * (N - 1)
+        assert win(N, pr, exch(N, quota_law(N, k))) - protected(N, pr, replan(N, k, F(1))) == F(k * (N - 1 - k), (N - 1) * (N - k) ** 2)
+    pr = [F(1, 2)] + [F(1, 18)] * 9
+    assert (win(10, pr, exch(10, quota_law(10, 8))), protected(10, pr, replan(10, 8, F(1)))) == (F(13, 18), F(1, 2))
+    # Динамика: T(k) = 1 + k/((N-1-k)(N-k)); N=10, r=2 — смена знака на k=7.
+    for N in range(3, 9):
+        for k in range(1, N - 1):
+            assert F(N - 1, N - 1 - k) - F(k, N - k) == 1 + F(k, (N - 1 - k) * (N - k))
+    pr = [F(2, 11)] + [F(1, 11)] * 9
+    d = {k: protected(10, pr, replan(10, k, F(1))) - win(10, pr, exch(10, quota_law(10, k))) for k in range(1, 9)}
+    assert all(d[k] < 0 for k in range(1, 7)) and all(d[k] > 0 for k in (7, 8)) and d[6] == -F(1, 22) and d[7] == F(1, 66)
+    print(f"P19: {n} точных случаев; порог T подтверждён; (1/2,1/4,1/4): 5/8 -> 1/2, равные: 1/2 -> 2/3.")
+    print("ALL OK")
+
+
+def race(N, k, pr, amulet):
+    """Бомбы с одинаковыми независимыми часами: порядок взрывов — равновероятная перестановка бомб,
+    участвующих в гонке (без амулета — все бомбы; с амулетом — кроме клетки 0). Видны первые k."""
+    from itertools import permutations
+    obs = {}
+    for e in range(N):
+        bombs = [i for i in range(N) if i != e and not (amulet and i == 0)]
+        perms = list(permutations(bombs))
+        for perm in perms:
+            key = frozenset(perm[:k])
+            v = obs.setdefault(key, [F(0)] * N)
+            v[e] += pr[e] / len(perms)
+    return sum(max(v[d] for d in range(N) if d not in o) for o, v in obs.items())
+
+
+if __name__ == "__main__":
+    for N in (3, 4, 5):
+        for k in range(1, N - 1):
+            for p0 in (F(1, N), F(1, 2), F(1, 5)):
+                p = (1 - p0) / (N - 1)
+                pr = [p0] + [p] * (N - 1)
+                assert race(N, k, pr, True) == protected(N, pr, replan(N, k, F(1)))
+                assert race(N, k, pr, False) == win(N, pr, exch(N, quota_law(N, k)))
+    assert (race(3, 1, [F(1, 3)] * 3, False), race(3, 1, [F(1, 3)] * 3, True)) == (F(1, 2), F(2, 3))
+    print("Гонка взрывов = квота: с амулетом — перепланирование, без — квота среди всех; 1/2 -> 2/3.")
