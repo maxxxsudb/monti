@@ -7,7 +7,7 @@ import random
 from fractions import Fraction as F
 from math import comb
 
-from r10_deletion import exch, protected, subsets, win
+from r10_deletion import coin_law, exch, protected, quota_law, subsets, win
 
 
 def loss_formula(N, w, pr):
@@ -59,4 +59,9 @@ if __name__ == "__main__":
                 assert loss_formula(N, w, [p0] + [p] * (N - 1)) <= best
                 m += 1
     print(f"Монетка — худший перестановочный ведущий: {m} случайных законов не превзошли (p0-p)(1-q^(N-1)).")
+    # Задача 6: безвредный ведущий (квота 1) против худшего (монетка 1/2) при априорах 1/2,1/4,1/4.
+    pr = [F(1, 2), F(1, 4), F(1, 4)]
+    A, B = exch(3, quota_law(3, 1)), exch(3, coin_law(3, F(1, 2)))
+    assert (win(3, pr, A), protected(3, pr, A), win(3, pr, B), protected(3, pr, B)) == (F(5, 8), F(5, 8), F(11, 16), F(1, 2))
+    print("Задача 6: ведущий А 5/8 -> 5/8, ведущий Б 11/16 -> 1/2.")
     print("ALL OK")
