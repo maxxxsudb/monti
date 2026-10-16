@@ -14,13 +14,15 @@ from scipy.optimize import linprog
 
 def vertices(pi, S, c, dT):
     S = list(S); k = len(S)
-    top = max(S, key=lambda t: pi[t]); it = S.index(top)
+    best_prior = max(pi[t] for t in S)
+    tops = [i for i, t in enumerate(S) if abs(pi[t] - best_prior) < 1e-12]
     rows, rhs = [], []                      # неравенства G p <= h
     for i in range(k):
         e = np.zeros(k); e[i] = -1; rows.append(e); rhs.append(0)       # p >= 0
         e = np.zeros(k); e[i] = 1; rows.append(e); rhs.append(c)        # p <= c
-        if i != it:
-            e = np.zeros(k); e[i] = 1; e[it] = -1; rows.append(e); rhs.append(-dT)  # p_top - p_i >= dT
+        for it in tops:
+            if i != it:
+                e = np.zeros(k); e[i] = 1; e[it] = -1; rows.append(e); rhs.append(-dT)  # every naive maximizer must remain optimal
     G = np.array(rows); h = np.array(rhs); out = []
     for act in itertools.combinations(range(len(G)), k - 1):
         A = np.vstack([np.ones(k), G[list(act)]]); b = np.concatenate([[1], h[list(act)]])
