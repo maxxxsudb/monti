@@ -1,0 +1,1329 @@
+Browser tab: 11, Title: "Arena | Benchmark & Compare the Best AI Models", URL: "https://arena.ai/c/01a143a3-0787-7a38-92f6-950dbb8e0729".
+0 AXWebArea Arena | Benchmark & Compare the Best AI Models, URL: arena.ai/c/01a143a3-0787-7a38-92f6-950dbb8e0729
+	1 container
+		2 container Notifications alt+T
+		3 button Toggle Sidebar
+		4 content list
+			5 pop up button (collapsed) Description: Arena menu, ID: radix-_R_59knpfjjl79fivb_, Secondary Actions: Expand
+				6 image
+				7 image
+		8 button
+			9 image
+		10 content list
+			11 link Description: New Chat, Value: arena.ai/text
+			12 link (collapsed) Description: Leaderboard New, Value: arena.ai/leaderboard, Secondary Actions: Expand
+			13 link Description: Search, Value: arena.ai/history/search
+		76 container
+			134 text Today
+			135 content list
+				136 container
+					137 link Description: Проверьте критически конкретный новый для нашей работы результат и оцените его точную научную новизн, Value: arena.ai/c/01a143a3-0787-7a38-92f6-950dbb8e0729
+					138 pop up button (collapsed) Description: More options, ID: radix-_r_49_, Secondary Actions: Expand
+						139 image
+			77 text Yesterday
+			78 content list
+				79 container
+					80 link Description: Три одинаковых с виду фонарика случайно перемешаны. Один полностью исправен, у второго лампочка пере, Value: arena.ai/c/01a13f6b-9ef3-7d83-90b7-9f7d865eb629
+					81 pop up button (collapsed) Description: More options, ID: radix-_r_f_, Secondary Actions: Expand
+						82 image
+			83 text Older
+			84 content list
+				85 container
+					86 link Description: RESEARCH TASK: invent a simple, humanly counterintuitive, potentially previously unknown probability, Value: arena.ai/c/01a13bb9-2fa6-7701-a7e3-2e408d1c72e7
+					87 pop up button (collapsed) Description: More options, ID: radix-_r_p_, Secondary Actions: Expand
+						88 image
+				89 container
+					90 link Description: Independently solve these six fully specified problems. Give exact probabilities and concise calcula, Value: arena.ai/c/01a13b79-4248-7f23-af49-07e0574acf11
+					91 pop up button (collapsed) Description: More options, ID: radix-_r_13_, Secondary Actions: Expand
+						92 image
+				93 container
+					94 link Description: Independently solve and check these five procedures. Give exact answers and brief derivations; do no, Value: arena.ai/c/01a13b77-1aac-78ec-8a64-aab67db5bcf3
+					95 pop up button (collapsed) Description: More options, ID: radix-_r_1d_, Secondary Actions: Expand
+						96 image
+				97 container
+					98 link Description: Solve these independent problems using the fully specified procedures. Give exact probabilities and, Value: arena.ai/c/01a13b74-d36e-7651-9fbe-9b28763cccf4
+					99 pop up button (collapsed) Description: More options, ID: radix-_r_1n_, Secondary Actions: Expand
+						100 image
+				101 container
+					102 link Description: Solve the following independent problems. Give exact numerical answers and brief calculations; disti, Value: arena.ai/c/01a13b73-591e-73bb-ab13-69101e26c999
+					103 pop up button (collapsed) Description: More options, ID: radix-_r_21_, Secondary Actions: Expand
+						104 image
+				105 container
+					106 link Description: Solve these five independent probability problems. Give an exact fraction and a brief derivation for, Value: arena.ai/c/01a13b70-5251-73ad-9a20-95714f9e6bab
+					107 pop up button (collapsed) Description: More options, ID: radix-_r_2b_, Secondary Actions: Expand
+						108 image
+				109 container
+					110 link Description: Solve these two independent probability problems. Give an exact numerical probability and a short de, Value: arena.ai/c/01a13b6c-b92b-7abf-bc16-f1e236c3f708
+					111 pop up button (collapsed) Description: More options, ID: radix-_r_2l_, Secondary Actions: Expand
+						112 image
+		15 link youtube.com/watch?v=Kq3-fV7w3Nk
+		16 heading Get More Done With Agents, Value: 3
+			17 text Get More Done With Agents
+		18 container
+			19 text Start evaluating agentic AI on Arena today. 
+			20 link Description: Learn more, Value: arena.ai/blog/agent-mode/
+		21 link Description: Try it now, Value: arena.ai/agent
+		22 button Hide this
+			23 image
+			24 text Hide this
+		25 button Log In
+		26 link Description: Terms of Use, Value: arena.ai/terms-of-use
+		27 link Description: Privacy Policy, Value: arena.ai/privacy-policy
+		28 button Cookies
+		115 container chat-area
+			116 container
+				117 pop up button (collapsed) Description: Проверьте критически конкретный новый для нашей работы результат и оцените его точную научную новизн, ID: radix-_r_37_, Secondary Actions: Expand
+			118 container
+				140 content list
+					141 container
+						142 container
+							1398 image
+							1399 text gpt-5.6-terra-xhigh
+							164 button
+								165 image
+								166 image
+							144 button
+								145 image
+							167 heading Вердикт, Value: 2
+								168 text Вердикт
+							169 content list
+								170 container
+									171 AXListMarker • 
+									172 text Корректность в буквальном виде: NO , потому что для строгих неравенств не хватает условий 
+									173 container
+										174 text 0 < 𝑝 < 1
+									175 text , а также независимости параметров разных приборов и качеств запасных деталей.
+								176 container
+									177 AXListMarker • 
+									178 text Исправленная теорема при естественных усиленных предпосылках: YES.  Формула для 
+									179 container
+										180 text 𝑉 𝑟
+									181 text , равенство 
+									182 container
+										183 text 𝑉
+										184 text 0
+										185 text =
+										186 text 𝑉
+										187 text 1
+									188 text , строгая выпуклость и пример 
+									189 container
+										190 text 𝑛 = 2
+									191 text  верны.
+								192 container
+									193 AXListMarker • 
+									194 text Научная новизна точного пакета утверждений: UNCERTAIN.  Я не знаю проверенного опубликованного источника, где именно для этого протокола сформулированы одновременно: нулевая выгода от одной заранее назначенной замены, строгая совместная комплементарность и асимптотический почти-единичный выигрыш пакета. Но математическое ядро — короткий байесовский расчёт плюс свойство моментов — достаточно элементарно, поэтому без целевого библиографического поиска нельзя честно утверждать “YES, это ранее неизвестная теорема”.
+							195 text Ниже — проверка.
+							196 heading 1. Что надо явно предположить, Value: 2
+								197 text 1. Что надо явно предположить
+							198 text Нужна следующая точная модель.
+							199 content list
+								200 container
+									201 AXListMarker • 
+									202 text Качества всех 
+									203 container
+										204 text 2 𝑛
+									205 text  деталей — старых и запасных — независимы и имеют закон Bernoulli
+									206 container
+										207 text ( 𝑝 )
+									208 text .
+								209 container
+									210 AXListMarker • 
+									211 container
+										212 text Θ
+										213 text 0
+										214 text ,
+										215 text Θ
+										216 text 1
+										217 text , … ,
+										218 text Θ
+										219 text 𝑛
+									220 text  независимы, одинаково распределены как 
+									221 text Θ
+									222 text , и независимы от качеств деталей.
+								223 container
+									224 AXListMarker • 
+									225 container
+										226 text Θ 0
+									227 text  — параметр общего прибора старых деталей; 
+									228 container
+										229 text Θ 𝑗
+									230 text  — параметр отдельного прибора 
+									231 text 𝑗
+									232 text -й запасной.
+								233 container
+									234 AXListMarker • 
+									235 text При фиксированных качестве и 
+									236 container
+										237 text Θ 𝑗
+									238 text  тестовые исходы независимы; хорошая деталь проходит наверняка, плохая — с вероятностью 
+									239 container
+										240 text Θ 𝑗
+									241 text .
+								242 container
+									243 AXListMarker • 
+									244 text Набор заменяемых позиций и набор используемых запасных зафиксированы заранее либо выбраны без дополнительной информации о качестве или приборе.
+							245 text Фраза «из того же источника» не должна означать общий скрытый параметр партии. Если у старых и запасных есть общий lot-effect, формула вообще может измениться.
+							246 container
+								247 text Также «приборы имеют тот же закон 
+								248 text Θ
+								249 text » недостаточно: нужны именно независимые реализации 
+								250 container
+									251 text Θ
+									252 text 1
+									253 text , … ,
+									254 text Θ
+									255 text 𝑛
+								256 text . Одинаковые маргинальные распределения при коррелированных приборах не дают множитель 
+								257 container
+									258 text ( 𝑝 / 𝜇
+									259 text )
+									260 text 𝑟
+								261 text .
+							262 heading 2. Доказательство формулы, Value: 2
+								263 text 2. Доказательство формулы
+							264 text Обозначим:
+							265 content list
+								266 container
+									267 AXListMarker • 
+									268 text 𝐴
+									269 text : все 
+									270 text 𝑛
+									271 text  старых деталей прошли общий прибор;
+								272 container
+									273 AXListMarker • 
+									274 text 𝐵
+									275 text : все 
+									276 text 𝑛
+									277 text  запасных деталей прошли свои отдельные приборы;
+								278 container
+									279 AXListMarker • 
+									280 text 𝐼
+									281 text : множество из 
+									282 text 𝑟
+									283 text  заменяемых старых позиций.
+							284 container
+								285 text Для одной детали при фиксированном 
+								286 container
+									287 text Θ = 𝜃
+							288 container
+								289 text Pr ⁡ ( проход ∣ 𝜃 ) = 𝑝 + ( 1 − 𝑝 ) 𝜃 = 𝑆 .
+							290 text Поэтому
+							291 container
+								292 text Pr ⁡ ( 𝐴 ) = 𝐸 [
+								293 text 𝑆
+								294 text 𝑛
+								295 text ] = 𝑍 , Pr ⁡ ( 𝐵 ) =
+								296 text 𝜇
+								297 text 𝑛
+								298 text , 𝜇 = 𝐸 𝑆 .
+							299 container
+								300 text Пусть после замены устройство должно иметь хорошие все 
+								301 container
+									302 text 𝑛 − 𝑟
+								303 text  сохранённых старых деталей и все 
+								304 text 𝑟
+								305 text  использованных запасных.
+							306 container
+								307 text Чтобы сохранённые 
+								308 container
+									309 text 𝑛 − 𝑟
+								310 text  старые детали были хорошими и все старые всё равно прошли тест, вероятность равна
+							311 container
+								312 text 𝑝
+								313 container
+									314 text 𝑛 − 𝑟
+								315 text 𝐸 [
+								316 text 𝑆
+								317 text 𝑟
+								318 text ] .
+							319 container
+								320 text Действительно: у сохранённых деталей качество принудительно хорошее и их проход гарантирован; у остальных 
+								321 text 𝑟
+								322 text  старых деталей остаётся только вероятность прохождения 
+								323 container
+									324 text 𝑆 𝑟
+								325 text .
+							326 container
+								327 text Для запасных: выбранные 
+								328 text 𝑟
+								329 text  должны быть хорошими, что даёт 
+								330 container
+									331 text 𝑝 𝑟
+								332 text ; у них проход уже гарантирован хорошестью. Остальные 
+								333 container
+									334 text 𝑛 − 𝑟
+								335 text  запасных просто должны пройти свои независимые тесты, что даёт 
+								336 container
+									337 text 𝜇
+									338 text 𝑛
+									339 text −
+									340 text 𝑟
+								341 text .
+							342 text Следовательно,
+							343 container
+								344 text Pr ⁡ ( работает после замены , 𝐴 , 𝐵 ) =
+							345 container
+								346 text p^{n-r}\mathbb E[S^r]\cdot p^r\mu^{n-r}.
+								347 text ]
+							348 text Делим на
+							349 container
+								350 text Pr ⁡ ( 𝐴 , 𝐵 ) = 𝑍
+								351 text 𝜇
+								352 text 𝑛
+								353 text ,
+							354 text и получаем
+							355 text \boxed{ V_r =
+							356 container
+								357 text \frac{p^n}{Z},
+								358 text \mathbb E!\left[\left(\frac{S}{\mu}\right)^r\right].
+								359 text }
+								360 text ]
+							361 container
+								362 text Это верно для 
+								363 container
+									364 text 0 ≤ 𝑟 ≤ 𝑛
+								365 text .
+							366 heading 3. Одна запасная лучше старой по отдельности, но одна замена не улучшает устройство, Value: 2
+								367 text 3. Одна запасная лучше старой по отдельности, но одна замена не улучшает устройство
+							368 text Постериорная вероятность исправности отдельно взятой старой детали:
+							369 container
+								370 text 𝑞
+								371 container
+									372 text o l d
+								373 text =
+							374 heading \Pr(G_i=1\mid A), Value: 1
+								375 text \Pr(G_i=1\mid A)
+							376 container
+								377 text \frac{p,\mathbb E[S^{n-1}]}{Z}.
+								378 text ]
+							379 text Для запасной, прошедшей свой отдельный прибор,
+							380 container
+								381 text 𝑞
+								382 container
+									383 text n e w
+								384 text =
+							385 heading \Pr(H_i=1\mid \text{она прошла}), Value: 1
+								386 text \Pr(H_i=1\mid \text{она прошла})
+							387 container
+								388 text \frac p\mu.
+								389 text ]
+							390 text Разность равна
+							391 container
+								392 text 𝑞
+								393 container
+									394 text n e w
+								395 text −
+								396 text 𝑞
+								397 container
+									398 text o l d
+								399 text =
+							400 heading \frac{ p\left(\mathbb E[S^n]-\mathbb E[S]\mathbb E[S^{n-1}]\right) }{ \mu Z }, Value: 1
+								401 text \frac{
+								402 text p\left(\mathbb E[S^n]-\mathbb E[S]\mathbb E[S^{n-1}]\right)
+								403 text }{
+								404 text \mu Z
+								405 text }
+							406 container
+								407 text \frac{p,\operatorname{Cov}(S,S^{n-1})}{\mu Z}.
+								408 text ]
+							409 container
+								410 text При 
+								411 container
+									412 text 𝑛 ≥ 2
+								413 text , 
+								414 container
+									415 text 0 < 𝑝 < 1
+								416 text  и 
+								417 container
+									418 text Var ⁡ Θ > 0
+								419 text , величина 
+								420 text 𝑆
+								421 text  не вырождена, а 
+								422 container
+									423 text 𝑠
+									424 text 𝑛
+									425 text −
+									426 text 1
+								427 text  строго возрастает. Поэтому
+							428 container
+								429 text Cov ⁡ ( 𝑆 ,
+								430 text 𝑆
+								431 container
+									432 text 𝑛 − 1
+								433 text ) > 0 ,
+							434 text и действительно
+							435 container
+								436 text 𝑞
+								437 container
+									438 text n e w
+								439 text >
+								440 text 𝑞
+								441 container
+									442 text o l d
+								443 text .
+							444 text Но для надёжности всего устройства
+							445 container
+								446 text 𝑉
+								447 text 0
+								448 text =
+								449 container
+									450 text 𝑝 𝑛
+								451 text 𝑍
+								452 text ,
+							453 text а
+							454 container
+								455 text 𝑉
+								456 text 1
+								457 text =
+							458 heading \frac{p^n}{Z}\mathbb E\left[\frac S\mu\right], Value: 1
+								459 text \frac{p^n}{Z}\mathbb E\left[\frac S\mu\right]
+							460 heading \frac{p^n}{Z}, Value: 1
+								461 text \frac{p^n}{Z}
+							462 container
+								463 text V_0.
+								464 text ]
+							465 text То есть верна аккуратная формулировка:
+							466 container
+								1380 text “ Политика «заменить ровно одну заранее названную старую деталь на одну отдельно протестированную запасную» имеет ту же условную надёжность устройства, что и политика без замен. ”
+							468 text Это не означает, что замена «безвредна в каждом мире». В совместимых со всеми наблюдениями состояниях:
+							469 content list
+								470 container
+									471 AXListMarker • 
+									472 text старая деталь может быть хорошей, запасная плохой: замена ухудшает исход;
+								473 container
+									474 AXListMarker • 
+									475 text старая может быть плохой, но случайно пройти тест, а запасная хорошей: замена улучшает исход.
+							476 container
+								477 text Равенство 
+								478 container
+									479 text 𝑉
+									480 text 1
+									481 text =
+									482 text 𝑉
+									483 text 0
+								484 text  — только равенство байесовских средних после условия на все проходы.
+							485 heading 4. Комплементарность и all-or-none при линейной цене, Value: 2
+								486 text 4. Комплементарность и all-or-none при линейной цене
+							487 container
+								488 text Положим 
+								489 container
+									490 text 𝑋 = 𝑆 / 𝜇
+								491 text . Тогда 
+								492 container
+									493 text 𝐸 𝑋 = 1
+								494 text , и
+							495 container
+								496 text 𝑉
+								497 text 𝑟
+								498 text =
+								499 container
+									500 text 𝑝 𝑛
+								501 text 𝑍
+								502 text 𝐸 [
+								503 text 𝑋
+								504 text 𝑟
+								505 text ] .
+							506 container
+								507 text Поэтому для 
+								508 container
+									509 text 0 ≤ 𝑟 ≤ 𝑛 − 2
+							510 container
+								511 container
+									512 text 𝑉
+									513 container
+										514 text 𝑟 + 2
+									515 text − 2
+									516 text 𝑉
+									517 container
+										518 text 𝑟 + 1
+									519 text +
+									520 text 𝑉
+									521 text 𝑟
+								522 container
+									523 text =
+									524 container
+										525 text 𝑝 𝑛
+									526 text 𝑍
+									527 text 𝐸
+									528 text [
+									529 container
+										530 text 𝑋 𝑟
+									531 text (
+									532 text 𝑋
+									533 text −
+									534 text 1
+									535 container
+										536 text ) 2
+									537 text ]
+									538 text .
+							539 text Следовательно,
+							540 container
+								541 text 𝑉
+								542 container
+									543 text 𝑟 + 2
+								544 text − 2
+								545 text 𝑉
+								546 container
+									547 text 𝑟 + 1
+								548 text +
+								549 text 𝑉
+								550 text 𝑟
+								551 text > 0
+							552 container
+								553 text при 
+								554 container
+									555 text 0 < 𝑝 < 1
+								556 text  и 
+								557 container
+									558 text Var ⁡ Θ > 0
+								559 text .
+							560 container
+								561 text Это нестрогая выпуклость без этих условий; строгая — только при невырожденном 
+								562 text 𝑆
+								563 text .
+							564 container
+								565 text В частности, если 
+								566 container
+									567 text Δ
+									568 text 𝑟
+									569 text =
+									570 text 𝑉
+									571 container
+										572 text 𝑟 + 1
+									573 text −
+									574 text 𝑉
+									575 text 𝑟
+								576 text , то
+							577 container
+								578 text Δ
+								579 text 0
+								580 text = 0 , 0 <
+								581 text Δ
+								582 text 1
+								583 text <
+								584 text Δ
+								585 text 2
+								586 text < ⋯ <
+								587 text Δ
+								588 container
+									589 text 𝑛 − 1
+								590 text .
+							591 text Значит, неверно было бы понимать фразу «нулевая польза каждого одиночного шага» буквально для каждого последовательного шага. Нулевой является только первый прирост:
+							592 container
+								593 text 𝑉
+								594 text 1
+								595 text −
+								596 text 𝑉
+								597 text 0
+								598 text = 0.
+							599 text Все последующие плановые добавочные замены уже полезны в среднем.
+							600 text Если целевая функция имеет вид
+							601 container
+								602 text 𝑈
+								603 text 𝑟
+								604 text =
+								605 text 𝑉
+								606 text 𝑟
+								607 text − 𝑐 𝑟 ,
+							608 container
+								609 text где 
+								610 text 𝑐
+								611 text  — одинаковая детерминированная цена одной замены, а надёжность измеряется в тех же нормированных единицах полезности, то 
+								612 container
+									613 text 𝑈 𝑟
+								614 text  тоже строго выпукла. Поэтому максимум по 
+								615 container
+									616 text 𝑟 ∈ { 0 , … , 𝑛 }
+								617 text  достигается на границе:
+							618 container
+								619 text 𝑟 = 0 или 𝑟 = 𝑛 .
+							620 text Точнее:
+							621 container
+								622 text заменять всё, если 
+								623 text 𝑉
+								624 text 𝑛
+								625 text − 𝑐 𝑛 >
+								626 text 𝑉
+								627 text 0
+								628 text ;
+							629 container
+								630 text не заменять ничего, если 
+								631 text 𝑉
+								632 text 𝑛
+								633 text − 𝑐 𝑛 <
+								634 text 𝑉
+								635 text 0
+								636 text .
+							637 text При равенстве оптимальны обе крайние политики; внутренние строго хуже.
+							638 container
+								639 text Это утверждение не переносится автоматически на бюджетное ограничение 
+								640 container
+									641 text 𝑟 ≤ 𝑅 < 𝑛
+								642 text , нелинейные цены, риск-аверсию, обязательные замены или адаптивный выбор после новых наблюдений.
+							643 heading 5. Ваш пример , Value: 2
+								644 text 5. Ваш пример 
+								645 container
+									646 text 𝑛 = 2
+							647 text При
+							648 container
+								649 text 𝑛 = 2 , 𝑝 =
+								650 text 1
+								651 text 2
+								652 text , Θ ∈ { 0 , 1 } , Pr ⁡ ( Θ = 0 ) = Pr ⁡ ( Θ = 1 ) =
+								653 text 1
+								654 text 2
+								655 text ,
+							656 text имеем
+							657 container
+								658 text 𝑆 ∈
+								659 text {
+								660 container
+									661 text 1 2
+								662 text ,
+								663 text 1
+								664 text }
+								665 text , 𝜇 =
+								666 text 3
+								667 text 4
+								668 text , 𝑍 =
+								669 text 1
+								670 text 2
+								671 text (
+								672 container
+									673 text 1 4
+								674 text +
+								675 text 1
+								676 text )
+								677 text =
+								678 text 5
+								679 text 8
+								680 text .
+							681 text Тогда
+							682 container
+								683 text 𝑞
+								684 container
+									685 text o l d
+								686 text =
+							687 heading \frac{(1/2)(3/4)}{5/8}, Value: 1
+								688 text \frac{(1/2)(3/4)}{5/8}
+							689 container
+								690 text \frac35,
+								691 text ]
+							692 container
+								693 text 𝑞
+								694 container
+									695 text n e w
+								696 text =
+							697 heading \frac{1/2}{3/4}, Value: 1
+								698 text \frac{1/2}{3/4}
+							699 container
+								700 text \frac23.
+								701 text ]
+							702 text И
+							703 container
+								704 text 𝑉
+								705 text 0
+								706 text =
+								707 text 𝑉
+								708 text 1
+								709 text =
+								710 container
+									711 text ( 1 / 2
+									712 text )
+									713 text 2
+								714 container
+									715 text 5 / 8
+								716 text =
+								717 text 2
+								718 text 5
+								719 text ,
+							720 container
+								721 text 𝑉
+								722 text 2
+								723 text =
+								724 container
+									725 text (
+									726 text 𝑝
+									727 text 𝜇
+									728 text )
+								729 text 2
+								730 text =
+							731 heading \left(\frac{2}{3}\right)^2, Value: 1
+								732 text \left(\frac{2}{3}\right)^2
+							733 container
+								734 text \frac49.
+								735 text ]
+							736 text Все числа в примере правильны.
+							737 heading 6. Асимптотический пример, Value: 2
+								738 text 6. Асимптотический пример
+							739 text Пусть
+							740 container
+								741 text 𝑝
+								742 text 𝑛
+								743 text = 1 −
+								744 text 1
+								745 text 𝑛
+								746 text , Pr ⁡ ( Θ = 1 ) =
+								747 text 1
+								748 text 𝑛
+								749 text , Pr ⁡ ( Θ = 0 ) = 1 −
+								750 text 1
+								751 text 𝑛
+								752 text .
+							753 text Тогда
+							754 container
+								755 text 𝜇
+								756 text 𝑛
+								757 text =
+							758 container
+								759 text 1-\frac1{\sqrt n}+\frac1{n^{3/2}},
+								760 text ]
+							761 container
+								762 text 𝑍
+								763 text 𝑛
+								764 text =
+							765 container
+								766 text \frac1n+\left(1-\frac1n\right)
+								767 text \left(1-\frac1{\sqrt n}\right)^n.
+								768 text ]
+							769 text Так как
+							770 container
+								771 text 𝑛
+								772 container
+									773 text ( 1 −
+									774 text 1
+									775 text 𝑛
+									776 text )
+								777 text 𝑛
+								778 text → 0 ,
+							779 text получаем
+							780 container
+								781 text 𝑍
+								782 text 𝑛
+								783 text ∼
+								784 text 1
+								785 text 𝑛
+								786 text ,
+								787 text 𝑉
+								788 text 0
+								789 text =
+								790 text 𝑉
+								791 text 1
+								792 text ∼ 𝑛
+								793 container
+									794 text ( 1 −
+									795 text 1
+									796 text 𝑛
+									797 text )
+								798 text 𝑛
+								799 text → 0.
+							800 text С другой стороны,
+							801 container
+								802 text 𝑉
+								803 text 𝑛
+								804 text =
+							805 heading \left(\frac{p_n}{\mu_n}\right)^n, Value: 1
+								806 text \left(\frac{p_n}{\mu_n}\right)^n
+							807 container
+								808 text \left(
+								809 text \frac{1-n^{-1/2}}
+								810 text {1-n^{-1/2}+n^{-3/2}}
+								811 text \right)^n
+								812 text \to1.
+								813 text ]
+							814 text Значит,
+							815 container
+								816 text 𝑉
+								817 text 𝑛
+								818 text −
+								819 text 𝑉
+								820 text 0
+								821 text → 1.
+							822 text Это верно.
+							823 text Более сильная и точная версия вашего лозунга такова:
+							824 container
+								825 container
+									826 text max ⁡
+								827 container
+									828 text 0 ≤ 𝑟 < 𝑛
+								829 text (
+								830 text 𝑉
+								831 container
+									832 text 𝑟 + 1
+								833 text −
+								834 text 𝑉
+								835 text 𝑟
+								836 text ) =
+							837 container
+								838 text V_n-V_{n-1}
+								839 text \sim n^{-1/2}\to0,
+								840 text ]
+							841 text но
+							842 container
+								843 text 𝑉
+								844 text 𝑛
+								845 text −
+								846 text 𝑉
+								847 text 0
+								848 text → 1.
+							849 container
+								850 text То есть каждая отдельная маржинальная прибавка асимптотически мала, равномерно по шагу, хотя совокупная прибавка стремится к единице. Это лучше, чем говорить «каждый шаг имеет ровно нулевую пользу»: при конечном 
+								851 text 𝑛
+								852 text  это неверно, кроме первого шага.
+							853 container
+								854 text Существенная оговорка: это треугольная последовательность моделей. Меняются и 
+								855 container
+									856 text 𝑝 𝑛
+								857 text , и закон 
+								858 container
+									859 text Θ 𝑛
+								860 text . Кроме того, вероятность заранее иметь 
+								861 text 𝑛
+								862 text  независимо протестированных запасных, все из которых прошли, равна
+							863 container
+								864 text 𝜇
+								865 text 𝑛
+								866 text 𝑛
+								867 text → 0.
+							868 text Поэтому это сильный условный результат после отбора всех прошедших запасных, но не полный ex ante расчёт стоимости приобретения, тестирования и отбраковки запасов.
+							869 heading Рекомендуемая короткая формулировка, Value: 2
+								870 text Рекомендуемая короткая формулировка
+							871 container
+								1381 text “
+								873 text Теорема о замене после общего и раздельного скрининга.
+								874 text Пусть 
+								875 container
+									876 text 0 < 𝑝 < 1
+								877 text . Качества старых и запасных деталей независимы Bernoulli
+								878 container
+									879 text ( 𝑝 )
+								880 text . Все старые детали прошли один тест с общим скрытым параметром 
+								881 container
+									882 text Θ 0
+								883 text ; каждая запасная прошла отдельный тест с независимым параметром 
+								884 container
+									885 text Θ 𝑗
+								886 text , причём 
+								887 container
+									888 text Θ
+									889 text 0
+									890 text ,
+									891 text Θ
+									892 text 1
+									893 text , … ,
+									894 text Θ
+									895 text 𝑛
+								896 text  i.i.d. как 
+								897 text Θ
+								898 text . Хорошая деталь проходит наверняка, плохая — с вероятностью 
+								899 container
+									900 text Θ 𝑗
+								901 text . При условии, что все старые и все запасные прошли свои тесты, для любой заранее фиксированной замены 
+								902 text 𝑟
+								903 text  деталей
+								904 container
+									905 text 𝑉
+									906 text 𝑟
+									907 text =
+									908 container
+										909 text 𝑝 𝑛
+									910 container
+										911 text 𝐸 [
+										912 text 𝑆
+										913 text 𝑛
+										914 text ]
+									915 text 𝐸
+									916 text [
+									917 container
+										918 text (
+										919 container
+											920 text 𝑆
+											921 text 𝐸
+											922 text 𝑆
+										923 text )
+										924 text 𝑟
+									925 text ]
+									926 text , 𝑆 = 𝑝 + ( 1 − 𝑝 ) Θ .
+								927 text Если 
+								928 container
+									929 text Var ⁡ Θ > 0
+								930 text , то отдельно протестированная запасная деталь имеет более высокую постериорную вероятность исправности, чем старая деталь после общего скрининга, но 
+								931 container
+									932 text 𝑉
+									933 text 1
+									934 text =
+									935 text 𝑉
+									936 text 0
+								937 text . При этом последовательность 
+								938 container
+									939 text 𝑉 𝑟
+								940 text  строго выпукла; следовательно, при линейной цене и риск-нейтральной ожидаемой полезности оптимальна либо нулевая, либо полная замена. ”
+							941 text Так эта формулировка не подменяет протокол, не утверждает покомпонентную или помировую безвредность замены и явно фиксирует нужные независимости.
+						147 container
+							1400 text shiba
+							944 button
+								945 image
+								946 image
+							149 button
+								150 image
+							947 container
+								948 text Коротко:  UNCERTAIN по строгому «никто не формулировал дословно», но NO по «абсолютно неизвестно» .
+							949 text Ядро Вашей теоремы верное по алгебре, но его точный научный предшественник в таком виде мне найти не удалось. Главная ценность — связка «одиночная замена бесполезна, любая пара даёт прирост, оптимум — всё или ничего, и есть предельный пример с выигрышем пакета ~1 при нулевом маргинальном эффекте первого шага».
+							950 heading 1) Проверка математики, Value: 2
+								951 text 1) Проверка математики
+							952 text Модель корректна. Ключевые выкладки держатся.
+							953 content list
+								954 container
+									955 AXListMarker • 
+									956 container
+										957 text 𝑆 ( Θ ) = 𝑝 + ( 1 − 𝑝 ) Θ = 𝑃 ( деталь проходит прибор ∣ Θ )
+									958 text .
+								959 container
+									960 AXListMarker • 
+									961 text Все 
+									962 text 𝑛
+									963 text  старых прошли один и тот же прибор 
+									964 container
+										965 text ⇒ 𝑃 ( все старые прошли ) = 𝑍 = 𝐸 [
+										966 text 𝑆
+										967 text 𝑛
+										968 text ]
+									969 text .
+								970 container
+									971 AXListMarker • 
+									972 container
+										973 text 𝑉
+										974 text 0
+										975 text = 𝑃 ( устройство исправно ∣ все старые прошли ) =
+										976 container
+											977 text 𝑝 𝑛
+										978 container
+											979 text 𝐸 [
+											980 text 𝑆
+											981 text 𝑛
+											982 text ]
+									983 text  (классика: при условии прохождения общего теста апостериорное 
+									984 container
+										985 text 𝑃 ( исправна ) =
+										986 text 𝑝
+										987 text 𝑆
+									988 text  в среднем по общему 
+									989 text Θ
+									990 text , произведение даёт 
+									991 container
+										992 text 𝑝
+										993 text 𝑛
+										994 text / 𝑍
+									995 text ).
+								996 container
+									997 AXListMarker • 
+									998 text Запасная прошла  свой , независимо выбранный 
+									999 container
+										1000 text Θ
+										1001 text ′
+										1002 container
+											1003 text =
+											1004 text 𝑑
+										1005 text Θ
+									1006 text . Значит 
+									1007 container
+										1008 text 𝑃 ( запасная прошла ) = 𝜇 = 𝐸 𝑆
+									1009 text , 
+									1010 container
+										1011 text 𝑃 ( запасная исправна ∣ прошла одна ) = 𝑝 / 𝜇
+									1012 text .
+								1013 container
+									1014 AXListMarker • 
+									1015 text При замене ровно 1 заранее выбранной старой на такую запасную, оставшиеся 
+									1016 container
+										1017 text 𝑛 − 1
+									1018 text  по-прежнему «из той же общей пробы»: 
+									1019 container
+										1020 text 𝐸 [
+										1021 text 𝑝
+										1022 container
+											1023 text 𝑛 − 1
+										1024 text 𝑆
+										1025 text ′
+										1026 text ⋅
+										1027 text 1
+										1028 container
+											1029 text 𝑜 𝑙 𝑑 𝑛 − 1 𝑜 𝑘 ∣ 𝑐 𝑜 𝑚 𝑚 𝑜 𝑛
+										1030 text ]
+									1031 text  сводится ровно к 
+									1032 container
+										1033 container
+											1034 text 𝑝 𝑛
+										1035 text 𝑍
+										1036 text 𝐸 [ 𝑆 / 𝜇 ] =
+										1037 text 𝑉
+										1038 text 0
+									1039 text . Тождество 
+									1040 container
+										1041 text 𝑉
+										1042 text 0
+										1043 text =
+										1044 text 𝑉
+										1045 text 1
+									1046 text  алгебраически верно.
+							1047 text Вторая разность
+							1048 container
+								1049 text 𝑉
+								1050 container
+									1051 text 𝑟 + 2
+								1052 text − 2
+								1053 text 𝑉
+								1054 container
+									1055 text 𝑟 + 1
+								1056 text +
+								1057 text 𝑉
+								1058 text 𝑟
+								1059 text =
+								1060 container
+									1061 text 𝑝 𝑛
+								1062 text 𝑍
+								1063 text 𝐸  ⁣
+								1064 text [
+								1065 container
+									1066 text (
+									1067 container
+										1068 text 𝑆 𝜇
+									1069 text )
+									1070 text 𝑟
+								1071 text  ⁣
+								1072 container
+									1073 text (
+									1074 container
+										1075 text 𝑆 𝜇
+									1076 text −
+									1077 text 1
+									1078 text )
+									1079 text 2
+								1080 text ]
+								1081 text > 0 (
+								1082 text V
+								1083 text a
+								1084 text r
+								1085 text Θ > 0 )
+							1086 container
+								1087 text также верна, т.к. 
+								1088 container
+									1089 text 𝐸 [ 𝑆 / 𝜇 ] = 1
+								1090 text . Из строгой выпуклости по дискретному 
+								1091 text 𝑟
+								1092 text  и линейной цене немедленно следует bang-bang: оптимум в 
+								1093 container
+									1094 text { 0 , 𝑛 }
+								1095 text  (либо ничего, либо весь комплект). Предельный пример тоже корректно просчитывается.
+							1096 container
+								1097 text Единственное мелкое техническое: фраза «строго лучше старой по отдельности» для запасной верна лишь в смысле 
+								1098 container
+									1099 text 𝑝 / 𝜇 > 𝐸 [ 𝑝 / 𝑆 ∣
+									1100 text 𝑆
+									1101 text 𝑛
+									1102 text ]
+								1103 text ? Да, 
+								1104 container
+									1105 text 𝜇 = 𝐸 𝑆 < 𝐸 [
+									1106 text 𝑆
+									1107 text 𝑛
+									1108 text ]
+									1109 container
+										1110 text 1 / 𝑛
+								1111 text  по неравенству Йенсена при 
+								1112 container
+									1113 text 𝑛 ≥ 2 ,
+									1114 text V
+									1115 text a
+									1116 text r
+									1117 text 𝑆 > 0
+								1118 text  и 
+								1119 container
+									1120 text 𝑝 / 𝜇
+								1121 text  действительно выше условной вероятности исправности любой из тех старых, что все вместе прошли общий прибор. Но само по себе это сравнение не делает одиночной замены полезной — что и есть суть результата. Вы это чётко оговариваете.
+							1122 heading 2) Есть ли точный предшественник?, Value: 2
+								1123 text 2) Есть ли точный предшественник?
+							1124 text Я бы искал в трёх смежных областях, но ни одна не даёт ровно этой формулировки.
+							1125 content list
+								1126 container
+									1127 AXListMarker • 
+									1128 text Group testing / pooled testing (Dorfman 1943 и последующее).  Там тестируют смесь, чтобы найти дефектные, и эффект — экономия тестов, а не «замена прошедшего по-своему на прошедшего вместе даёт нулевой маргинал». Ближе по духу, но целевая величина иная.
+								1129 container
+									1130 AXListMarker • 
+									1131 text Common-cause / common-mode failure & dependent components.  В надёжности давно известно, что общий фактор создаёт положительную корреляцию между компонентами и сильно бьёт по 
+									1132 text 𝑘
+									1133 text -out-of-
+									1134 text 𝑛
+									1135 text . Однако там обычно  не  вводят два разных режима приёмочного контроля (один общий на группу vs независимые одиночные на запасные) и не получают именно 
+									1136 container
+										1137 text 𝑉
+										1138 text 0
+										1139 text =
+										1140 text 𝑉
+										1141 text 1
+									1142 text .
+								1143 container
+									1144 AXListMarker • 
+									1145 text Bayesian updating / exchangeability (de Finetti), Pólya-urn-подобные, или «inspection paradox»-лайт.  Факт, что условное на событие «вся когорта прошла один шумный фильтр» элементы становятся зависимыми и апостериорно «хуже» выборки, чем элемент, прошедший независимый фильтр той же селективности — интуитивно знаком. Также перекликается с идеей, что групповой отбор усиливает скрытую гетерогенность (иногда называют  batch effect ,  test-induced dependence ).
+								1146 container
+									1147 AXListMarker • 
+									1148 text Information aggregation / herding-микро?  Очень отдалённо. Или Clemen–Winkler по комбинированию оценок, но там иное.
+							1149 container
+								1150 text Ещё одно очень близкое по механике наблюдение встречается в некоторых дискуссиях о калибровке/скрининге и о том, почему «прошедший жёсткий общий экзамен класс» даёт другую информативность, чем серия независимых зачётов. Но я  не знаю ни одной опубликованной работы , где явно выписаны 
+								1151 container
+									1152 text 𝑉
+									1153 text 𝑟
+									1154 text =
+									1155 container
+										1156 text 𝑝 𝑛
+									1157 text 𝑍
+									1158 text 𝐸 [ ( 𝑆 / 𝜇
+									1159 text )
+									1160 text 𝑟
+									1161 text ]
+								1162 text , доказано 
+								1163 container
+									1164 text 𝑉
+									1165 text 0
+									1166 text =
+									1167 text 𝑉
+									1168 text 1
+								1169 text , строгая выпуклость и показан предельный переход 
+								1170 container
+									1171 text 𝑉
+									1172 text 1
+									1173 text  ⁣ → 0 ,
+									1174 text 𝑉
+									1175 text 𝑛
+									1176 text  ⁣ → 1
+								1177 text  при фиксированном правиле замены.
+							1178 text Если бы она была в виде леммы в теории надёжности (например, Barlow–Proschan, Aven–Jensen и др.) или в decision-theory, я почти наверняка бы её припомнил. Скорее всего её нет в каноне.
+							1179 heading 3) Существенные ограничения и оговорки, Value: 2
+								1180 text 3) Существенные ограничения и оговорки
+							1181 text Главные, на мой взгляд:
+							1182 content list
+								1183 container
+									1184 AXListMarker 1. 
+									1185 text Предварительный выбор 
+									1186 text 𝑟
+									1187 text .  Критично. Если бы разрешалось сначала прогнать все 
+									1188 text 𝑛
+									1189 text  запасных по своим приборам и  потом  выбрать, какие именно 
+									1190 text 𝑟
+									1191 text  старых заменить (например, только те редкие случаи, когда запасные «особо хороши» по косвенной инфо), результат мог бы стать иным. У Вас же 
+									1192 text 𝑟
+									1193 text  фиксируется  до  получения результатов одиночных проверок запасных. Это абсолютно необходимо для 
+									1194 container
+										1195 text 𝑉
+										1196 text 0
+										1197 text =
+										1198 text 𝑉
+										1199 text 1
+									1200 text . Без этого протокола утверждение ложно.
+								1201 container
+									1202 AXListMarker 2. 
+									1203 text Идентичность закона 
+									1204 text Θ
+									1205 text .  Общий прибор для старых и каждый одиночный для запасных имеют одно и то же распределение скрытого параметра качества теста. Если они статистически разные, тождество рушится.
+								1206 container
+									1207 AXListMarker 3. 
+									1208 text Только замена, никаких доработок.  Никакого «браковать/ремонтировать», только подмена заранее отобранных элементов на запасные, каждый из которых уже единожды протестирован своим прибором.
+								1209 container
+									1210 AXListMarker 4. 
+									1211 text Обменяемость.  Детали i.i.d. из одного источника, 
+									1212 text 𝑝
+									1213 text  одинаково. Модель чисто байесовская по 
+									1214 text Θ
+									1215 text .
+								1216 container
+									1217 AXListMarker 5. 
+									1218 text Не «безвредна в каждом мире».  Вы абсолютно правы, что нельзя говорить: «замена никогда не вредит». В конкретной реализации 
+									1219 text Θ
+									1220 text  одиночная замена может слегка повысить или понизить надёжность системы. Равенство 
+									1221 container
+										1222 text 𝑉
+										1223 text 0
+										1224 text =
+										1225 text 𝑉
+										1226 text 1
+									1227 text  — это равенство  безусловных  (по 
+									1228 text Θ
+									1229 text  и по результатам, усреднённых при данном протоколе) вероятностей работоспособности устройства после решения, а не покомпонентное доминирование траекторий. Это важное различие и его стоит сохранить.
+								1230 container
+									1231 AXListMarker 6. 
+									1232 text Скрытое положительное коррелирование.  Механизм прост: прохождение общего теста означает «либо все хорошие, либо общий 
+									1233 text Θ
+									1234 text  оказался велик». Это создаёт сильную положительную зависимость между старыми деталями  a posteriori . Запасная же избавлена от этого общего «смягчающего» эпизода — она прошла независимый 
+									1235 container
+										1236 text Θ ′
+									1237 text . Именно эта разница в происхождении фильтра и рождает парадоксальный эффект.
+							1238 heading 4) Можно ли упростить формулировку без подмены протокола?, Value: 2
+								1239 text 4) Можно ли упростить формулировку без подмены протокола?
+							1240 container
+								1241 text Да. Ключевой пункт — не тащить лишних слов про «приборы», а сразу говорить о  двух способах получить прошедшую деталь из того же пула .
+							1242 text Моё предложение максимально бережное:
+							1243 container
+								1382 text “ Пусть 
+								1245 container
+									1246 text 𝑋
+									1247 text 1
+									1248 text , … ,
+									1249 text 𝑋
+									1250 text 𝑛
+									1251 text ,
+									1252 text 𝑌
+									1253 text 1
+									1254 text , … ,
+									1255 text 𝑌
+									1256 text 𝑛
+									1257 text ∈ { 0 , 1 }
+								1258 text  — индикаторы исправности, i.i.d. 
+								1259 container
+									1260 text B
+									1261 text e
+									1262 text r
+									1263 text n
+									1264 text o
+									1265 text u
+									1266 text l
+									1267 text l
+									1268 text i
+									1269 text ( 𝑝 )
+								1270 text . Есть скрытая 
+								1271 container
+									1272 text 𝑇 ∈ [ 0 , 1 ]
+								1273 text  (
+								1274 container
+									1275 text 𝑇 ≡ Θ
+								1276 text ).
+								1277 text Наблюдаем событие 
+								1278 container
+									1279 text 𝐴 = { ∀ 𝑖 ≤ 𝑛 :
+									1280 text 𝑋
+									1281 text 𝑖
+									1282 text ′
+									1283 text = 1 }
+								1284 text , где 
+								1285 container
+									1286 text 𝑋
+									1287 text 𝑖
+									1288 text ′
+									1289 text ≥
+									1290 text 𝑋
+									1291 text 𝑖
+								1292 text  и 
+								1293 container
+									1294 text 𝑃 (
+									1295 text 𝑋
+									1296 text 𝑖
+									1297 text ′
+									1298 text = 1 ∣
+									1299 text 𝑋
+									1300 text 𝑖
+									1301 text , 𝑇 ) =
+									1302 text 𝑋
+									1303 text 𝑖
+									1304 text + ( 1 −
+									1305 text 𝑋
+									1306 text 𝑖
+									1307 text ) 𝑇
+								1308 text  при общем 
+								1309 text 𝑇
+								1310 text .
+								1311 text Для каждого 
+								1312 text 𝑗
+								1313 text  наблюдаем 
+								1314 container
+									1315 text 𝐵
+									1316 text 𝑗
+									1317 text = {
+									1318 text 𝑌
+									1319 text 𝑗
+									1320 text ′
+									1321 text = 1 }
+								1322 text  с независимой копией 
+								1323 container
+									1324 text 𝑇 𝑗
+								1325 text  того же закона.
+								1326 text Система работоспособна, если все 
+								1327 text 𝑛
+								1328 text  установленных деталей исправны. Разрешается заменить любой заранее зафиксированный набор из 
+								1329 text 𝑟
+								1330 text  позиций, на которых стояли 
+								1331 text 𝑋
+								1332 text 's, на соответствующие 
+								1333 text 𝑌
+								1334 text 's,  только  при условии 
+								1335 container
+									1336 text 𝐴 ∩
+									1337 text 𝐵
+									1338 text 1
+									1339 text ∩ ⋯ ∩
+									1340 text 𝐵
+									1341 text 𝑟
+								1342 text  (т.е. заменяем на те запасные, что уже прошли свои одиночные тесты).
+								1343 text Тогда 
+								1344 container
+									1345 text 𝑃 ( работает ∣ 𝐴 ) = 𝑃 ( работает после 1 замены ∣ 𝐴 ∩
+									1346 text 𝐵
+									1347 text 1
+									1348 text )
+								1349 text , и надёжность строго выпукла по 
+								1350 text 𝑟
+								1351 text . ”
+							1352 container
+								1353 text Так короче, исчезает слово «прибор» само по себе, но явно зафиксирован протокол «тестировали отдельно и только потом меняем». Также хорошо бы добавить фразу:  «ни один из 
+								1354 container
+									1355 text 𝑌 𝑗
+								1356 text , не прошедший 
+								1357 container
+									1358 text 𝐵 𝑗
+								1359 text , не используется»  — иначе легко неверно истолковать.
+							1360 container
+								1361 text Ещё одно улучшение: вместо «оценка только после завершения замен» прямо написать «стратегия неадаптивна по результатам 
+								1362 container
+									1363 text 𝐵 𝑗
+								1364 text ».
+							1365 heading 5) Оценка новизны, Value: 2
+								1366 text 5) Оценка новизны
+							1367 text Моя оценка: точной публикации с этой связкой нет. Вероятнее всего — новый наблюдательный результат.
+							1368 container
+								1369 text То, что 
+								1370 container
+									1371 text 𝑉
+									1372 text 0
+									1373 text =
+									1374 text 𝑉
+									1375 text 1
+								1376 text  само по себе очень тонкое. То, что маргинал нулевой, а пакетный выигрыш может быть почти полным — по-настоящему неожиданный эффект. Я бы назвал его чем-то вроде  «common-test screening paradox»  или  «singleton-null, bundle-positive under correlated qualification» .
+							1377 text Если Вам когда-нибудь попадётся работа, прямо выводящая эту дискретную выпуклость для замены элементов, прошедших общий vs независимые скрининговые тесты, с тем же предельным примером — крайне любопытно было бы увидеть ссылку. Но по текущим знаниям я такого не встречал.
+							1378 container
+								1379 text Вердикт: YES в смысле содержательной новизны связки, при оговорённом выше протоколе.  Не «всеобщее открытие», а изящный и, похоже, ранее не зафиксированный частный факт.
+					152 text Проверьте критически конкретный новый для нашей работы результат и оцените его точную научную новизну по своим знаниям (YES/NO/UNCERTAIN, причина, конкретный источник если известен). Общий коллайдер/Берксон и комплементарность известны — нас интересует именно теорема ниже. Не соглашайтесь из вежливости.
+					153 text n>=2 деталей до проверок независимы, каждая исправна с вероятностью p. Устройство работает iff все исправны. Скрытый параметр общего прибора Theta∈[0,1]: хорошая деталь всегда проходит, плохая проходит с вероятностью Theta; результаты условно независимы при фиксированных Theta и качествах. Все n старых деталей прошли один общий прибор. Есть n запасных из того же исходного источника; каждая прошла свой отдельно и независимо выбранный прибор с тем же законом Theta. Других наблюдений и повреждений нет. Заменяют заранее выбранные r старых деталей, оценка устройства только после завершения замен.
+					154 container
+						155 text S=p+(1-p)Theta, mu=E S, Z=E S^n. Утверждаем:
+						156 text V_r=(p^n/Z)E[(S/mu)^r]. Поэтому V0=V1, каждая запасная строго лучше старой по отдельности при VarTheta>0, но любая одиночная замена вообще не улучшает устройство. V_(r+2)-2V_(r+1)+V_r=(p^n/Z)E[(S/mu)^r*(S/mu-1)^2]>0. При одинаковой линейной цене замены оптимально либо менять всё, либо ничего. Выигрыш всего пакета может приближаться к1 при нулевой пользе каждого одиночного шага: Theta=1 с вероятностью1/n, иначе0, p=1-1/sqrt(n), n→∞; V0=V1→0,Vn→1.
+					157 text Простой случай n2,p1/2,Theta0/1 с равными шансами: старая деталь исправна3/5, запасная2/3; надёжность без замен2/5, с любой одной2/5, с двумя4/9.
+					158 text Найдите ошибку или независимо докажите. Укажите существенные ограничения, не называйте замену безвредной в каждом отдельном мире. Если знаете опубликованный точный предшественник singleton-zero + совместная прибавка + почти единичный пакет в этой модели, назовите. Затем попробуйте улучшить простую формулировку без подмены протокола.
+					159 button
+						160 image
+						161 image
+				1383 container
+					1384 text entry area (settable)
+					1385 pop up button (collapsed) Description: Add files, Secondary Actions: Expand
+					1386 combo box (collapsed) Value: Battle, Secondary Actions: Expand
+						1387 image
+						1388 text Battle
+					1389 pop up button (collapsed) Description: Modality: Text, Secondary Actions: Expand
+						1390 image
+						1391 text Text
+						1392 image
+					1393 button
+						1394 image
+					1395 button (disabled) Send message
+						1396 image
+					1397 text Inputs are processed by third-party AI and responses may be inaccurate.
+		114 text Arena | Benchmark & Compare the Best AI Models
+
+The focused UI element is 0 AXWebArea Arena | Benchmark & Compare the Best AI Models, URL: arena.ai/c/01a143a3-0787-7a38-92f6-950dbb8e0729
