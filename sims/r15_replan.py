@@ -34,5 +34,12 @@ if __name__ == "__main__":
     pr = [F(1, 2), F(1, 4), F(1, 4)]
     assert (win(3, pr, exch(3, quota_law(3, 1))), protected(3, pr, replan(3, 1, F(1)))) == (F(5, 8), F(1, 2))
     assert (win(3, [F(1, 3)] * 3, exch(3, quota_law(3, 1))), protected(3, [F(1, 3)] * 3, replan(3, 1, F(1)))) == (F(1, 2), F(2, 3))
+    for N, k in ((3, 1), (4, 2), (5, 3), (10, 8)):
+        r0 = F(N - 1, N - 1 - k)
+        p = 1 / (N - 1 + r0)
+        pr = [r0 * p] + [p] * (N - 1)
+        assert win(N, pr, exch(N, quota_law(N, k))) - protected(N, pr, replan(N, k, F(1))) == F(k * (N - 1 - k), (N - 1) * (N - k) ** 2)
+    pr = [F(1, 2)] + [F(1, 18)] * 9
+    assert (win(10, pr, exch(10, quota_law(10, 8))), protected(10, pr, replan(10, 8, F(1)))) == (F(13, 18), F(1, 2))
     print(f"P19: {n} точных случаев; порог T подтверждён; (1/2,1/4,1/4): 5/8 -> 1/2, равные: 1/2 -> 2/3.")
     print("ALL OK")
