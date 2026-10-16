@@ -11,7 +11,7 @@ import numpy as np
 from scipy.optimize import milp, LinearConstraint, Bounds
 
 
-def solve_cap(pi, c=1.0, delta=0.0):
+def solve_cap(pi, c=1.0, delta=0.0, dT=0.0):
     n = len(pi)
     pi = np.array(pi, float)
     msgs = []
@@ -49,6 +49,8 @@ def solve_cap(pi, c=1.0, delta=0.0):
             for t in S:
                 if t != m:
                     row = np.zeros(nv); row[idx[("x", S, m)]] = 1; row[idx[("x", S, t)]] = -1
+                    for s2 in S:
+                        row[idx[("x", S, s2)]] -= dT      # строгий запас знающего
                     add(row, 0, np.inf)
         for t in S:                           # потолок уверенности
             row = np.zeros(nv)
