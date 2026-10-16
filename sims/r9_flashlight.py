@@ -1,50 +1,63 @@
-"""R03 в форме фонариков: точный перебор протокола (независимо от таблицы P3).
-
-Три фонарика: W (всё исправно), P (села батарейка, лампа цела),
-C (перегорела лампа, батарейка цела). Шесть размещений равновероятны.
-Ваш фонарик A не проверяют. Мастер из двух других отбраковывает неисправный;
-если неисправны оба, бракует C с вероятностью r. Вы ставите в A
-батарейку из оставленного или из отбракованного фонарика.
-"""
 from fractions import Fraction as F
 from itertools import permutations
-
-GOOD_BULB = {"W": 1, "P": 1, "C": 0}
-GOOD_BATT = {"W": 1, "P": 0, "C": 1}
+from random import Random
 
 
-def run(r):
-    keep_batt = rej_batt = keep_light = rej_light = F(0)
-    for a, x, y in permutations("WPC"):
-        if x > y:  # пара {x, y} без порядка; итого 3 равновероятных типа A
-            continue
-        if "W" in (x, y):
-            cases = [(x if y == "W" else y, "W", F(1))]
-        else:  # оба неисправны
-            cases = [("C", "P", r), ("P", "C", 1 - r)]
-        for rej, keep, w in cases:
-            w *= F(1, 3)
-            keep_batt += w * GOOD_BATT[keep]
-            rej_batt += w * GOOD_BATT[rej]
-            keep_light += w * GOOD_BULB[a] * GOOD_BATT[keep]
-            rej_light += w * GOOD_BULB[a] * GOOD_BATT[rej]
-    return keep_batt, rej_batt, keep_light, rej_light
+def outcomes(order, lamp_life=1.0, battery_life=2.0):
+    lives = {'W': (3600.0, 3600.0),
+             'L': (lamp_life, 3600.0),
+             'B': (3600.0, battery_life)}
+    a, x, y = order
+    tx, ty = min(lives[x]), min(lives[y])
+    stop = min(tx, ty)
+    assert tx != ty
+    dead, live = (x, y) if tx < ty else (y, x)
+    battery_dead = lives[dead][1] - stop
+    battery_live = lives[live][1] - stop
+    good_dead = battery_dead >= 60
+    good_live = battery_live >= 60
+    success_dead = min(lives[a][0], battery_dead) >= 60
+    success_live = min(lives[a][0], battery_live) >= 60
+    return (good_dead, good_live, success_dead, success_live), stop
 
 
-if __name__ == "__main__":
-    for r in (F(1, 2), F(3, 4), F(1)):
-        kb, rb, kl, rl = run(r)
-        assert (kb, rb, kl, rl) == (1 - r / 3, (1 + r) / 3, (2 - r) / 3, (1 + r) / 3)
-        print(f"r={r}: батарейка исправна: оставленный {kb}, брак {rb}; "
-              f"ваш фонарик светит: с батарейкой оставленного {kl}, брака {rl}")
-    # Лемма границы: Success_X = E[лампа A]*Q_X + Cov(лампа A, батарейка X); E[лампа A] = 2/3.
-    for r in (F(1, 4), F(1, 2), F(3, 4), F(1)):
-        kb, rb, kl, rl = run(r)
-        assert kl - F(2, 3) * kb == -r / 9 and rl - F(2, 3) * rb == (1 + r) / 9
-    # Рычаг правдоподобия x «лучшая деталь»: правило мастера при двух неисправных переворачивает выбор.
-    lo, hi = run(F(1, 4)), run(F(3, 4))
-    assert lo[0] > lo[1] and hi[0] > hi[1]          # оставленная батарейка надёжнее у обоих мастеров
-    assert lo[2] > lo[3] and hi[2] < hi[3]          # но лучший донор противоположный
-    print(f"r=1/4: батарейка {lo[0]} vs {lo[1]}, светит {lo[2]} vs {lo[3]}; "
-          f"r=3/4: батарейка {hi[0]} vs {hi[1]}, светит {hi[2]} vs {hi[3]}")
-    print("OK: формулы P3, лемма ковариации и разворот по правилу мастера подтверждены точно.")
+totals = [F(0)] * 4
+conditional = {}
+for order in permutations('WLB'):
+    values, stop = outcomes(order)
+    for i, value in enumerate(values):
+        totals[i] += F(int(value), 6)
+    group = conditional.setdefault(stop, [])
+    group.append(values)
+assert totals == [F(2, 3), F(2, 3), F(2, 3), F(1, 3)]
+print('Exact: quality(dead,live)=2/3,2/3; success(dead,live)=2/3,1/3.')
+for stop, rows in sorted(conditional.items()):
+    values = [sum(F(int(row[i]), len(rows)) for row in rows) for i in range(4)]
+    print(f'Given time={stop:g}s: quality(dead,live)={values[:2]}; success={values[2:]}.')
+assert [sum(F(int(row[i]), len(conditional[1])) for row in conditional[1])
+        for i in (2, 3)] == [F(1), F(1, 2)]
+assert all(not row[2] and not row[3] for row in conditional[2])
+
+rng = Random(20261015)
+n = 1_000_000
+counts = [0] * 4
+race_wins = 0
+for _ in range(n):
+    lamp_life = 2 * rng.random()
+    battery_life = 4 * rng.random()
+    race_wins += lamp_life < battery_life
+    a = rng.randrange(3)
+    order = [('W', 'L', 'B'), ('L', 'W', 'B'), ('B', 'W', 'L')][a]
+    values, _ = outcomes(order, lamp_life, battery_life)
+    for i, value in enumerate(values):
+        counts[i] += value
+expected = [F(7, 12), F(3, 4), F(7, 12), F(5, 12)]
+print(f'Continuous lifetimes: lamp U(0,2), battery U(0,4); {n} trials.')
+print(f'P(lamp fails earlier): MC={race_wins/n:.6f}; exact=3/4.')
+for name, count, probability in zip(('quality_dead', 'quality_live', 'success_dead', 'success_live'),
+                                   counts, expected):
+    estimate = count / n
+    tolerance = 5 * (float(probability*(1-probability)) / n)**0.5
+    assert abs(estimate-float(probability)) < tolerance
+    print(f'{name}: MC={estimate:.6f}, exact={probability}.')
+print('All checks passed. Analytic derivation is in rounds/r9-flashlight.md.')
