@@ -108,4 +108,12 @@ if __name__ == "__main__":
         got = (protected(3, pr, exch(3, coin_law(3, F(1, 2)))), win(3, pr, exch(3, coin_law(3, F(1, 2)))))
         assert got == tent(p0), (p0, got)
     print("Граница: потеря 0 при p0<=1/3, 9/8(p0-1/3) на [1/3,1/2], 3(1-p0)/8 на [1/2,1].")
+    # Общий q: потеря = (1+q) max(0, min((1-q)(p0-p), q p)).
+    for q in (F(1, 5), F(1, 3), F(1, 2), F(3, 4)):
+        for p0 in [F(j, 40) for j in range(0, 41, 2)]:
+            p = (1 - p0) / 2
+            pl = exch(3, coin_law(3, q))
+            loss = win(3, [p0, p, p], pl) - protected(3, [p0, p, p], pl)
+            assert loss == (1 + q) * max(0, min((1 - q) * (p0 - p), q * p))
+    print("Общий q: формула палатки подтверждена при q=1/5, 1/3, 1/2, 3/4.")
     print("ALL OK")
