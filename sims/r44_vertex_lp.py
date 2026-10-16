@@ -47,6 +47,8 @@ def solve_lp(pi, c=1.0, dT=0.0, dN=0.0):
     if c >= 1:                               # одиночные сообщения допустимы только без потолка
         for t in range(n):
             full = np.zeros(n); full[t] = 1; cand.append(([t], full, 0.0))
+    if not cand:
+        return None
     A = np.array([cd[1] for cd in cand]).T; obj = -np.array([cd[2] for cd in cand])
     res = linprog(obj, A_eq=A, b_eq=pi, bounds=(0, None), method="highs")
     if res.status != 0:
