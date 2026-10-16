@@ -201,7 +201,7 @@ if __name__ == "__main__":
     # код (N=5, k=3): машина c -> {0, c, следующая по кругу}; машина у вас -> {0, 1, 3}
     code = [{frozenset((0, 1, 3)): F(1)}] + [{frozenset((0, c, c % 4 + 1)): F(1)} for c in range(1, 5)]
     uni5 = [{S: F(1, len(o)) for S in o} for o in (protected_options(5, 3, c) for c in range(5))]
-    half = [{S: uni5[c].get(S, 0) / 2 + code[c].get(S, 0) / 2 for S in set(uni5[c]) | set(code[c])} for c in range(5)]
+    half = [{S: uni5[c].get(S, F(0)) / 2 + code[c].get(S, F(0)) / 2 for S in set(uni5[c]) | set(code[c])} for c in range(5)]
     assert (protected_rent(5, uni5), protected_rent(5, code), protected_rent(5, half)) == (F(2, 15), F(2, 3), F(16, 45))
     print("Влияние на ведущего: равномерный — минимум; код до 2/3; половина сотрудничества 16/45 < линейной 2/5.")
     print("ALL OK")
