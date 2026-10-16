@@ -1,0 +1,16 @@
+[
+ {
+  "type": "started",
+  "key": "v2:e04a96cb57660eb21ab8e737a6b880e6170dd718ce85ec3dd8e2420a1e23c10f",
+  "agentId": "a3d2f205dcb9195e2",
+  "label": "explore:structure",
+  "phase": "Explore"
+ },
+ {
+  "type": "started",
+  "key": "v2:268c4aa1e7ea59300ab4684b7d495dddaaa54d438710344a2f7d1fd869184825",
+  "agentId": "a98839b3b4947bb7f",
+  "label": "explore:robust",
+  "phase": "Explore"
+ }
+]
