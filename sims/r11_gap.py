@@ -73,4 +73,26 @@ if __name__ == "__main__":
     ex = {r: gain([r / (2 + r), 1 / (2 + r), 1 / (2 + r)], [a, 1 - a], [b, 1 - b], [1, 2]) for r in (F(1, 2), F(1), F(2))}
     assert ex == {F(1, 2): F(9, 320), F(1): 0, F(2): F(21, 256)}
     print("Бинарный тест 3/4|1/4: ноль только при r<=1/9, r=1, r>=9; пример r=1/2, 1, 2:", ex[F(1, 2)], ex[F(1)], ex[F(2)])
+    # Замкнутая формула из шести кусков (P13, п. 4).
+    def closed(n, a, b, r):
+        h, l, Q, p = a / b, (1 - a) / (1 - b), (1 - b) ** (n - 1), 1 / (n - 1 + r)
+        if r <= l / h:
+            return F(0)
+        if r <= l:
+            return Q * p * b * (r * h - l)
+        if r <= 1:
+            return Q * p * (1 - a) * (1 - r)
+        if r <= h:
+            return (1 - Q) * p * a * (r - 1)
+        if r <= h / l:
+            return (1 - Q) * p * (1 - b) * (h - r * l)
+        return F(0)
+    k = 0
+    for a, b in ((F(3, 4), F(1, 4)), (F(2, 3), F(1, 5)), (F(9, 10), F(1, 2)), (F(3, 5), F(2, 5))):
+        for n in (3, 4):
+            for r in [F(j, 8) for j in range(1, 100)]:
+                p = 1 / (n - 1 + r)
+                assert gain([r * p] + [p] * (n - 1), [a, 1 - a], [b, 1 - b], list(range(1, n))) == closed(n, a, b, r)
+                k += 1
+    print(f"Формула из шести кусков: {k} точных совпадений.")
     print("ALL OK")
