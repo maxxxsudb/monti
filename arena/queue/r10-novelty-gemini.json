@@ -1,0 +1,35 @@
+{
+ "id": "r10-novelty-gemini",
+ "text": {
+  "value": "Please give your own expert assessment (from your knowledge; no need to search the web) of whether the following results contain SCIENTIFIC NOVELTY. If any of it is known, name the specific paper, book, puzzle or author where the SAME result (not just the general principle) appears.\n\nSetting: n options, exactly one target, equal priors. Each option can be given one test; results are conditionally i.i.d. given the target location, with outcome law g1 at the target and g0 elsewhere; l(x) = g1(x)/g0(x) is the likelihood ratio (an untested option has l = 1).\n\n(1) Forced choice of one option: P(correct) = (1/n) E_0[max_i l_i]. The LAST test (all other options already tested) has zero value IF AND ONLY IF l takes at most two values (an effectively binary test); with three or more values it is strictly valuable for every n >= 2. The same zero holds for any rank-only objective (pick k of n, any ranking reward).\n\n(2) With a walk-away option (+1 correct, -2 wrong, 0 walk away) that same last binary test becomes strictly valuable whenever playing is ever profitable; for a test that never errs on the target and misses a non-target with probability q <= 1/2, it multiplies the expected payoff exactly by n.\n\n(3) Monty Hall form (\"coin Monty\"): the host knows where the car is; over every goat door he flips a coin and opens it on heads, never opening the car. Allowing him to open YOUR door too changes nothing under forced choice (win probability (1+q+q^2)/3 for 3 doors both ways, 7/12 at q=1/2), whereas in classic Monty Hall protecting your door is exactly what creates 2/3 vs 1/2. With the walk-away option, the host's access to your door triples the expected payoff (1/12 -> 1/4).\n\nQuestion: Is there scientific novelty here (in (1), (2), (3) separately)? Answer for each: NOVEL / KNOWN (with exact source) / PARTLY KNOWN (what is known, what is new). Then give an overall verdict in one line: \"Scientific novelty: YES\" or \"Scientific novelty: NO\". Be strict: the general value-of-information principle alone does not make the exact statement known.\n",
+  "PSPath": "C:\\proj\\montihol\\arena\\r10-novelty-prompt.txt",
+  "PSParentPath": "C:\\proj\\montihol\\arena",
+  "PSChildName": "r10-novelty-prompt.txt",
+  "PSDrive": {
+   "CurrentLocation": "proj\\montihol\\arena",
+   "Name": "C",
+   "Provider": "Microsoft.PowerShell.Core\\FileSystem",
+   "Root": "C:\\",
+   "Description": "BOOTCAMP",
+   "MaximumSize": null,
+   "Credential": "System.Management.Automation.PSCredential",
+   "DisplayRoot": null
+  },
+  "PSProvider": {
+   "ImplementingType": "Microsoft.PowerShell.Commands.FileSystemProvider",
+   "HelpFile": "System.Management.Automation.dll-Help.xml",
+   "Name": "FileSystem",
+   "PSSnapIn": "Microsoft.PowerShell.Core",
+   "ModuleName": "Microsoft.PowerShell.Core",
+   "Module": null,
+   "Description": "",
+   "Capabilities": 52,
+   "Home": "C:\\Users\\MacProMax",
+   "Drives": "C"
+  },
+  "ReadCount": 1
+ },
+ "tag": "r10-novelty",
+ "target": "gemini",
+ "created": 1792132789.7018545
+}
