@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-19",
+  "item": "host-type item (R49): three doors, prize uniform, subject chose A; host opened B and B is empty; host is informed with probability alpha, otherwise uninformed; informed host always opens B when B is empty, else C; uninformed host opens B or C uniformly even if the prize is there",
+  "question_main": "P(host was informed | observed empty B)",
+  "model": "DSH subagent, reported by the harness as deepseek-flash; exact version and decoding settings not exposed",
+  "protocol": "each row is an independent clean context; the participant was told not to use tools, not to read files and not to search; no key or neighbouring variant was shown",
+  "caveats": [
+    "repeated calls of one model are not independent people",
+    "self-reported 'first instinct' is not a direct observation of the first internal answer",
+    "all-correct results are a ceiling check for this model, not a human measurement"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "condition": "host-type Q1+Q2",
+      "N": 3,
+      "alpha": "1/2",
+      "question": "P(prize C), P(host informed)",
+      "expected_correct": ["1/2", "2/3"],
+      "observed": ["1/2", "2/3"],
+      "coding": "correct",
+      "note": "explanation uses likelihoods 2/3 and 1/3"
+    },
+    {
+      "id": 2,
+      "condition": "price ticket",
+      "N": 3,
+      "alpha": "1/2",
+      "question": "buy a ticket paying 100 iff host informed, price 60",
+      "expected_correct": "buy",
+      "observed": "buy",
+      "coding": "correct",
+      "note": "expected value 100*2/3-60 = +20/3"
+    },
+    {
+      "id": 3,
+      "condition": "five-door transfer Q1+Q2",
+      "N": 5,
+      "alpha": "1/2",
+      "question": "P(prize C), P(host informed)",
+      "expected_correct": ["1/4", "4/5"],
+      "observed": ["1/4", "4/5"],
+      "coding": "correct",
+      "note": "likelihoods 4/5 and 1/5"
+    },
+    {
+      "id": 4,
+      "condition": "classical informed host, prize question",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C)",
+      "expected_correct": "2/3",
+      "observed": "2/3",
+      "coding": "correct",
+      "note": "control for the classic Monty answer"
+    },
+    {
+      "id": 5,
+      "condition": "classical random host, prize question",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C)",
+      "expected_correct": "1/2",
+      "observed": "1/2",
+      "coding": "correct",
+      "note": "control for the random-host answer"
+    },
+    {
+      "id": 6,
+      "condition": "classical informed host, ticket",
+      "N": 3,
+      "alpha": null,
+      "question": "buy ticket on C at 60, pays 100",
+      "expected_correct": "buy",
+      "observed": "buy",
+      "coding": "correct",
+      "note": "control for the price calculation"
+    },
+    {
+      "id": 7,
+      "condition": "classical random host, ticket",
+      "N": 3,
+      "alpha": null,
+      "question": "buy ticket on C at 60, pays 100",
+      "expected_correct": "refuse",
+      "observed": "refuse",
+      "coding": "correct",
+      "note": "control for the price calculation"
+    },
+    {
+      "id": 8,
+      "condition": "host-type Q2, first-instinct instruction",
+      "N": 3,
+      "alpha": "1/3",
+      "question": "P(host informed), one line, no analysis",
+      "expected_correct": "1/2",
+      "observed": "1/2",
+      "coding": "ambiguous_collision",
+      "note": "at alpha=1/3 the correct answer 1/2 coincides with the equal-split answer; the answer alone cannot separate correct from equal"
+    },
+    {
+      "id": 9,
+      "condition": "classical informed host, prize question, first-instinct instruction",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C), one line, no analysis",
+      "expected_correct": "2/3",
+      "observed": "2/3",
+      "coding": "correct",
+      "note": "self-report, not a direct observation of the first internal answer"
+    },
+    {
+      "id": 10,
+      "condition": "host-type Q2 alone",
+      "N": 3,
+      "alpha": "1/3",
+      "question": "P(host informed)",
+      "expected_correct": "1/2",
+      "observed": "1/2",
+      "coding": "correct",
+      "note": "full reasoning; explanation is the exact likelihood update"
+    },
+    {
+      "id": 11,
+      "condition": "host-type Q2 alone",
+      "N": 3,
+      "alpha": "1/2",
+      "question": "P(host informed)",
+      "expected_correct": "2/3",
+      "observed": "2/3",
+      "coding": "correct",
+      "note": "full reasoning"
+    },
+    {
+      "id": 12,
+      "condition": "host question first, then prize question",
+      "N": 3,
+      "alpha": "1/3",
+      "question": "P(host informed), P(prize C)",
+      "expected_correct": ["1/2", "1/2"],
+      "observed": ["1/2", "1/2"],
+      "coding": "correct",
+      "note": "reverse order; no order effect observed in this call"
+    },
+    {
+      "id": 13,
+      "condition": "host question first, then prize question",
+      "N": 3,
+      "alpha": "1/2",
+      "question": "P(host informed), P(prize C)",
+      "expected_correct": ["2/3", "1/2"],
+      "observed": ["2/3", "1/2"],
+      "coding": "correct",
+      "note": "reverse order; no order effect observed in this call"
+    },
+    {
+      "id": 14,
+      "condition": "missing protocol, minimal",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C), no host rule given; 'insufficient' allowed",
+      "expected_correct": "insufficient; 2/3 under informed, 1/2 under random",
+      "observed": "insufficient; names both rules",
+      "coding": "correct",
+      "note": "negative control: the participant notices the missing condition"
+    },
+    {
+      "id": 15,
+      "condition": "missing protocol, story framing",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C), no host rule given; 'insufficient' allowed",
+      "expected_correct": "insufficient; 2/3 under informed, 1/2 under random",
+      "observed": "insufficient; names both rules",
+      "coding": "correct",
+      "note": "negative control; wording is unambiguous"
+    },
+    {
+      "id": 16,
+      "condition": "two host types, unknown prior",
+      "N": 3,
+      "alpha": "unknown",
+      "question": "P(prize C), prior on host type unknown",
+      "expected_correct": "range 1/2 to 2/3, depends on prior",
+      "observed": "range 1/2 to 2/3; formula (1+p)/(2+p)",
+      "coding": "correct",
+      "note": "the participant can express underdetermination as a range"
+    },
+    {
+      "id": 17,
+      "condition": "missing protocol, informed control",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C), informed rule given; 'insufficient' allowed",
+      "expected_correct": "2/3",
+      "observed": "2/3",
+      "coding": "correct",
+      "note": "control: the invitation to say 'insufficient' does not make the participant refuse"
+    },
+    {
+      "id": 18,
+      "condition": "missing protocol, random control",
+      "N": 3,
+      "alpha": null,
+      "question": "P(prize C), random rule given; 'insufficient' allowed",
+      "expected_correct": "1/2",
+      "observed": "1/2",
+      "coding": "correct",
+      "note": "control"
+    },
+    {
+      "id": 19,
+      "condition": "host-type Q2",
+      "N": 3,
+      "alpha": "1/4",
+      "question": "P(host informed)",
+      "expected_correct": "2/5",
+      "observed": "2/5",
+      "coding": "correct",
+      "note": "separating prior: correct 2/5, prior 1/4, equal 1/2, classic 2/3"
+    },
+    {
+      "id": 20,
+      "condition": "host-type Q2",
+      "N": 3,
+      "alpha": "1/4",
+      "question": "P(host informed); 'insufficient' allowed",
+      "expected_correct": "2/5",
+      "observed": "2/5",
+      "coding": "correct",
+      "note": "separating prior, second call"
+    },
+    {
+      "id": 21,
+      "condition": "host-type Q2",
+      "N": 3,
+      "alpha": "2/5",
+      "question": "P(host informed)",
+      "expected_correct": "4/7",
+      "observed": "4/7",
+      "coding": "correct",
+      "note": "larger correct-prior gap"
+    },
+    {
+      "id": 22,
+      "condition": "host-type Q2, recommended near-optimal prior",
+      "N": 3,
+      "alpha": "2/9",
+      "question": "P(host informed)",
+      "expected_correct": "4/11",
+      "observed": "4/11",
+      "coding": "correct",
+      "note": "one-question design: 4/11 correct, 2/9 prior, 1/2 equal, 2/3 classic"
+    }
+  ]
+}
