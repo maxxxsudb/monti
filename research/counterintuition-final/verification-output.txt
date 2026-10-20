@@ -1,0 +1,26 @@
+n=1: free-k=0, common-k=0, W/B-common-k=0
+n=2: free-k=1/6, common-k=1/6, W/B-common-k=0
+n=3: free-k=1/4, common-k=1/4, W/B-common-k=1/4
+n=4: free-k=5/14, common-k=24/77, W/B-common-k=24/77
+n=5: free-k=9/22, common-k=9/22, W/B-common-k=9/22
+Exact ordered-path checks: 210
+Five-ticket probabilities, noise threshold, hidden protocol and rare-event cost: PASS
+Covariance and structural criterion: 676 exact cases PASS
+Five intervention profiles: minimum=3; IZ,IR,IZ+IR separates all
+TV scaling, pointwise witness and Lipschitz counterexamples: PASS
+Parity finite check n=2: cross=1/6, same=1/6
+Parity finite check n=3: cross=1/4, same=1/4
+Parity finite check n=4: cross=5/14, same=24/77
+Parity finite check n=5: cross=9/22, same=9/22
+Parity finite check n=6: cross=19/42, same=40/91
+Parity finite check n=7: cross=17/36, same=17/36
+Parity finite check n=8: cross=69/142, same=55/114
+Parity finite check n=9: cross=125/254, same=125/254
+Parity finite check n=10: cross=251/506, same=209/422
+Parity finite check n=11: cross=461/926, same=461/926
+Parity finite check n=12: cross=923/1850, same=791/1586
+Both Q1 models, full menu, cost 0 : 1/10, 1/10, 11/500, 29/2500, 203/50000
+Both Q1 models, full menu, cost 1/20 : 3/20, 3/20, 197/1500, 5483/45000, 27307/225000
+Both Q1 models, full menu, cost 1/10 : 1/5, 1/5, 1/5, 1/5, 1/5
+Without identifier: Q1-new [Fraction(17, 40), Fraction(117, 400), Fraction(117, 400), Fraction(117, 400), Fraction(117, 400)] ; Q1-r64 [Fraction(13, 20), Fraction(13, 25), Fraction(13, 25), Fraction(13, 25), Fraction(13, 25)]
+ALL CHECKS PASSED; finite checks do not replace general proofs
