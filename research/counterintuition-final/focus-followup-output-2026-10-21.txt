@@ -1,0 +1,14 @@
+CHESTS factorization and full focus criterion: 34220 triples PASS; first= (4, 3, 2)
+CORRECT TABLE (5, 4, 2) posterior= 2/5 own= 3/5 other= 16/25 gap= -1/25
+CORRECT TABLE (5, 4, 3) posterior= 2/5 own= 4/5 other= 18/25 gap= 2/25
+CORRECT TABLE (6, 4, 3) posterior= 8/17 own= 21/34 other= 10/17 gap= 1/34
+CORRECT TABLE (6, 5, 3) posterior= 5/14 own= 19/28 other= 5/7 gap= -1/28
+CORRECT TABLE (6, 5, 4) posterior= 5/13 own= 11/13 other= 10/13 gap= 1/13
+VOI first colour given G2= 1/30 ; both colours= 1/16
+N2 count Chernoff counterexample: actual= 0.04401020724924025 >beta/4=0.0125
+R1 original five-class model: minimum probes and strict improvement region PASS
+R3 smooth rounded tent eta= 1/8 formula proxy <= 8.375 but KL lower-bound denominator <=8eta^2= 0.125
+R3 smooth rounded tent eta= 1/16 formula proxy <= 16.3125 but KL lower-bound denominator <=8eta^2= 0.03125
+R3 smooth rounded tent eta= 1/32 formula proxy <= 32.28125 but KL lower-bound denominator <=8eta^2= 0.0078125
+R3 smooth rounded tent eta= 1/64 formula proxy <= 64.265625 but KL lower-bound denominator <=8eta^2= 0.001953125
+PASS; symbolic proofs and uniform/nonuniform qualifications are in the review

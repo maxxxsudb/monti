@@ -1,0 +1,17 @@
+Exact rational minimax catalogue fit: PASS
+BUDGET eta=1/5 beta=1/20 omega= 1/5 M= 16 K= 7 train_each= 8372 confirm_each= 2773 screen= flat total= 184303 pure_halving_total= 7552811
+  certified block success >= 0.8528911214344673 vote-error bounds= 0.0004580467939376831 0.011284060836536484
+BUDGET eta=1/5 beta=1/20 omega= 1/50 M= 128 K= 9 train_each= 8372 confirm_each= 2773 screen= flat total= 1967001 pure_halving_total= 130726311
+  certified block success >= 0.8126799121389132 vote-error bounds= 9.706834680400789e-05 0.01482723672942296
+BUDGET eta=1/5 beta=1/20 omega= 1/5000 M= 16384 K= 7 train_each= 8372 confirm_each= 2773 screen= flat total= 302132719 pure_halving_total= 22659658371
+  certified block success >= 0.8457394108260672 vote-error bounds= 0.0004580467939376831 0.013383361274347463
+SYNTHETIC flat NULL CATALOG votes= 0 / 7 logical Bernoulli responses= 184303
+SYNTHETIC flat WIDE_UNKNOWN UNKNOWN votes= 7 / 7 logical Bernoulli responses= 184303
+SYNTHETIC halving NULL CATALOG votes= 0 / 7 logical Bernoulli responses= 7552811
+SYNTHETIC halving WIDE_UNKNOWN UNKNOWN votes= 7 / 7 logical Bernoulli responses= 7552811
+BALANCED optimal nodes / balanced a= 0.36345502018349585 train_each= 3451 M= 19 validation_each= 955 total= 28498
+BALANCED optimal nodes / ratio 3/8 a= 0.375 train_each= 3242 M= 19 validation_each= 990 total= 28536
+BALANCED rational nodes / ratio 3/8 a= 0.375 train_each= 3721 M= 19 validation_each= 990 total= 29973
+SYNTHETIC balanced NULL CATALOG logical responses= 29973
+SYNTHETIC balanced WIDE_UNKNOWN UNKNOWN logical responses= 29973
+PASS; synthetic runs check execution, not the uniform error theorem
