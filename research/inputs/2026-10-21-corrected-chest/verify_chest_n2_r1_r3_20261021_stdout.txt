@@ -1,0 +1,41 @@
+CHEST: exact identity verified by symbolic expansion.
+       D = (a+b-n)/2 * [(a+b)(2n-a-b)-(2n-1)(a-b)^2]
+CHEST: full exhaustive comparison of original and compact criteria, n=3..40
+ n= 3  good= []
+ n= 4  good= [(3, 2)]
+ n= 5  good= [(4, 3)]
+ n= 6  good= [(4, 3), (5, 4)]
+ n= 7  good= [(5, 4), (6, 5)]
+ n= 8  good= [(5, 4), (6, 5), (7, 6)]
+ n= 9  good= [(6, 4), (6, 5), (7, 5), (7, 6), (8, 7)]
+ n= 10  good= [(6, 5), (7, 5), (7, 6), (8, 6), (8, 7), (9, 8)]
+CHEST: disputed individual cases (posterior A, own next G, other next G, gain)
+ (4, 3, 2): 3/7, 5/7, 9/14, gain=1/14
+ (5, 4, 2): 2/5, 3/5, 16/25, gain=-1/25
+ (5, 4, 3): 2/5, 4/5, 18/25, gain=2/25
+ (6, 4, 3): 8/17, 21/34, 10/17, gain=1/34
+ (6, 5, 3): 5/14, 19/28, 5/7, gain=-1/28
+ (6, 5, 4): 5/13, 11/13, 10/13, gain=1/13
+CHEST: conditional value of observing first color given G2:  1/30
+R1: verify five-class N=HEALTHY profiles and pairwise minimum distances
+ gamma=0.90, eps=0.10: 2-probe gap=0.010000, 3-probe gap=0.710000
+ gamma=0.70, eps=0.49: 2-probe gap=0.147000, 3-probe gap=0.147000
+ gamma=1.00, eps=0.00: 2-probe gap=0.000000, 3-probe gap=1.000000
+ gamma=1.00, eps=0.30: 2-probe gap=0.000000, 3-probe gap=0.700000
+ gamma=0.80, eps=0.70: 2-probe gap=0.100000, 3-probe gap=0.100000
+ gamma=0.50, eps=0.20: 2-probe gap=0.100000, 3-probe gap=0.100000
+R1: all 210 parameter pairs passed both exact separation formulas.
+R3: exact McShane-Whitney envelopes for p0(x)=x, L=1 and S={0,1}
+R3: envelopes collapse to identity (exact noiseless theorem).
+N2: constructive PAC-group certificate (median elimination itself is a theorem):
+ eta=0.2 omega=0.05 beta=0.05: group_size=40, groups=53, confirm_repeats_per_group=2952
+ prob_detect_per_group>=0.739288, upper_H1_vote_error=0.0023125, upper_H0_vote_error=0.0000000
+N2: this checks the voting arithmetic, not a simulated empirical error rate.
+ALL INDEPENDENT CHECKS COMPLETED.
+R3: constructive C^1 oscillatory reference, uniform-integral-formula counterexample
+    p0=1/2 + box-average[dist(x, (1/K) Z)] with radius delta=1/(100 K^3).
+    Slope |p0prime|=1 off at most 4 K delta of [0,1].
+    Each of K-1 interior minima supports a disjoint eta-height alternative.
+ K= 10: eta=0.010000, integral/eta <= 0.040000, proposed grid surrogate <= 1.040000, actual disjoint alternatives >= 9
+ K= 30: eta=0.003333, integral/eta <= 0.013333, proposed grid surrogate <= 1.013333, actual disjoint alternatives >= 29
+ K=100: eta=0.001000, integral/eta <= 0.004000, proposed grid surrogate <= 1.004000, actual disjoint alternatives >= 99

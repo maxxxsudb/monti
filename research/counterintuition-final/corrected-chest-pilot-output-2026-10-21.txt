@@ -1,0 +1,10 @@
+PASS chest identity and criterion: 9880 exact triples
+PASS R1 counterexample to mandatory third probe: gamma=4/5 eps=0, IZ/IZR gap=4/25
+PASS noisy-envelope example: identity endpoints +/-1/50 certify sup-error <=1/50
+PASS pilot answer key: original own=.80 other=.72; returned own=.68 other=.72
+Exact one-sided tail for 9/20 against p<=.25: 22498848881/549755813888 0.04092516770651855
+Illustrative only, NOT data: 4 /20; 95% exact interval= (0.05733399705003275, 0.4366140029966683)
+Illustrative only, NOT data: 9 /20; 95% exact interval= (0.2305778967759241, 0.6847218669594515)
+Illustrative only, NOT data: 10 /20; 95% exact interval= (0.2719578495607917, 0.7280421504392081)
+Illustrative only, NOT data: 12 /20; 95% exact interval= (0.36054258730748967, 0.8088099392746928)
+Pilot packet: 20 A / 20 B; no participants contacted, no answers fabricated.
