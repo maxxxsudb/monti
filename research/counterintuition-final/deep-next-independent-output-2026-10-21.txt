@@ -1,0 +1,9 @@
+PASS exact Q(sqrt(2)): endpoint balance, minimum, derivative, endpoint x=1
+optimal points: 0 0.58578643762690495119831127579030192143032812 gap: 0.136454928592147747134418167475967660641686224
+relative gap increase vs 2/15: 2.34119644411081035081362560697574548126466800 %
+PASS rational battery {0,3/5}: weights= 35/44 gap= 3/22
+relative gap loss vs optimum: 0.066902844370135032681216612462779675372585200 %
+PASS exact controls A B C D: ['2/3', '2/3', '4/5', '1/2']
+PASS exact latent model: covariance= 104/4125 learning= 7/100
+Proof of global optimality uses convexity; no source NumPy/SciPy script executed.
+No human data, no universal causal diagnosis or optimal sampling-cost claim.
