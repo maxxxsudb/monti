@@ -1,0 +1,11 @@
+repair profile N 1,1,1
+repair profile L 9/10,1/10,1/10
+repair profile W 1/10,9/10,1/10
+repair profile E 1/10,1/10,9/10
+repair profile LW 9/100,9/100,1/100
+Repair threshold and matching L/W channels for every intervention subset: PASS
+Boundary interval invariants under bounded estimation errors: 756 PASS
+Own conservative budget example: stages= 4 counts= [3309, 11814, 41576, 143591] total= 200290
+Disjoint Bernoulli UNKNOWN tents: 5 PASS
+Lamp posteriors, event frequency and general reversal condition: PASS
+PASS; these finite checks supplement the proofs, not the missing source runs
