@@ -1,0 +1,32 @@
+DESIGN [0.0,1.0] nodes=[0.0, 0.41421356237309515, 1.0]
+  coefficient inverse row sums=[11.65685424949238, 6.000000000000002, 6.000000000000002], OPT=2/(sqrt(1+hi)-sqrt(1+lo))^2=11.656854249492, optimized=11.656854249774
+  prediction sup Lebesgue=1.244453127477, optimized sampled=1.244453133650, numerical optimizer nodes=[np.float64(2.3829953854420763e-07), np.float64(0.41421348395663987), np.float64(0.9999992965896103)]
+DESIGN [0.1,0.9] nodes=[0.1, 0.4456832294800961, 0.9]
+  coefficient inverse row sums=[18.410520184250597, 12.627787266330223, 13.456260674621499], OPT=2/(sqrt(1+hi)-sqrt(1+lo))^2=18.410520184251, optimized=18.410520185241
+  prediction sup Lebesgue=2.656946816583, optimized sampled=2.656946820053, numerical optimizer nodes=[np.float64(0.10000000003106155), np.float64(0.44568250415062), np.float64(0.899999998449171)]
+BASELINE nodes=[0,.25,.5], coefficient norm= 45.99999999999997  prediction norm= 11.0
+CONSTRAINED prediction exact 1+0.09*coefnorm= 2.656946816582556
+EXACT-EXAMPLE 0 p= 1/6 decimal= 0.16666666666666666
+EXACT-EXAMPLE 1/4 p= 491/1200 decimal= 0.4091666666666667
+EXACT-EXAMPLE 1/2 p= 71/120 decimal= 0.5916666666666667
+EXACT-EXAMPLE 1/5 p= 11/30 decimal= 0.36666666666666664
+EXACT-EXAMPLE 3/8 p= 2671/5280 decimal= 0.5058712121212121
+EXACT-EXAMPLE 3/4 p= 1243/1680 decimal= 0.7398809523809524
+SIMPLIFIED λ= ['1/4', '1/5', '1/10'] sum= 11/20
+ALLOCATION holdouts: [0.2, 0.375, 0.75] W: [[0.34477153, 0.77712362, -0.12189514], [0.04303178, 0.9934819, -0.03651368], [-0.1158086, 0.62447433, 0.49133426]]
+ALLOCATION minimax fractions= [0.1892054019068143, 0.5682088804209994, 0.24258571767218629] worst N*varianceproxy= 1.7523460477335995 equal= 2.9705737821330307
+ALLOCATION dual certificate pi= [0.4810793113418288, 0.12203421997710943, 0.3968864686810618] fractions= [0.18920826880004327, 0.568204562634491, 0.24258716856546572] primal individual objectives= [1.7523442387623696, 1.75234422096716, 1.7523442370637525] dual value= 1.752344235916587 gap= 2.8457824985395064e-09
+SYNTH-HOLDOUT alpha=0.2, predicted=0.3661636, truth=0.3666667, heldout_mean=0.3533333
+SYNTH-HOLDOUT alpha=0.375, predicted=0.5035046, truth=0.5058712, heldout_mean=0.5183333
+SYNTH-HOLDOUT alpha=0.75, predicted=0.7393458, truth=0.7398810, heldout_mean=0.7550000
+SYNTH fitted lambda= [0.28877291971095653, 0.176, 0.126] in simplex= True
+CONFIDENCE train n_each= 1500 beta= 0.05 Hoeffding radius= 0.03994784826404732 polytope feasible= True
+CONFIDENCE-HOLDOUT 0.2 prediction_band= (0.3164769, 0.4158504)
+CONFIDENCE-HOLDOUT 0.375 prediction_band= (0.4606395, 0.5463697)
+CONFIDENCE-HOLDOUT 0.75 prediction_band= (0.6901453, 0.7885462)
+UNKNOWN-GUARANTEE beta eta omega= 0.05 0.2 0.2 n_train_each= 7293 M_validation_points= 19 n_each_validation= 1547 total= 51272
+UNKNOWN-SYNTH-NULL fitted lambda= [0.0, 0.9839572192513368, 0.01604278074866318] max_validation_deviation= 0.025621437386143253 threshold= 0.125 decision= CATALOG
+ATTACK uniform interpolation upper K= 28.34467120181406 height H=32eta, feasible if eta<=1/128, omega<=0.05
+ATTACK-FAMILY count= 17 omega= 0.02 eta= 0.005 all match training nodes; each is UNKNOWN relative to every simplex function by anchor/interpolation lemma
+ATTACK-FAMILY grid catalogue audit min disagreement fraction= 0.03948025987006497 required omega= 0.02 (grid check only; universal guarantee is analytic)
+ALL CHECKS PASSED

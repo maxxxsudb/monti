@@ -1,0 +1,7 @@
+Python: bundled CPython 3.12.14 (Windows)
+SciPy: 1.18.1, installed in a temporary directory
+Command: bundled python -u research/inputs/2026-10-21-next-tasks/next_tasks_verified.py
+Environment: PYTHONIOENCODING=utf-8; PYTHONPATH points to temporary SciPy installation
+Source script unchanged; final exit code 0, ALL CHECKS PASSED.
+Numerical optimizer last digits differ from supplied stdout; synthetic examples and main values reproduce.
+Independent audit: python sims/next_tasks_independent_audit_20261021.py (standard library).

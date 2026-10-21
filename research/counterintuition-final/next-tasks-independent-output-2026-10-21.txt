@@ -1,0 +1,10 @@
+165 rational triples: coefficient-row identity and reproduction PASS
+Analytic-extrema prediction norm: 1.2444531321870854148211
+Analytic-extrema prediction norm: 2.6569468165825540170712
+Analytic-extrema prediction norm: 11.0
+84 grid triples: no contradiction to analytic global bound PASS
+RIGOROUS allocation optimum enclosure: 1.752344235916587 1.7523442454622362
+RIGOROUS allocation primal-dual gap < 9.545649192061341e-09
+UNKNOWN anchor bound: 12500/441 <31; budget: 51272
+NEW four-query contrast: catalogue identity and outside-family attack PASS
+PASS; rational interval bounds certify allocation; no empirical trap data
