@@ -1,0 +1,5 @@
+Contrast lower bound and squared-error identity: 625 exact cases PASS
+Three-probe inversion and held-out predictions: 286 simplex points PASS
+Two-probe ambiguity for simultaneous mixtures: PASS
+Two-probe interclass margin on a conservative finite subfamily: 1/60 PASS
+PASS; exact checks supplement the general proofs, not empirical validation
