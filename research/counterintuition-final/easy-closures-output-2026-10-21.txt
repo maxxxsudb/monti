@@ -1,0 +1,9 @@
+N2 CERTIFIED optimal nodes total= 24751 train_each= 3071 M= 17 validation_each= 914 a= 7434799/20000000 checked_nt= 7824
+N2 CERTIFIED rational nodes, exact norm total= 25082 train_each= 3136 M= 17 validation_each= 922 a= 7489459/20000000 checked_nt= 7919
+N2 CERTIFIED rational nodes, bound 4/3 total= 26074 train_each= 3308 M= 17 validation_each= 950 a= 1535029/4000000 checked_nt= 8208
+CHESTS GLOBAL conditional optimum= (Fraction(2, 25), (5, 4, 3)) ; original-trial optimum= (Fraction(1, 48), (4, 3, 2))
+  Finite enumeration below analytic cutoffs; beyond cutoffs monotone upper bounds prove exclusion
+GENERAL focus threshold for arbitrary supported removed colours PASS
+SYNTHETIC certified rational design NULL reject= False logical answers= 25082
+SYNTHETIC certified rational design UNKNOWN reject= True logical answers= 25082
+PASS; exact within the stated finite design, not a universal finite minimax claim
