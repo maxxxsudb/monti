@@ -1,0 +1,9 @@
+Coverage gap: wrong supremum 0 for band 1 is not rejected
+Coverage gap: wrong supremum 0 for band 4 is not rejected
+Coverage gap: wrong supremum 0 for band 5 is not rejected
+Positive control: wrong covariance identity is rejected
+Combined-intervention menu: IZ,IR,IZ+IR separates all five profiles
+Absolute TV counterexample remains valid: permitted success 1/5 > claimed 11/100
+The mimicry function still has Lipschitz constant 52/25, exceeding 2
+13122 = two priors times 81 by 81 strictly positive weight vectors
+PASS: audit findings reproduced; original source is unchanged
