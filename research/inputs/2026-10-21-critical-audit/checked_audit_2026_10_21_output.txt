@@ -1,0 +1,28 @@
+FIVE-CLASS SIGNALS:
+N (Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)) (1, 1, 1)
+L (Fraction(9, 10), Fraction(1, 10), Fraction(1, 10)) (1, 0, 0)
+W (Fraction(1, 10), Fraction(9, 10), Fraction(1, 10)) (0, 1, 0)
+E (Fraction(1, 10), Fraction(1, 10), Fraction(9, 10)) (0, 0, 1)
+LW (Fraction(9, 100), Fraction(9, 100), Fraction(1, 100)) (0, 0, 0)
+FIVE-CLASS 3-SINGLETON SIGNATURES: PASS
+CALIBRATED MINIMAX: EXACT: 14302950678331545473/334273295270405361113 = 0.042788194213
+Claimed 557/13000: 557/13000 = 0.042846153846
+Five exact risks: N=14302950678331545473/334273295270405361113, L=14302950678331545473/334273295270405361113, W=14302950678331545473/334273295270405361113, E=14302950678331545473/334273295270405361113, LW=14302950678331545473/334273295270405361113
+Exact primal and least-favorable-prior dual certificates: PASS
+GLOBAL BOX CHECK over all 1<=w_low<w_high<=n, 1<=k<=n; require both observed white likelihoods > 0
+n=3: max=1/4 | optimizers=[(2, 3, 2)] | PASS
+n=4: max=24/77 | optimizers=[(2, 4, 2)] | PASS
+n=5: max=9/22 | optimizers=[(3, 5, 3)] | PASS
+n=6: max=40/91 | optimizers=[(3, 6, 3)] | PASS
+n=7: max=17/36 | optimizers=[(4, 7, 4)] | PASS
+n=8: max=55/114 | optimizers=[(5, 8, 5)] | PASS
+n=10: max=209/422 | optimizers=[(6, 10, 6)] | PASS
+n=12: max=791/1586 | optimizers=[(7, 12, 7)] | PASS
+n=16: max=11439/22882 | optimizers=[(9, 16, 9)] | PASS
+n=22: max=646645/1293294 | optimizers=[(12, 22, 12)] | PASS
+GLOBAL BOX CHECK: ALL PASS for n=3..22
+even n=4 center=24/77 shift=3/10 winner=center
+even n=6 center=40/91 shift=7/16 winner=center
+even n=8 center=4760/9869 shift=55/114 winner=shift
+even n=10 center=63000/127259 shift=209/422 winner=shift
+even n=20 center=34134410024/68269743827 shift=167959/335922 winner=shift

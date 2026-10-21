@@ -1,0 +1,7 @@
+512 raw answer histories: probability normalization and feasible rule PASS
+All five risks: {'N': '14302950678331545473/334273295270405361113', 'L': '14302950678331545473/334273295270405361113', 'W': '14302950678331545473/334273295270405361113', 'E': '14302950678331545473/334273295270405361113', 'LW': '14302950678331545473/334273295270405361113'}
+Bayes lower bound = minimax rule upper bound = 14302950678331545473/334273295270405361113
+Percent: 4.278819421325
+Exact branch-difference identity, center deficit and crossover for m=2..40 PASS
+General-composition checks and extension to common-k F/W/B: 30105 PASS
+PASS; finite checks supplement the general proof
