@@ -1,0 +1,6 @@
+Python: bundled CPython 3.12.14, NumPy from bundled runtime, temporary SciPy 1.18.1.
+PYTHONIOENCODING=utf-8. OPENBLAS_NUM_THREADS=1 for verify_all_tasks_20261021.py.
+Both original scripts were executed unchanged; exit codes 0.
+Provided source files were archived byte-for-byte and SHA256-compared with Downloads.
+Independent exact audit: python sims/all_hard_audit_independent_20261021.py.
+A successful source-script run is not a proof of its mathematical claims; see ALL-HARD-PACKAGES-REVIEW-2026-10-21.md.

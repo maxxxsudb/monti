@@ -1,0 +1,32 @@
+N1 - matrix identity and certified node comparison
+  interval [0,1]: b*=0.414213562; rows=[11.656854  6.        6.      ]; formula_err=1.78e-15; max_sq_excess=0.00e+00
+  interval [0.1,0.9]: b*=0.445683229; rows=[18.41052  12.627787 13.456261]; formula_err=1.07e-14; max_sq_excess=0.00e+00
+  interval [0,0.5]: b*=0.224744871; rows=[39.595918 45.595918 35.696938]; formula_err=2.13e-14; max_sq_excess=0.00e+00
+  rational nodes (0.0, 0.25, 0.5): ||D^(-1)||_inf=46.000000000
+  rational nodes (0.0, 0.4, 1.0): ||D^(-1)||_inf=11.666666667
+  rational nodes (0.1, 0.45, 0.9): ||D^(-1)||_inf=18.412698413
+
+N2 - test the stated Hoeffding-level guarantee s_l at eta=.2
+  ell=1: n=155, exact Bernoulli failure=0.019257990, claimed bound=0.062500000, violated=False
+  ell=3: n=252, exact Bernoulli failure=0.005341730, claimed bound=0.006944444, violated=False
+  ell=5: n=298, exact Bernoulli failure=0.003031446, claimed bound=0.002500000, violated=True
+  ell=6: n=314, exact Bernoulli failure=0.002414177, claimed bound=0.001736111, violated=True
+  N2 plateaus measure = 4*omega; for omega=0.30 this equals 1.20 > 1 (construction impossible).
+
+R1 - true minimum separation of all five structural profiles
+  gamma=0.7 epsilon=0.49: enumerated=0.210000000 (L,E), claimed=0.000000000, corrected=0.210000000
+  gamma=0.6 epsilon=0.3: enumerated=0.210000000 (E,L+W), claimed=0.060000000, corrected=0.210000000
+  gamma=0.9 epsilon=0.1: enumerated=0.710000000 (E,L+W), claimed=0.710000000, corrected=0.710000000
+  fixed gamma=.9 epsilon=.1, two-probe signatures: {'N': (1, 1), 'L': (0.9, 0.1), 'W': (0.1, 0.9), 'E': (0.1, 0.1), 'L+W': (0.01, 0.01)} ; distinct= True
+  Structural independence demands L+W = (gamma*epsilon, gamma*epsilon, gamma**2), NOT (epsilon**2,epsilon**2,gamma**2)
+  REPAIRED gamma=0.7 epsilon=0.49: enumerated=0.147000000 (E,L+W); formula=0.147000000
+  REPAIRED gamma=0.6 epsilon=0.3: enumerated=0.120000000 (E,L+W); formula=0.120000000
+  REPAIRED gamma=0.9 epsilon=0.1: enumerated=0.710000000 (E,L+W); formula=0.710000000
+
+R3 - false L_eff equivalence
+  L=1 slope=0.9: sqrt(L^2-s^2)=0.4358899; L-|s|=0.1000000; ratio=4.359
+  L=1 slope=0.99: sqrt(L^2-s^2)=0.1410674; L-|s|=0.0100000; ratio=14.107
+  L=1 slope=0.9999: sqrt(L^2-s^2)=0.0141418; L-|s|=0.0001000; ratio=141.418
+
+R4 - independent exact fractions for both paradoxes
+  C1: 1/2 3/4 ; C2: 3/5 3/7

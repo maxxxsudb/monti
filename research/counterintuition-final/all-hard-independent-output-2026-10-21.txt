@@ -1,0 +1,15 @@
+N1 row norms and POSITIVE determinant: 165 rational triples PASS
+N1 squared-weight identity: exact POLYNOMIAL coefficients PASS
+N2 exact absolute-residual failure: 5 298 0.0030314459856494134 REFUTES claimed bound
+N2 exact absolute-residual failure: 6 314 0.0024141767793386445 REFUTES claimed bound
+R1 repaired formulas: 420 exact parameter/table cases PASS
+N2 corrected CONTINUOUS disjoint four-pair family: 30 supports PASS
+  Universal separation uses the quadratic root-count proof, not a catalogue grid
+C1 informed apples likelihoods and reserve enumeration PASS
+C2 SECOND_GOLD royal / own next / other next: 3/5 8/15 3/5
+C2 FIRST_GOLD_2 royal / own next / other next: 3/7 5/7 9/14
+NEW endpoint test: eta= 1/20 beta=1/20, total upper budget= 118
+NEW endpoint test: eta= 1/10 beta=1/20, total upper budget= 58
+NEW endpoint test: eta= 1/4 beta=1/20, total upper budget= 22
+  Exact rate Theta(eta^-1 log(1/beta)) follows from endpoint test and KL mixture bound
+PASS; proofs remain separate from finite checks; no human/model trap trials
