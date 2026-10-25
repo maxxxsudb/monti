@@ -1,0 +1,10 @@
+{
+  "n": 3,
+  "a": 2,
+  "b": 1,
+  "observation": "silver",
+  "observation_protocol": "one_uniform_draw_conditioned_on_color",
+  "returned": false,
+  "prior": "1/2",
+  "goal": "next_gold"
+}

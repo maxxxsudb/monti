@@ -4,18 +4,42 @@ import json
 from pathlib import Path
 
 
-def physical(n, a, b, returned):
+def physical(n, a, b, returned, color='silver', prior=F(1,2)):
     weight = own = other = F(0)
-    for chosen, untouched in ((a, b), (b, a)):
+    for chosen, untouched, type_mass in ((a, b, prior), (b, a, 1-prior)):
         for first in range(n):
-            if first < chosen:
+            if (first < chosen) != (color == 'gold'):
                 continue
-            mass = F(1, 2*n)
+            mass = type_mass/n
             rest = list(range(n)) if returned else [i for i in range(n) if i != first]
             weight += mass
             own += mass*F(sum(i < chosen for i in rest), len(rest))
             other += mass*F(untouched, n)
     return own/weight, other/weight
+
+
+def solve(task):
+    n,a,b = (task[k] for k in ('n','a','b'))
+    assert n>=2 and 0<=b<a<n and type(task['returned']) is bool
+    assert task['goal']=='next_gold' and task['observation'] in ('silver','gold')
+    assert task['observation_protocol']=='one_uniform_draw_conditioned_on_color'
+    prior = F(task['prior'])
+    assert 0<=prior<=1
+    gold = task['observation']=='gold'
+    la,lb = (F(a,n),F(b,n)) if gold else (F(n-a,n),F(n-b,n))
+    evidence = prior*la+(1-prior)*lb
+    assert evidence>0
+    pi = prior*la/evidence
+    removed = int(not task['returned'])
+    own = (pi*a+(1-pi)*b-int(gold)*removed)/(n-removed)
+    other = (pi*b+(1-pi)*a)/n
+    return {'own':str(own),'other':str(other),
+            'choice':'own' if own>other else 'other' if other>own else 'equal'}
+
+
+def shortcut(task, completion):
+    compressed = {k:v for k,v in task.items() if k!='returned'}
+    return solve(dict(compressed,returned=completion))
 
 
 def formula(n, a, b):
@@ -46,19 +70,40 @@ def main():
     print('PASS action threshold pi>1/5; gain over fair random choice=1/18.')
     print('PASS physical labeled-coin enumeration:', count, 'triples; maximum=',best,'winners=',winners)
     print('Global proof additionally uses decreasing tail bound (2n-3)/(2n(n-1)), n>=9.')
-    original = {'n':3,'a':2,'b':1,'observation':'silver','returned':False,
-                'prior':'1/2','goal':'next_gold'}
+    root = Path(__file__).resolve().parents[1]
+    original = json.loads((root/'research/candidates/single-silver-3.task.json').read_text(encoding='utf-8'))
     twin = dict(original,returned=True)
     assert [k for k in original if original[k] != twin[k]] == ['returned']
     compress = lambda task: {k:v for k,v in task.items() if k != 'returned'}
     assert compress(original) == compress(twin)
     print('PASS twin differs in exactly returned; compressed representations coincide.')
+    normative, control, predicted = solve(original),solve(twin),shortcut(original,True)
+    assert normative['choice']!=control['choice'] and predicted==control
+    for color in ('silver','gold'):
+        for returned in (False,True):
+            task = dict(original,observation=color,returned=returned)
+            exact = physical(task['n'],task['a'],task['b'],returned,color,F(task['prior']))
+            assert tuple(F(solve(task)[key]) for key in ('own','other'))==exact
+    cells=[]
+    for color in ('silver','gold'):
+        for returned in (False,True):
+            task=dict(original,observation=color,returned=returned)
+            cells.append({'color':color,'returned':returned,**solve(task)})
+    signs=(1,-1,-1,1)
+    assert [F(c['own'])-F(c['other']) for c in cells]==[F(s,9) for s in signs]
+    gap4=min(s*(physical(4,3,2,r,c)[0]-physical(4,3,2,r,c)[1])
+             for s,(c,r) in zip(signs,[(c,r) for c in ('silver','gold') for r in (False,True)]))
+    assert gap4==F(1,20)
+    print('PASS four-cell gaps +/-1/9; remaining one-cell maximizer has min gap=1/20.')
+    print('PASS completion True/False executed; normative JSON calculated from TaskSpec.')
     record = {'candidate_id':'single_silver_3', 'original':original, 'control':twin,
-              'normative':{'own':'2/3','other':'5/9','choice':'own'},
-              'shortcut':{'erase':'returned','complete_as':True,'choice':'other'},
-              'control_normative':{'own':'4/9','other':'5/9','choice':'other'},
-              'status':{'normative_proven':True,'structural_lure_certified':True,
-                        'behaviorally_validated':False},
+              'normative':normative,
+              'shortcut':{'erase':'returned','complete_as':True,'choice':predicted['choice']},
+              'competing_shortcut':{'erase':'returned','complete_as':False,'choice':shortcut(original,False)['choice']},
+              'control_normative':control, 'four_cells':cells,
+              'status':{'normative_proven':True,'representation_collision_proven':True,
+                        'shortcut_executable':True,'shortcut_prevalence_estimated':False,
+                        'self_check_failure_tested':False,'behaviorally_validated':False},
               'independent_check':'enumerate labeled physical draws; account for remaining coins',
               'scope':'fixed compression/completion hypothesis, not a human error probability'}
     out = Path(__file__).resolve().parents[1]/'research/candidates/single-silver-3.json'

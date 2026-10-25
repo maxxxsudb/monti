@@ -37,8 +37,11 @@
 `research/candidates/generated-2026-10-25/`, отчёт
 `research/results-2026-10-25/02-GENERATOR-RESULT.md`.
 Не перезаписывать стартовый образец. В отчёте — выполненные команды,
-ошибки и ограничения, варианты статусов normative_proven,
-structural_lure_certified, behaviorally_validated=false.
+ошибки и ограничения, статусы normative_proven,
+representation_collision_proven, shortcut_executable,
+shortcut_prevalence_estimated, self_check_failure_tested,
+behaviorally_validated=false. Не использовать прежний неоднозначный
+structural_lure_certified. Нормативный ключ и shortcut вычислять из TaskSpec.
 Если доступа к файлам нет, вернуть готовые тексты кода и карточек.
 
 Успех: автоматически воспроизводимые пары и конкретные ложные ответы.

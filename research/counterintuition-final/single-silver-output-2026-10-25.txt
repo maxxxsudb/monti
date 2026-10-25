@@ -2,4 +2,6 @@ PASS action threshold pi>1/5; gain over fair random choice=1/18.
 PASS physical labeled-coin enumeration: 84 triples; maximum= 1/9 winners= [(3, 2, 1), (4, 3, 2)]
 Global proof additionally uses decreasing tail bound (2n-3)/(2n(n-1)), n>=9.
 PASS twin differs in exactly returned; compressed representations coincide.
+PASS four-cell gaps +/-1/9; remaining one-cell maximizer has min gap=1/20.
+PASS completion True/False executed; normative JSON calculated from TaskSpec.
 Wrote certified candidate; no human data or model evaluation performed.
