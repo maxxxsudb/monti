@@ -1,0 +1,43 @@
+{
+  "candidate_id": "single_silver_3",
+  "original": {
+    "n": 3,
+    "a": 2,
+    "b": 1,
+    "observation": "silver",
+    "returned": false,
+    "prior": "1/2",
+    "goal": "next_gold"
+  },
+  "control": {
+    "n": 3,
+    "a": 2,
+    "b": 1,
+    "observation": "silver",
+    "returned": true,
+    "prior": "1/2",
+    "goal": "next_gold"
+  },
+  "normative": {
+    "own": "2/3",
+    "other": "5/9",
+    "choice": "own"
+  },
+  "shortcut": {
+    "erase": "returned",
+    "complete_as": true,
+    "choice": "other"
+  },
+  "control_normative": {
+    "own": "4/9",
+    "other": "5/9",
+    "choice": "other"
+  },
+  "status": {
+    "normative_proven": true,
+    "structural_lure_certified": true,
+    "behaviorally_validated": false
+  },
+  "independent_check": "enumerate labeled physical draws; account for remaining coins",
+  "scope": "fixed compression/completion hypothesis, not a human error probability"
+}

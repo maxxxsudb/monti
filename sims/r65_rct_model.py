@@ -1,49 +1,34 @@
-"""r65: minimal relational-composition model.
+"""Explicit local facts and entailed answers; no fabricated cognitive profiles."""
+def query(facts, relation, subject=None, object_=None):
+    assert (subject is None) != (object_ is None)
+    return {o if subject is not None else s for r,s,o in facts
+            if r == relation and (subject is None or s == subject)
+            and (object_ is None or o == object_)}
 
-Checks the countermodel for the invalid inference
-produce(x,y) & drink(z,y) => drink(x,y), and prints the predicted profiles
-for correct / association / role-misbinding / ignorance.
-"""
-import sys
-
-sys.dont_write_bytecode = True
-
-ENTITIES = ("cow", "human", "milk", "water", "yak", "cat")
-
+BASE = {('produce','cow','milk'), ('drink','human','milk'), ('drink','cow','water')}
+CASES = [
+    ('Q1',BASE,('drink','cow',None),{'water'}),
+    ('Q2',BASE,('drink',None,'milk'),{'human'}),
+    ('Q3',BASE,('produce','cow',None),{'milk'}),
+    ('Q4',{('produce','yak','milk'),('drink','human','milk')},('drink','yak',None),set()),
+    ('Q5',{('produce','cow','milk'),('drink','cat','milk')},('drink','cow',None),set()),
+    ('Q6',{('produce','cow','milk')},('drink',None,'milk'),set()),
+]
 
 def main():
-    print("=== r65 relational-composition model ===")
-    # countermodel: premises true, conclusion false
-    produce = {("cow", "milk")}
-    drink = {("human", "milk"), ("cow", "water")}
-    x, y, z = "cow", "milk", "human"
-    assert (x, y) in produce
-    assert (z, y) in drink
-    assert (x, y) not in drink
-    print("countermodel: produce(cow,milk)=T, drink(human,milk)=T, drink(cow,milk)=F")
-    print("invalid inference refuted")
+    for name,facts,args,expected in CASES:
+        answer = query(facts,*args)
+        assert answer == expected
+        print(name, sorted(answer) if answer else 'NOT_DETERMINED_BY_GIVEN_FACTS')
+    assert ('produce','cow','milk') in BASE and ('drink','human','milk') in BASE
+    assert ('drink','cow','milk') not in BASE
+    print('PASS invalid implication has a countermodel.')
+    for name,facts,args,expected in CASES[3:]:
+        relation,subject,object_ = args
+        fact = (relation,subject,'water') if subject is not None else (relation,'human',object_)
+        assert not query(facts,*args) and query(facts|{fact},*args)
+    print('PASS missing-fact completions change answers; missing does not mean false.')
+    print('Former association/role arrays were hypotheses, not implemented mechanisms.')
 
-    # predicted profiles: Q1..Q6
-    correct = ["water", "human", "milk", "water", "water", "human"]
-    assoc = ["milk", "human", "milk", "water/unknown", "milk", "human"]
-    role = ["milk", "cow", "milk", "milk", "milk", "cow"]
-    ignorance = ["?", "?", "?", "?", "?", "?"]
-    rows = [("correct", correct), ("association", assoc),
-            ("role-misbinding", role), ("ignorance", ignorance)]
-    print("\nProfiles (Q1..Q6):")
-    for name, prof in rows:
-        print(f"  {name:>16}: {prof}")
-
-    # minimal pair Q1 vs Q4 distinguishes association from role-misbinding
-    assert assoc[0] == "milk" and assoc[3] in ("water/unknown", "water")
-    assert role[0] == "milk" and role[3] == "milk"
-    print("\nQ1/Q4: association is familiar-pair-specific; role-misbinding transfers to yak")
-    # Q2/Q6: agent question distinguishes association (human) from role (cow)
-    assert assoc[1] == "human" and role[1] == "cow"
-    assert assoc[5] == "human" and role[5] == "cow"
-    print("Q2/Q6: agent question distinguishes association (human) from role (cow)")
-    print("All checks passed")
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

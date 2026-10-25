@@ -1,0 +1,9 @@
+Q1 ['water']
+Q2 ['human']
+Q3 ['milk']
+Q4 NOT_DETERMINED_BY_GIVEN_FACTS
+Q5 NOT_DETERMINED_BY_GIVEN_FACTS
+Q6 NOT_DETERMINED_BY_GIVEN_FACTS
+PASS invalid implication has a countermodel.
+PASS missing-fact completions change answers; missing does not mean false.
+Former association/role arrays were hypotheses, not implemented mechanisms.
